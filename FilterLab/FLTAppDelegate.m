@@ -7,12 +7,17 @@
 //
 
 #import "FLTAppDelegate.h"
+#import "FLTHomeScreenViewController.h"
 
 @implementation FLTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    FLTHomeScreenViewController *hvc = [[FLTHomeScreenViewController alloc] init];
+    self.window.rootViewController = hvc;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
