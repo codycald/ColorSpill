@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FLTPhotoPreviewViewController">
+            <connections>
+                <outlet property="imageView" destination="rrA-yB-UDj" id="7wG-uO-B9l"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rfj-Jl-kOH">
+                    <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="LKl-GC-d9g"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem title="back" id="PTh-VE-U6G">
+                            <connections>
+                                <action selector="back:" destination="-1" id="TTg-ND-a4e"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="xTV-hW-l1p"/>
+                        <barButtonItem title="use" id="dJZ-7K-OpW">
+                            <connections>
+                                <action selector="usePhoto:" destination="-1" id="1Hf-Jw-vtU"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preview" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDg-kw-fiC">
+                    <rect key="frame" x="130" y="535" width="61" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="G1Q-rQ-qhE"/>
+                        <constraint firstAttribute="width" constant="61" id="qPQ-m6-jUC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rrA-yB-UDj">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="wDg-kw-fiC" secondAttribute="centerX" id="992-Kk-vPG"/>
+                <constraint firstAttribute="bottom" secondItem="rfj-Jl-kOH" secondAttribute="bottom" id="FhN-OT-VK0"/>
+                <constraint firstItem="rfj-Jl-kOH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="U2K-nA-NOt"/>
+                <constraint firstItem="rfj-Jl-kOH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="U2p-UQ-5f2"/>
+                <constraint firstAttribute="bottom" secondItem="rfj-Jl-kOH" secondAttribute="bottom" id="UMq-ZY-AL7"/>
+                <constraint firstAttribute="bottom" secondItem="wDg-kw-fiC" secondAttribute="bottom" constant="12" id="i4y-LH-z2Y"/>
+                <constraint firstAttribute="trailing" secondItem="rfj-Jl-kOH" secondAttribute="trailing" id="sGe-Ir-uG2"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

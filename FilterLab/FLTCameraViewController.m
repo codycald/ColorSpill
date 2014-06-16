@@ -8,8 +8,9 @@
 
 #import "FLTCameraViewController.h"
 #import "GPUImage.h"
+#import "FLTPhotoPreviewViewController.h"
 
-@interface FLTCameraViewController ()
+@interface FLTCameraViewController () <FLTPhotoPreviewViewControllerDelegate>
 
 @property (strong, nonatomic) GPUImageStillCamera *camera;
 @property (strong, nonatomic) GPUImageFilter *currentFilter;
@@ -44,6 +45,34 @@
     [self.camera startCameraCapture];
 }
 
+#pragma mark - Photo preview delegate methods
+
+- (void)photoPreviewCancelPreview:(FLTPhotoPreviewViewController *)photoPreview {
+    
+    [self dismissViewControllerAnimated:YES completion:NULL];
+}
+
+- (void)photoPreviewUsePhoto:(FLTPhotoPreviewViewController *)photoPreview {
+    
+    NSLog(@"Use photo");
+}
+
 #pragma mark - Actions
+
+- (IBAction)capturePhoto:(id)sender {
+    
+    [self.camera capturePhotoAsImageProcessedUpToFilter:self.currentFilter withOrientation:UIImageOrientationUp withCompletionHandler:^(UIImage *processedImage, NSError *error) {
+        
+        if (!error) {
+            FLTPhotoPreviewViewController *pvc = [[FLTPhotoPreviewViewController alloc] init];
+            pvc.image = processedImage;
+            pvc.delegate = self;
+            [self presentViewController:pvc animated:YES completion:NULL];
+        } else {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Could not capture photo" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [alert show];
+        }
+    }];
+}
 
 @end

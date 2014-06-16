@@ -25,7 +25,11 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <items>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="6tS-rI-kLz"/>
-                        <barButtonItem title="Capture" id="5BG-bO-bMN"/>
+                        <barButtonItem title="Capture" id="5BG-bO-bMN">
+                            <connections>
+                                <action selector="capturePhoto:" destination="-1" id="wjJ-Do-QQO"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="q2W-7d-E2k"/>
                     </items>
                 </toolbar>
