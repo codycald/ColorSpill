@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		030726987C1E44C48ED32425 /* libPods-FilterLab.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EC4995A616B4AEBB9590483 /* libPods-FilterLab.a */; };
+		06349245194EB0C700D6E052 /* FLTCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06349243194EB0C700D6E052 /* FLTCameraViewController.m */; };
+		06349246194EB0C700D6E052 /* FLTCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06349244194EB0C700D6E052 /* FLTCameraViewController.xib */; };
 		06E2EE49194B9807004C6FE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E2EE48194B9807004C6FE8 /* Foundation.framework */; };
 		06E2EE4B194B9807004C6FE8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E2EE4A194B9807004C6FE8 /* CoreGraphics.framework */; };
 		06E2EE4D194B9807004C6FE8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E2EE4C194B9807004C6FE8 /* UIKit.framework */; };
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06349242194EB0C700D6E052 /* FLTCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTCameraViewController.h; sourceTree = "<group>"; };
+		06349243194EB0C700D6E052 /* FLTCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTCameraViewController.m; sourceTree = "<group>"; };
+		06349244194EB0C700D6E052 /* FLTCameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLTCameraViewController.xib; sourceTree = "<group>"; };
 		06E2EE45194B9807004C6FE8 /* FilterLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilterLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06E2EE48194B9807004C6FE8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		06E2EE4A194B9807004C6FE8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -122,6 +127,9 @@
 				06E2EE58194B9807004C6FE8 /* FLTAppDelegate.m */,
 				06E2EE77194BA1CA004C6FE8 /* FLTHomeScreenViewController.h */,
 				06E2EE78194BA1CA004C6FE8 /* FLTHomeScreenViewController.m */,
+				06349242194EB0C700D6E052 /* FLTCameraViewController.h */,
+				06349243194EB0C700D6E052 /* FLTCameraViewController.m */,
+				06349244194EB0C700D6E052 /* FLTCameraViewController.xib */,
 				06E2EE7A194BA292004C6FE8 /* FLTHomeScreenViewController.xib */,
 				06E2EE5A194B9807004C6FE8 /* Images.xcassets */,
 				06E2EE4F194B9807004C6FE8 /* Supporting Files */,
@@ -238,6 +246,7 @@
 			files = (
 				06E2EE53194B9807004C6FE8 /* InfoPlist.strings in Resources */,
 				06E2EE7B194BA292004C6FE8 /* FLTHomeScreenViewController.xib in Resources */,
+				06349246194EB0C700D6E052 /* FLTCameraViewController.xib in Resources */,
 				06E2EE5B194B9807004C6FE8 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +301,7 @@
 			files = (
 				06E2EE79194BA1CA004C6FE8 /* FLTHomeScreenViewController.m in Sources */,
 				06E2EE55194B9807004C6FE8 /* main.m in Sources */,
+				06349245194EB0C700D6E052 /* FLTCameraViewController.m in Sources */,
 				06E2EE59194B9807004C6FE8 /* FLTAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,6 +7,7 @@
 //
 
 #import "FLTHomeScreenViewController.h"
+#import "FLTCameraViewController.h"
 
 @interface FLTHomeScreenViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
@@ -15,6 +16,12 @@
 @implementation FLTHomeScreenViewController
 
 #pragma mark - Actions
+
+- (IBAction)presentCamera:(id)sender {
+    
+    FLTCameraViewController *cvc = [[FLTCameraViewController alloc] init];
+    [self presentViewController:cvc animated:YES completion:NULL];
+}
 
 - (IBAction)presentPhotoLibary:(id)sender {
     
