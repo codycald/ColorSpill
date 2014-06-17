@@ -45,6 +45,10 @@
     [self.camera startCameraCapture];
 }
 
+- (BOOL)shouldAutorotate {
+    return NO;
+}
+
 #pragma mark - Photo preview delegate methods
 
 - (void)photoPreviewCancelPreview:(FLTPhotoPreviewViewController *)photoPreview {
@@ -61,8 +65,7 @@
 
 - (IBAction)capturePhoto:(id)sender {
     
-    [self.camera capturePhotoAsImageProcessedUpToFilter:self.currentFilter withOrientation:UIImageOrientationUp withCompletionHandler:^(UIImage *processedImage, NSError *error) {
-        
+    [self.camera capturePhotoAsImageProcessedUpToFilter:self.currentFilter withCompletionHandler:^(UIImage *processedImage, NSError *error) {
         if (!error) {
             FLTPhotoPreviewViewController *pvc = [[FLTPhotoPreviewViewController alloc] init];
             pvc.image = processedImage;

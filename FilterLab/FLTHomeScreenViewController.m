@@ -15,6 +15,10 @@
 
 @implementation FLTHomeScreenViewController
 
+- (BOOL)shouldAutorotate {
+    return NO;
+}
+
 #pragma mark - Actions
 
 - (IBAction)presentCamera:(id)sender {

@@ -24,6 +24,10 @@
     self.imageView.image = self.image;
 }
 
+- (BOOL)shouldAutorotate {
+    return NO;
+}
+
 #pragma mark - Actions
 
 - (IBAction)back:(id)sender {

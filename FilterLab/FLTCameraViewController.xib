@@ -15,14 +15,17 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TXI-WA-vl8" customClass="GPUImageView">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TXI-WA-vl8" customClass="GPUImageView">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                 </view>
-                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="llu-Fi-rNT">
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="llu-Fi-rNT">
                     <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="rsc-cC-YCe"/>
+                    </constraints>
                     <items>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="6tS-rI-kLz"/>
                         <barButtonItem title="Capture" id="5BG-bO-bMN">
@@ -36,6 +39,15 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <accessibility key="accessibilityConfiguration" label=""/>
+            <constraints>
+                <constraint firstItem="llu-Fi-rNT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9Wt-hc-2sB"/>
+                <constraint firstItem="TXI-WA-vl8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="FQP-yz-VwA"/>
+                <constraint firstAttribute="trailing" secondItem="llu-Fi-rNT" secondAttribute="trailing" id="V9X-Aa-Wqc"/>
+                <constraint firstAttribute="bottom" secondItem="llu-Fi-rNT" secondAttribute="bottom" id="a2R-iv-KVM"/>
+                <constraint firstItem="llu-Fi-rNT" firstAttribute="top" secondItem="TXI-WA-vl8" secondAttribute="bottom" id="afI-IU-pw6"/>
+                <constraint firstItem="TXI-WA-vl8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lOD-tE-5i3"/>
+                <constraint firstAttribute="trailing" secondItem="TXI-WA-vl8" secondAttribute="trailing" id="xYb-mr-MaM"/>
+            </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
