@@ -8,8 +8,9 @@
 
 #import "FLTHomeScreenViewController.h"
 #import "FLTCameraViewController.h"
+#import "FLTPhotoPreviewViewController.h"
 
-@interface FLTHomeScreenViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+@interface FLTHomeScreenViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate, FLTPhotoPreviewViewControllerDelegate>
 
 @end
 
@@ -17,6 +18,29 @@
 
 - (BOOL)shouldAutorotate {
     return NO;
+}
+
+#pragma mark - Image picker delegate methods
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    
+    UIImage *image = info[UIImagePickerControllerOriginalImage];
+    FLTPhotoPreviewViewController *pvc = [[FLTPhotoPreviewViewController alloc] init];
+    pvc.image = image;
+    pvc.delegate = self;
+    [picker presentViewController:pvc animated:YES completion:NULL];
+}
+
+#pragma mark - Photo preview delegate methods
+
+- (void)photoPreviewCancelPreview:(FLTPhotoPreviewViewController *)photoPreview {
+    
+    [photoPreview.presentingViewController dismissViewControllerAnimated:YES completion:NULL];
+}
+
+- (void)photoPreviewUsePhoto:(FLTPhotoPreviewViewController *)photoPreview {
+    
+    NSLog(@"Use photo");
 }
 
 #pragma mark - Actions

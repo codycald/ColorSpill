@@ -78,4 +78,8 @@
     }];
 }
 
+- (IBAction)cancelPhotoCapture:(id)sender {
+    [self.presentingViewController dismissViewControllerAnimated:YES completion:NULL];
+}
+
 @end

@@ -27,6 +27,11 @@
                         <constraint firstAttribute="height" constant="44" id="rsc-cC-YCe"/>
                     </constraints>
                     <items>
+                        <barButtonItem title="cancel" id="LsA-Sp-S3Y">
+                            <connections>
+                                <action selector="cancelPhotoCapture:" destination="-1" id="lcs-GD-3vj"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="6tS-rI-kLz"/>
                         <barButtonItem title="Capture" id="5BG-bO-bMN">
                             <connections>
