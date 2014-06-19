@@ -10,7 +10,7 @@
 #import "FLTCameraViewController.h"
 #import "FLTPhotoPreviewViewController.h"
 
-@interface FLTHomeScreenViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate, FLTPhotoPreviewViewControllerDelegate>
+@interface FLTHomeScreenViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate, FLTPhotoPreviewViewControllerDelegate, FLTCameraViewControllerDelegate>
 
 @end
 
@@ -20,7 +20,7 @@
     return NO;
 }
 
-#pragma mark - Image picker delegate methods
+#pragma mark - UIImagePickerController delegate methods
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     
@@ -31,16 +31,21 @@
     [picker presentViewController:pvc animated:YES completion:NULL];
 }
 
-#pragma mark - Photo preview delegate methods
+#pragma mark - FLTPhotoPreviewController delegate methods
 
 - (void)photoPreviewCancelPreview:(FLTPhotoPreviewViewController *)photoPreview {
     
     [photoPreview.presentingViewController dismissViewControllerAnimated:YES completion:NULL];
 }
 
-- (void)photoPreviewUsePhoto:(FLTPhotoPreviewViewController *)photoPreview {
-    
-    NSLog(@"Use photo");
+- (void)photoPreview:(FLTPhotoPreviewViewController *)photoPreview useImage:(UIImage *)image {
+    NSLog(@"%@", image);
+}
+
+#pragma mark - FLTCameraViewController delegate methods
+
+- (void)cameraViewController:(FLTCameraViewController *)camera didCaptureImage:(UIImage *)image {
+    NSLog(@"%@", image);
 }
 
 #pragma mark - Actions

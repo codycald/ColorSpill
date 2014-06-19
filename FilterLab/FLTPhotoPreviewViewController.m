@@ -62,7 +62,7 @@
 - (IBAction)usePhoto:(id)sender {
     
     if (self.delegate) {
-        [self.delegate photoPreviewUsePhoto:self];
+        [self.delegate photoPreview:self useImage:self.image];
     }
 }
 

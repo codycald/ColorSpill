@@ -14,7 +14,7 @@
 
 @required
 - (void)photoPreviewCancelPreview:(FLTPhotoPreviewViewController *)photoPreview;
-- (void)photoPreviewUsePhoto:(FLTPhotoPreviewViewController *)photoPreview;
+- (void)photoPreview:(FLTPhotoPreviewViewController *)photoPreview useImage:(UIImage *)image;
 
 @end
 

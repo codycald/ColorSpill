@@ -56,9 +56,8 @@
     [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
-- (void)photoPreviewUsePhoto:(FLTPhotoPreviewViewController *)photoPreview {
-    
-    NSLog(@"Use photo");
+- (void)photoPreview:(FLTPhotoPreviewViewController *)photoPreview useImage:(UIImage *)image {
+    NSLog(@"%@", image);
 }
 
 #pragma mark - Actions
