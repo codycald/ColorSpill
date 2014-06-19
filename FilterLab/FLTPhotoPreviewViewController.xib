@@ -6,7 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FLTPhotoPreviewViewController">
             <connections>
-                <outlet property="imageView" destination="rrA-yB-UDj" id="7wG-uO-B9l"/>
+                <outlet property="imageView" destination="dsN-E9-W3P" id="9bL-VH-WaZ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -45,26 +45,35 @@
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rrA-yB-UDj">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dsN-E9-W3P" customClass="GPUImageView">
                     <rect key="frame" x="0.0" y="44" width="320" height="480"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zw4-0n-e8s">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items/>
+                </toolbar>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="centerY" secondItem="rrA-yB-UDj" secondAttribute="centerY" id="4ib-EO-xJS"/>
+                <constraint firstAttribute="trailing" secondItem="dsN-E9-W3P" secondAttribute="trailing" id="2ea-lk-8DB"/>
+                <constraint firstItem="Zw4-0n-e8s" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2k1-4q-Lih"/>
+                <constraint firstItem="Zw4-0n-e8s" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="491-OT-XE8"/>
+                <constraint firstAttribute="trailing" secondItem="Zw4-0n-e8s" secondAttribute="trailing" id="8QZ-bv-cXq"/>
                 <constraint firstAttribute="centerX" secondItem="wDg-kw-fiC" secondAttribute="centerX" id="992-Kk-vPG"/>
                 <constraint firstAttribute="bottom" secondItem="rfj-Jl-kOH" secondAttribute="bottom" id="FhN-OT-VK0"/>
-                <constraint firstItem="rrA-yB-UDj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Nsh-o0-0nJ"/>
-                <constraint firstAttribute="bottom" secondItem="rrA-yB-UDj" secondAttribute="bottom" constant="44" id="QzS-id-711"/>
+                <constraint firstItem="dsN-E9-W3P" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SKa-KG-XeU"/>
                 <constraint firstItem="rfj-Jl-kOH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="U2K-nA-NOt"/>
                 <constraint firstItem="rfj-Jl-kOH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="U2p-UQ-5f2"/>
                 <constraint firstAttribute="bottom" secondItem="rfj-Jl-kOH" secondAttribute="bottom" id="UMq-ZY-AL7"/>
-                <constraint firstAttribute="centerX" secondItem="rrA-yB-UDj" secondAttribute="centerX" id="UNm-RK-1vR"/>
-                <constraint firstItem="rrA-yB-UDj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="WVd-9S-d3Y"/>
-                <constraint firstAttribute="trailing" secondItem="rrA-yB-UDj" secondAttribute="trailing" id="aKZ-Fj-M5T"/>
+                <constraint firstItem="rfj-Jl-kOH" firstAttribute="top" secondItem="dsN-E9-W3P" secondAttribute="bottom" id="Uhb-7s-fkm"/>
+                <constraint firstItem="dsN-E9-W3P" firstAttribute="top" secondItem="Zw4-0n-e8s" secondAttribute="bottom" id="gxO-a1-hst"/>
                 <constraint firstAttribute="bottom" secondItem="wDg-kw-fiC" secondAttribute="bottom" constant="12" id="i4y-LH-z2Y"/>
+                <constraint firstAttribute="centerY" secondItem="dsN-E9-W3P" secondAttribute="centerY" id="jwP-WA-FDa"/>
                 <constraint firstAttribute="trailing" secondItem="rfj-Jl-kOH" secondAttribute="trailing" id="sGe-Ir-uG2"/>
+                <constraint firstAttribute="centerX" secondItem="dsN-E9-W3P" secondAttribute="centerX" id="tvy-VI-VWe"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>

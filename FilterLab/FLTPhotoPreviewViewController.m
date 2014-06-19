@@ -7,10 +7,11 @@
 //
 
 #import "FLTPhotoPreviewViewController.h"
+#import "GPUImage.h"
 
 @interface FLTPhotoPreviewViewController ()
 
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet GPUImageView *imageView;
 
 @end
 
@@ -21,7 +22,28 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    self.imageView.image = self.image;
+    GPUImagePicture *imagePicture = [[GPUImagePicture alloc] initWithImage:self.image smoothlyScaleOutput:YES];
+    GPUImageRotationMode rotationMode = kGPUImageNoRotation;
+    
+    switch (self.image.imageOrientation) {
+        case UIImageOrientationUp:
+            break;
+        case UIImageOrientationDown:
+            rotationMode = kGPUImageRotate180;
+            break;
+        case UIImageOrientationLeft:
+            rotationMode = kGPUImageRotateLeft;
+            break;
+        case UIImageOrientationRight:
+            rotationMode = kGPUImageRotateRight;
+            break;
+        default:
+            break;
+    }
+    
+    [imagePicture addTarget:self.imageView];
+    [self.imageView setInputRotation:rotationMode atIndex:0];
+    [imagePicture processImage];
 }
 
 - (BOOL)shouldAutorotate {
