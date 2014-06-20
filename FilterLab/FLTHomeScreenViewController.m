@@ -9,6 +9,7 @@
 #import "FLTHomeScreenViewController.h"
 #import "FLTCameraViewController.h"
 #import "FLTPhotoPreviewViewController.h"
+#import "FLTPhotoEditorViewController.h"
 
 @interface FLTHomeScreenViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate, FLTPhotoPreviewViewControllerDelegate, FLTCameraViewControllerDelegate>
 
@@ -39,13 +40,19 @@
 }
 
 - (void)photoPreview:(FLTPhotoPreviewViewController *)photoPreview useImage:(UIImage *)image {
-    NSLog(@"%@", image);
+    
+    [self dismissViewControllerAnimated:YES completion:^{
+        [self openPhotoEditorWithImage:image];
+    }];
 }
 
 #pragma mark - FLTCameraViewController delegate methods
 
 - (void)cameraViewController:(FLTCameraViewController *)camera didCaptureImage:(UIImage *)image {
-    NSLog(@"%@", image);
+    
+    [self dismissViewControllerAnimated:YES completion:^{
+        [self openPhotoEditorWithImage:image];
+    }];
 }
 
 #pragma mark - Actions
@@ -53,6 +60,7 @@
 - (IBAction)presentCamera:(id)sender {
     
     FLTCameraViewController *cvc = [[FLTCameraViewController alloc] init];
+    cvc.delegate = self;
     [self presentViewController:cvc animated:YES completion:NULL];
 }
 
@@ -63,6 +71,15 @@
     ipc.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     ipc.delegate = self;
     [self presentViewController:ipc animated:YES completion:NULL];
+}
+
+#pragma mark - Helper methods
+
+- (void)openPhotoEditorWithImage:(UIImage *)image {
+    
+    FLTPhotoEditorViewController *evc = [[FLTPhotoEditorViewController alloc] init];
+    evc.image = image;
+    [self presentViewController:evc animated:YES completion:NULL];
 }
 
 @end

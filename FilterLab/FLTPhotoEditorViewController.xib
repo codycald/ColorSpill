@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FLTPhotoEditorViewController">
+            <connections>
+                <outlet property="imageView" destination="eYp-zh-8DE" id="42E-Jh-bPV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TFe-ss-rD0">
+                    <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem title="Revert" id="xyf-ZQ-lLf"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="me1-Rx-ust"/>
+                        <barButtonItem title="Tools" id="EM2-bM-fRl"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="5UZ-02-X8B"/>
+                        <barButtonItem title="Filters" id="Wo2-aO-AQU"/>
+                    </items>
+                </toolbar>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ra-8p-6kR">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem title="back" id="T9c-l1-Gv2"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Zpl-H9-Xq9"/>
+                        <barButtonItem title="done" id="r6y-gE-5qy"/>
+                    </items>
+                </toolbar>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eYp-zh-8DE" customClass="GPUImageView">
+                    <rect key="frame" x="0.0" y="44" width="320" height="480"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="eYp-zh-8DE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0m3-JZ-hfH"/>
+                <constraint firstItem="3Ra-8p-6kR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0nB-n3-RLK"/>
+                <constraint firstAttribute="centerX" secondItem="eYp-zh-8DE" secondAttribute="centerX" id="4Ig-jk-Gg1"/>
+                <constraint firstAttribute="bottom" secondItem="TFe-ss-rD0" secondAttribute="bottom" id="4cc-zF-WwF"/>
+                <constraint firstItem="3Ra-8p-6kR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5Pm-NI-qRd"/>
+                <constraint firstAttribute="trailing" secondItem="3Ra-8p-6kR" secondAttribute="trailing" id="Nh3-Nl-aNM"/>
+                <constraint firstItem="eYp-zh-8DE" firstAttribute="top" secondItem="3Ra-8p-6kR" secondAttribute="bottom" id="Rgj-i6-dH5"/>
+                <constraint firstAttribute="trailing" secondItem="TFe-ss-rD0" secondAttribute="trailing" id="U3F-U6-HYE"/>
+                <constraint firstAttribute="trailing" secondItem="eYp-zh-8DE" secondAttribute="trailing" id="neo-3z-UPo"/>
+                <constraint firstItem="TFe-ss-rD0" firstAttribute="top" secondItem="eYp-zh-8DE" secondAttribute="bottom" id="r5T-FQ-o5u"/>
+                <constraint firstItem="TFe-ss-rD0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="y36-ry-TSi"/>
+                <constraint firstAttribute="centerY" secondItem="eYp-zh-8DE" secondAttribute="centerY" id="zsh-tf-V3H"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

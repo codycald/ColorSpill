@@ -57,7 +57,10 @@
 }
 
 - (void)photoPreview:(FLTPhotoPreviewViewController *)photoPreview useImage:(UIImage *)image {
-    NSLog(@"%@", image);
+    
+    if (self.delegate) {
+        [self.delegate cameraViewController:self didCaptureImage:image];
+    }
 }
 
 #pragma mark - Actions
