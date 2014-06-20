@@ -56,4 +56,14 @@
     [imagePicture processImage];
 }
 
+#pragma mark - Actions
+
+- (IBAction)back:(id)sender {
+    
+    if (self.delegate) {
+        [self.delegate photoEditorViewControllerDidCancel:self];
+    }
+}
+
+
 @end

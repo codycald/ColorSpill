@@ -11,7 +11,8 @@
 #import "FLTPhotoPreviewViewController.h"
 #import "FLTPhotoEditorViewController.h"
 
-@interface FLTHomeScreenViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate, FLTPhotoPreviewViewControllerDelegate, FLTCameraViewControllerDelegate>
+@interface FLTHomeScreenViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate,
+FLTPhotoPreviewViewControllerDelegate, FLTCameraViewControllerDelegate, FLTPhotoEditorViewControllerDelegate>
 
 @end
 
@@ -65,6 +66,13 @@
     }];
 }
 
+#pragma mark - FLTPhotoEditorViewController delegate methods
+
+- (void)photoEditorViewControllerDidCancel:(FLTPhotoEditorViewController *)photoEditor {
+    
+    [self dismissViewControllerAnimated:YES completion:NULL];
+}
+
 #pragma mark - Actions
 
 - (IBAction)presentCamera:(id)sender {
@@ -89,6 +97,7 @@
     
     FLTPhotoEditorViewController *evc = [[FLTPhotoEditorViewController alloc] init];
     evc.image = image;
+    evc.delegate = self;
     [self presentViewController:evc animated:YES completion:NULL];
 }
 

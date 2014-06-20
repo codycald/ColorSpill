@@ -8,8 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+@class FLTPhotoEditorViewController;
+
+@protocol FLTPhotoEditorViewControllerDelegate <NSObject>
+
+@required
+- (void)photoEditorViewControllerDidCancel:(FLTPhotoEditorViewController *)photoEditor;
+
+@end
+
 @interface FLTPhotoEditorViewController : UIViewController
 
 @property (strong, nonatomic) UIImage *image;
+@property (weak, nonatomic) id<FLTPhotoEditorViewControllerDelegate> delegate;
 
 @end

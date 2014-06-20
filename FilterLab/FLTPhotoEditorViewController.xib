@@ -30,7 +30,11 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <items>
-                        <barButtonItem title="back" id="T9c-l1-Gv2"/>
+                        <barButtonItem title="back" id="T9c-l1-Gv2">
+                            <connections>
+                                <action selector="back:" destination="-1" id="F59-Up-shO"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="Zpl-H9-Xq9"/>
                         <barButtonItem title="done" id="r6y-gE-5qy"/>
                     </items>
