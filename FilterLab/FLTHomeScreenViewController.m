@@ -25,11 +25,21 @@
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     
+    // Hide status bar
+    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
+    
     UIImage *image = info[UIImagePickerControllerOriginalImage];
     FLTPhotoPreviewViewController *pvc = [[FLTPhotoPreviewViewController alloc] init];
     pvc.image = image;
     pvc.delegate = self;
     [picker presentViewController:pvc animated:YES completion:NULL];
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    
+    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
+    
+    [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
 #pragma mark - FLTPhotoPreviewController delegate methods
