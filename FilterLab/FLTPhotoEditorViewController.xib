@@ -20,7 +20,11 @@
                     <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <items>
-                        <barButtonItem title="Revert" id="xyf-ZQ-lLf"/>
+                        <barButtonItem title="Revert" id="xyf-ZQ-lLf">
+                            <connections>
+                                <action selector="revertChanges:" destination="-1" id="d7g-Yw-z1t"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="me1-Rx-ust"/>
                         <barButtonItem title="Tools" id="EM2-bM-fRl"/>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="5UZ-02-X8B"/>

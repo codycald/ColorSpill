@@ -31,32 +31,9 @@
     
     [super viewDidLoad];
     
-    self.originalImageView.contentMode = UIViewContentModeScaleAspectFit;
-    self.filteredImageView.contentMode = UIViewContentModeScaleAspectFit;
+    [self reconfigureImageViews];
     
     GPUImagePicture *imagePicture = [[GPUImagePicture alloc] initWithImage:self.image smoothlyScaleOutput:YES];
-    
-    GPUImageRotationMode rotationMode = kGPUImageNoRotation;
-    
-    switch (self.image.imageOrientation) {
-        case UIImageOrientationUp:
-            break;
-        case UIImageOrientationDown:
-            rotationMode = kGPUImageRotate180;
-            break;
-        case UIImageOrientationLeft:
-            rotationMode = kGPUImageRotateLeft;
-            break;
-        case UIImageOrientationRight:
-            rotationMode = kGPUImageRotateRight;
-            break;
-        default:
-            break;
-    }
-    
-    [self.originalImageView setInputRotation:rotationMode atIndex:0];
-    [self.filteredImageView setInputRotation:rotationMode atIndex:0];
-    
     [imagePicture addTarget:self.originalImageView];
     GPUImageSepiaFilter *filter = [[GPUImageSepiaFilter alloc] init];
     [imagePicture addTarget:filter];
@@ -64,7 +41,10 @@
     [imagePicture processImage];
     
     [self.originalImageView setHidden:YES];
+    [self.filteredImageView setHidden:NO];
 }
+
+#pragma mark - Touch event handlers
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     UITouch *touch = [touches anyObject];
@@ -93,5 +73,48 @@
     }
 }
 
+- (IBAction)revertChanges:(id)sender {
+    
+    [self reconfigureImageViews];
+    
+    GPUImagePicture *imagePicture = [[GPUImagePicture alloc] initWithImage:self.image smoothlyScaleOutput:YES];
+    [imagePicture addTarget:self.originalImageView];
+    [imagePicture addTarget:self.filteredImageView];
+    [imagePicture processImage];
+    
+    [self.originalImageView setHidden:YES];
+    [self.filteredImageView setHidden:NO];
+}
+
+#pragma mark - Helper methods
+
+- (void)reconfigureImageViews {
+    
+    self.originalImageView.contentMode = UIViewContentModeScaleAspectFit;
+    self.filteredImageView.contentMode = UIViewContentModeScaleAspectFit;
+    
+    // We must reset the rotationMode of the GPUImageViews everytime
+    // we want to reprocess an image
+    GPUImageRotationMode rotationMode = kGPUImageNoRotation;
+    
+    switch (self.image.imageOrientation) {
+        case UIImageOrientationUp:
+            break;
+        case UIImageOrientationDown:
+            rotationMode = kGPUImageRotate180;
+            break;
+        case UIImageOrientationLeft:
+            rotationMode = kGPUImageRotateLeft;
+            break;
+        case UIImageOrientationRight:
+            rotationMode = kGPUImageRotateRight;
+            break;
+        default:
+            break;
+    }
+    
+    [self.originalImageView setInputRotation:rotationMode atIndex:0];
+    [self.filteredImageView setInputRotation:rotationMode atIndex:0];
+}
 
 @end
