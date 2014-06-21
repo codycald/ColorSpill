@@ -6,7 +6,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FLTPhotoEditorViewController">
             <connections>
-                <outlet property="imageView" destination="eYp-zh-8DE" id="42E-Jh-bPV"/>
+                <outlet property="filteredImageView" destination="zzh-BD-Vbf" id="k7a-EO-Y4y"/>
+                <outlet property="originalImageView" destination="eYp-zh-8DE" id="7Ij-kw-M1K"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -44,18 +45,29 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zzh-BD-Vbf" customClass="GPUImageView">
+                    <rect key="frame" x="0.0" y="44" width="320" height="480"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="zzh-BD-Vbf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="08n-aT-NUh"/>
                 <constraint firstItem="eYp-zh-8DE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0m3-JZ-hfH"/>
                 <constraint firstItem="3Ra-8p-6kR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0nB-n3-RLK"/>
                 <constraint firstAttribute="centerX" secondItem="eYp-zh-8DE" secondAttribute="centerX" id="4Ig-jk-Gg1"/>
                 <constraint firstAttribute="bottom" secondItem="TFe-ss-rD0" secondAttribute="bottom" id="4cc-zF-WwF"/>
                 <constraint firstItem="3Ra-8p-6kR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5Pm-NI-qRd"/>
+                <constraint firstItem="zzh-BD-Vbf" firstAttribute="top" secondItem="3Ra-8p-6kR" secondAttribute="bottom" id="5ls-TX-4TO"/>
+                <constraint firstAttribute="centerY" secondItem="zzh-BD-Vbf" secondAttribute="centerY" id="ETq-J4-g1L"/>
                 <constraint firstAttribute="trailing" secondItem="3Ra-8p-6kR" secondAttribute="trailing" id="Nh3-Nl-aNM"/>
+                <constraint firstAttribute="trailing" secondItem="zzh-BD-Vbf" secondAttribute="trailing" id="OGg-nI-rPa"/>
                 <constraint firstItem="eYp-zh-8DE" firstAttribute="top" secondItem="3Ra-8p-6kR" secondAttribute="bottom" id="Rgj-i6-dH5"/>
                 <constraint firstAttribute="trailing" secondItem="TFe-ss-rD0" secondAttribute="trailing" id="U3F-U6-HYE"/>
+                <constraint firstItem="TFe-ss-rD0" firstAttribute="top" secondItem="zzh-BD-Vbf" secondAttribute="bottom" id="bAe-rX-mPW"/>
                 <constraint firstAttribute="trailing" secondItem="eYp-zh-8DE" secondAttribute="trailing" id="neo-3z-UPo"/>
+                <constraint firstAttribute="centerX" secondItem="zzh-BD-Vbf" secondAttribute="centerX" id="nzD-cy-PX3"/>
                 <constraint firstItem="TFe-ss-rD0" firstAttribute="top" secondItem="eYp-zh-8DE" secondAttribute="bottom" id="r5T-FQ-o5u"/>
                 <constraint firstItem="TFe-ss-rD0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="y36-ry-TSi"/>
                 <constraint firstAttribute="centerY" secondItem="eYp-zh-8DE" secondAttribute="centerY" id="zsh-tf-V3H"/>

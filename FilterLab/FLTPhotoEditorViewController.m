@@ -11,7 +11,8 @@
 
 @interface FLTPhotoEditorViewController ()
 
-@property (weak, nonatomic) IBOutlet GPUImageView *imageView;
+@property (weak, nonatomic) IBOutlet GPUImageView *originalImageView;
+@property (weak, nonatomic) IBOutlet GPUImageView *filteredImageView;
 
 @end
 
@@ -30,7 +31,9 @@
     
     [super viewDidLoad];
     
-    self.imageView.contentMode = UIViewContentModeScaleAspectFit;
+    self.originalImageView.contentMode = UIViewContentModeScaleAspectFit;
+    self.filteredImageView.contentMode = UIViewContentModeScaleAspectFit;
+    
     GPUImagePicture *imagePicture = [[GPUImagePicture alloc] initWithImage:self.image smoothlyScaleOutput:YES];
     
     GPUImageRotationMode rotationMode = kGPUImageNoRotation;
@@ -51,9 +54,34 @@
             break;
     }
     
-    [imagePicture addTarget:self.imageView];
-    [self.imageView setInputRotation:rotationMode atIndex:0];
+    [self.originalImageView setInputRotation:rotationMode atIndex:0];
+    [self.filteredImageView setInputRotation:rotationMode atIndex:0];
+    
+    [imagePicture addTarget:self.originalImageView];
+    GPUImageSepiaFilter *filter = [[GPUImageSepiaFilter alloc] init];
+    [imagePicture addTarget:filter];
+    [filter addTarget:self.filteredImageView];
     [imagePicture processImage];
+    
+    [self.originalImageView setHidden:YES];
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    UITouch *touch = [touches anyObject];
+    CGPoint location = [touch locationInView:self.originalImageView];
+    if (touch) {
+        if (CGRectContainsPoint(self.originalImageView.bounds, location)) {
+            [self.originalImageView setHidden:NO];
+            [self.filteredImageView setHidden:YES];
+        }
+    }
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    if (!self.originalImageView.isHidden) {
+        [self.originalImageView setHidden:YES];
+        [self.filteredImageView setHidden:NO];
+    }
 }
 
 #pragma mark - Actions
