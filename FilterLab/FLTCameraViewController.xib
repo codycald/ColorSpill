@@ -39,6 +39,11 @@
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="q2W-7d-E2k"/>
+                        <barButtonItem title="Flip" id="edt-H1-KAP">
+                            <connections>
+                                <action selector="switchCamera:" destination="-1" id="pM1-ci-WHI"/>
+                            </connections>
+                        </barButtonItem>
                     </items>
                 </toolbar>
             </subviews>

@@ -88,4 +88,9 @@
     [self.presentingViewController dismissViewControllerAnimated:YES completion:NULL];
 }
 
+- (IBAction)switchCamera:(id)sender {
+    [self.camera rotateCamera];
+}
+
+
 @end
