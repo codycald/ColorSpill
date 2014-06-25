@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FLTCameraViewController">
             <connections>
+                <outlet property="captureButton" destination="5BG-bO-bMN" id="vXa-WU-Ybe"/>
                 <outlet property="imageView" destination="TXI-WA-vl8" id="svc-Xp-hOD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

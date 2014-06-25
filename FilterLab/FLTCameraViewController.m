@@ -16,6 +16,7 @@
 @property (strong, nonatomic) GPUImageFilter *currentFilter;
 
 @property (weak, nonatomic) IBOutlet GPUImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *captureButton;
 
 @end
 
@@ -67,6 +68,7 @@
 
 - (IBAction)capturePhoto:(id)sender {
     
+    self.captureButton.enabled = NO;
     [self.camera capturePhotoAsImageProcessedUpToFilter:self.currentFilter withCompletionHandler:^(UIImage *processedImage, NSError *error) {
         if (!error) {
             FLTPhotoPreviewViewController *pvc = [[FLTPhotoPreviewViewController alloc] init];
@@ -81,6 +83,7 @@
                                                   otherButtonTitles:nil];
             [alert show];
         }
+        self.captureButton.enabled = YES;
     }];
 }
 
@@ -91,6 +94,5 @@
 - (IBAction)switchCamera:(id)sender {
     [self.camera rotateCamera];
 }
-
 
 @end
