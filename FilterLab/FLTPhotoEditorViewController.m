@@ -8,11 +8,13 @@
 
 #import "FLTPhotoEditorViewController.h"
 #import "GPUImage.h"
+#import "FLTMenuItemCell.h"
+#import "FLTMenuItemTitleView.h"
+#import "FLTHorizontalScrollMenuLayout.h"
 
 @interface FLTPhotoEditorViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property (strong, nonatomic) UICollectionView *currentMenu;
-@property (assign, nonatomic) NSInteger menuPadding;
 
 @property (weak, nonatomic) IBOutlet GPUImageView *originalImageView;
 @property (weak, nonatomic) IBOutlet GPUImageView *filteredImageView;
@@ -20,10 +22,10 @@
 
 @end
 
-typedef enum {
-    kFilterMenu = 1,
-    kToolMenu = 2
-} MenuType;
+typedef NS_ENUM(NSInteger, MenuType) {
+    FilterMenuType = 1 << 0,
+    ToolMenuType = 1 << 1
+};
 
 @implementation FLTPhotoEditorViewController
 
@@ -31,7 +33,8 @@ typedef enum {
     
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.menuPadding = 10;
+        // Start out with no menu to display
+        self.currentMenu = nil;
     }
     return self;
 }
@@ -42,6 +45,7 @@ typedef enum {
     
     [self reconfigureImageViews];
     
+    // Process image and display it in the image views
     GPUImagePicture *imagePicture = [[GPUImagePicture alloc] initWithImage:self.image smoothlyScaleOutput:YES];
     [imagePicture addTarget:self.originalImageView];
     GPUImageSepiaFilter *filter = [[GPUImageSepiaFilter alloc] init];
@@ -61,23 +65,21 @@ typedef enum {
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    UICollectionViewCell *cell = [collectView dequeueReusableCellWithReuseIdentifier:@"UICollectionViewCell"
+    FLTMenuItemCell *cell = [collectView dequeueReusableCellWithReuseIdentifier:@"FLTMenuItemCell"
                                                                         forIndexPath:indexPath];
     
-    switch (collectView.tag) {
-        case kFilterMenu:
-            cell.backgroundColor = [UIColor whiteColor];
-            break;
-            
-        case kToolMenu:
-            cell.backgroundColor = [UIColor blueColor];
-            break;
-            
-        default:
-            break;
-    }
-    
+    cell.imageView.image = [UIImage imageNamed:@"contrast"];
     return cell;
+}
+
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
+    
+    FLTMenuItemTitleView *titleView = [collectionView dequeueReusableSupplementaryViewOfKind:@"title" withReuseIdentifier:@"FLTMenuItemTitleView" forIndexPath:indexPath];
+    
+    if (collectionView.tag == FilterMenuType) {
+        titleView.label.text = @"hi";
+    }
+    return titleView;
 }
 
 #pragma mark - UICollectionView delegate methods
@@ -89,10 +91,12 @@ typedef enum {
 #pragma mark - Touch event handlers
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
     UITouch *touch = [touches anyObject];
     CGPoint location = [touch locationInView:self.originalImageView];
     if (touch) {
         if (CGRectContainsPoint(self.originalImageView.bounds, location)) {
+            // Display the original image
             [self.originalImageView setHidden:NO];
             [self.filteredImageView setHidden:YES];
         }
@@ -100,7 +104,9 @@ typedef enum {
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    
     if (!self.originalImageView.isHidden) {
+        // Display the filtered image
         [self.originalImageView setHidden:YES];
         [self.filteredImageView setHidden:NO];
     }
@@ -129,11 +135,11 @@ typedef enum {
 }
 
 - (IBAction)showFilterMenu:(id)sender {
-    [self displayMenuOfType:kFilterMenu];
+    [self displayMenuOfType:FilterMenuType];
 }
 
 - (IBAction)showToolMenu:(id)sender {
-    [self displayMenuOfType:kToolMenu];
+    [self displayMenuOfType:ToolMenuType];
 }
 
 #pragma mark - Helper methods
@@ -191,37 +197,31 @@ typedef enum {
 
 - (void)configureScrollMenuOfType:(MenuType)type {
     
-    UICollectionViewFlowLayout *scrollMenuLayout = [[UICollectionViewFlowLayout alloc] init];
-    scrollMenuLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-    scrollMenuLayout.sectionInset = UIEdgeInsetsMake(0, self.menuPadding, 0, self.menuPadding);
+    FLTHorizontalScrollMenuLayout *scrollMenuLayout = [[FLTHorizontalScrollMenuLayout alloc] init];
     
-    CGFloat menuItemSize;
-    switch (type) {
-        case kToolMenu:
-            menuItemSize = 50;
-            break;
-        case kFilterMenu:
-            menuItemSize = 30;
-            break;
+    // The tool menu items have no title, so we adjust the edge insets
+    if (type == ToolMenuType) {
+        scrollMenuLayout.edgeInsets = UIEdgeInsetsMake(5.0f, 10.0f, 5.0f, 10.0f);
+        scrollMenuLayout.titleHeight = 0.0f;
     }
-    
-    scrollMenuLayout.itemSize = CGSizeMake(menuItemSize, menuItemSize);
     
     self.currentMenu = [[UICollectionView alloc] initWithFrame:CGRectZero
                                             collectionViewLayout:scrollMenuLayout];
-    [self.currentMenu registerClass:[UICollectionViewCell class]
-           forCellWithReuseIdentifier:@"UICollectionViewCell"];
+    
+    // Place the menu directly above our bottom toolbar
+    self.currentMenu.frame = CGRectMake(0, self.editingToolBar.frame.origin.y - scrollMenuLayout.collectionViewContentSize.height, self.view.bounds.size.width, scrollMenuLayout.collectionViewContentSize.height);
+    
+    UINib *cellNib = [UINib nibWithNibName:@"FLTMenuItemCell" bundle:nil];
+    [self.currentMenu registerNib:cellNib forCellWithReuseIdentifier:@"FLTMenuItemCell"];
+    
+    [self.currentMenu registerClass:[FLTMenuItemTitleView class] forSupplementaryViewOfKind:@"title" withReuseIdentifier:@"FLTMenuItemTitleView"];
+    
     self.currentMenu.dataSource = self;
     self.currentMenu.delegate = self;
     self.currentMenu.tag = type;
     [self.currentMenu setShowsHorizontalScrollIndicator:NO];
     self.currentMenu.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.5];
-    
-    CGFloat scrollMenuHeight = menuItemSize + self.menuPadding * 2;
-    self.currentMenu.frame = CGRectMake(0,
-                                        self.editingToolBar.frame.origin.y - scrollMenuHeight,
-                                        self.view.bounds.size.width,
-                                        scrollMenuHeight);
+
 }
 
 @end
