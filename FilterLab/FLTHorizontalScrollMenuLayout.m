@@ -101,21 +101,25 @@ static NSString *const FLTMenuItemTitleLayout = @"FLTMenuItemTitleLayout";
 #pragma Accessors
 
 - (void)setEdgeInsets:(UIEdgeInsets)edgeInsets {
+    
     _edgeInsets = edgeInsets;
     [self invalidateLayout];
 }
 
 - (void)setItemSize:(CGSize)itemSize {
+    
     _itemSize = itemSize;
     [self invalidateLayout];
 }
 
 - (void)setInterItemSpacingX:(CGFloat)interItemSpacingX {
+    
     _interItemSpacingX = interItemSpacingX;
     [self invalidateLayout];
 }
 
 - (void)setTitleHeight:(CGFloat)titleHeight {
+    
     _titleHeight = titleHeight;
     [self invalidateLayout];
 }
@@ -152,6 +156,7 @@ static NSString *const FLTMenuItemTitleLayout = @"FLTMenuItemTitleLayout";
 }
 
 - (void)setupDefaults {
+    
     self.layoutInfo = [NSMutableDictionary dictionary];
     self.edgeInsets = UIEdgeInsetsMake(5.0f, 10.0f, 0.0f, 10.0f);
     self.itemSize = CGSizeMake(22.0f, 22.0f);

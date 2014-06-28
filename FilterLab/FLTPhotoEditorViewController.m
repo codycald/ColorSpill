@@ -14,6 +14,7 @@
 
 @interface FLTPhotoEditorViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 
+@property (strong, nonatomic) UIImage *filteredImage;
 @property (strong, nonatomic) UICollectionView *currentMenu;
 
 @property (weak, nonatomic) IBOutlet GPUImageView *originalImageView;
@@ -29,6 +30,8 @@ typedef NS_ENUM(NSInteger, MenuType) {
 
 @implementation FLTPhotoEditorViewController
 
+#pragma mark - Initializers
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -38,6 +41,8 @@ typedef NS_ENUM(NSInteger, MenuType) {
     }
     return self;
 }
+
+#pragma mark - View life cycle
 
 - (void)viewDidLoad {
     
@@ -51,7 +56,10 @@ typedef NS_ENUM(NSInteger, MenuType) {
     GPUImageSepiaFilter *filter = [[GPUImageSepiaFilter alloc] init];
     [imagePicture addTarget:filter];
     [filter addTarget:self.filteredImageView];
+    [filter useNextFrameForImageCapture];
     [imagePicture processImage];
+    
+    self.filteredImage = [filter imageFromCurrentFramebuffer];
     
     [self.originalImageView setHidden:YES];
     [self.filteredImageView setHidden:NO];
@@ -128,7 +136,13 @@ typedef NS_ENUM(NSInteger, MenuType) {
     GPUImagePicture *imagePicture = [[GPUImagePicture alloc] initWithImage:self.image smoothlyScaleOutput:YES];
     [imagePicture addTarget:self.originalImageView];
     [imagePicture addTarget:self.filteredImageView];
+    
+    GPUImageFilter *dummyFilter = [[GPUImageFilter alloc] init];
+    [imagePicture addTarget:dummyFilter];
+    [dummyFilter useNextFrameForImageCapture];
+    
     [imagePicture processImage];
+    self.filteredImage = [dummyFilter imageFromCurrentFramebuffer];
     
     [self.originalImageView setHidden:YES];
     [self.filteredImageView setHidden:NO];
@@ -140,6 +154,15 @@ typedef NS_ENUM(NSInteger, MenuType) {
 
 - (IBAction)showToolMenu:(id)sender {
     [self displayMenuOfType:ToolMenuType];
+}
+
+- (IBAction)shareImage:(id)sender {
+
+    NSArray *imageToShare = @[self.filteredImage];
+    UIActivityViewController *avc = [[UIActivityViewController alloc]
+                                     initWithActivityItems:imageToShare applicationActivities:nil];
+    avc.excludedActivityTypes = @[UIActivityTypeAssignToContact, UIActivityTypePrint];
+    [self presentViewController:avc animated:YES completion:NULL];
 }
 
 #pragma mark - Helper methods

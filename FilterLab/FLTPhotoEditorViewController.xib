@@ -38,6 +38,12 @@
                                 <action selector="showFilterMenu:" destination="-1" id="sQ0-nR-cNQ"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="twf-Nb-e5I"/>
+                        <barButtonItem title="Share" id="wNM-Zk-IAC">
+                            <connections>
+                                <action selector="shareImage:" destination="-1" id="kWK-et-CHZ"/>
+                            </connections>
+                        </barButtonItem>
                     </items>
                 </toolbar>
                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ra-8p-6kR">
@@ -49,8 +55,6 @@
                                 <action selector="back:" destination="-1" id="F59-Up-shO"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Zpl-H9-Xq9"/>
-                        <barButtonItem title="done" id="r6y-gE-5qy"/>
                     </items>
                 </toolbar>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eYp-zh-8DE" customClass="GPUImageView">
