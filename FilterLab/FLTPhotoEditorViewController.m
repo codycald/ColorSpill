@@ -12,7 +12,7 @@
 #import "FLTMenuItemTitleView.h"
 #import "FLTHorizontalScrollMenuLayout.h"
 
-@interface FLTPhotoEditorViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface FLTPhotoEditorViewController () <UICollectionViewDataSource, UICollectionViewDelegate, UIAlertViewDelegate>
 
 @property (strong, nonatomic) UIImage *filteredImage;
 @property (strong, nonatomic) UICollectionView *currentMenu;
@@ -96,6 +96,36 @@ typedef NS_ENUM(NSInteger, MenuType) {
     NSLog(@"Selected item #%ld", indexPath.row);
 }
 
+#pragma mark - UIAlertView delegate methods
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    
+    if ([alertView.title isEqualToString:@"Go to home"] && buttonIndex == 1) {
+        
+        if (self.delegate) {
+            [self.delegate photoEditorViewControllerDidCancel:self];
+        }
+        
+    } else if ([alertView.title isEqualToString:@"Discard changes"] && buttonIndex == 1) {
+        
+        [self reconfigureImageViews];
+        
+        GPUImagePicture *imagePicture = [[GPUImagePicture alloc] initWithImage:self.image smoothlyScaleOutput:YES];
+        [imagePicture addTarget:self.originalImageView];
+        [imagePicture addTarget:self.filteredImageView];
+        
+        GPUImageFilter *dummyFilter = [[GPUImageFilter alloc] init];
+        [imagePicture addTarget:dummyFilter];
+        [dummyFilter useNextFrameForImageCapture];
+        
+        [imagePicture processImage];
+        self.filteredImage = [dummyFilter imageFromCurrentFramebuffer];
+        
+        [self.originalImageView setHidden:YES];
+        [self.filteredImageView setHidden:NO];
+    }
+}
+
 #pragma mark - Touch event handlers
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -124,28 +154,14 @@ typedef NS_ENUM(NSInteger, MenuType) {
 
 - (IBAction)back:(id)sender {
     
-    if (self.delegate) {
-        [self.delegate photoEditorViewControllerDidCancel:self];
-    }
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Go to home" message:@"Go back to home screen?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Go back", nil];
+    [alert show];
 }
 
 - (IBAction)revertChanges:(id)sender {
     
-    [self reconfigureImageViews];
-    
-    GPUImagePicture *imagePicture = [[GPUImagePicture alloc] initWithImage:self.image smoothlyScaleOutput:YES];
-    [imagePicture addTarget:self.originalImageView];
-    [imagePicture addTarget:self.filteredImageView];
-    
-    GPUImageFilter *dummyFilter = [[GPUImageFilter alloc] init];
-    [imagePicture addTarget:dummyFilter];
-    [dummyFilter useNextFrameForImageCapture];
-    
-    [imagePicture processImage];
-    self.filteredImage = [dummyFilter imageFromCurrentFramebuffer];
-    
-    [self.originalImageView setHidden:YES];
-    [self.filteredImageView setHidden:NO];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Discard changes" message:@"Are you sure you want to discard all changes?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Discard", nil];
+    [alert show];
 }
 
 - (IBAction)showFilterMenu:(id)sender {
@@ -162,6 +178,13 @@ typedef NS_ENUM(NSInteger, MenuType) {
     UIActivityViewController *avc = [[UIActivityViewController alloc]
                                      initWithActivityItems:imageToShare applicationActivities:nil];
     avc.excludedActivityTypes = @[UIActivityTypeAssignToContact, UIActivityTypePrint];
+    avc.completionHandler = ^(NSString *activityType, BOOL completed) {
+        
+        if (completed && [activityType isEqualToString:UIActivityTypeSaveToCameraRoll]) {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Save Complete" message:@"The image has been saved to your camera roll" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [alert show];
+        }
+    };
     [self presentViewController:avc animated:YES completion:NULL];
 }
 
