@@ -11,11 +11,15 @@
 #import "FLTMenuItemCell.h"
 #import "FLTMenuItemTitleView.h"
 #import "FLTHorizontalScrollMenuLayout.h"
+#import "FLTFilterManager.h"
+#import "FLTImageEffectType.h"
+#import "FLTFilter.h"
 
 @interface FLTPhotoEditorViewController () <UICollectionViewDataSource, UICollectionViewDelegate, UIAlertViewDelegate>
 
 @property (strong, nonatomic) UIImage *filteredImage;
 @property (strong, nonatomic) UICollectionView *currentMenu;
+@property (strong, nonatomic) FLTFilterManager *filterManager;
 
 @property (weak, nonatomic) IBOutlet GPUImageView *originalImageView;
 @property (weak, nonatomic) IBOutlet GPUImageView *filteredImageView;
@@ -24,8 +28,8 @@
 @end
 
 typedef NS_ENUM(NSInteger, MenuType) {
-    FilterMenuType = 1 << 0,
-    ToolMenuType = 1 << 1
+    GeneralFilterMenuType = 1 << 0,
+    ToolFilterMenuType = 1 << 1
 };
 
 @implementation FLTPhotoEditorViewController
@@ -38,6 +42,7 @@ typedef NS_ENUM(NSInteger, MenuType) {
     if (self) {
         // Start out with no menu to display
         self.currentMenu = nil;
+        self.filterManager = [[FLTFilterManager alloc] init];
     }
     return self;
 }
@@ -68,15 +73,30 @@ typedef NS_ENUM(NSInteger, MenuType) {
 #pragma mark - UICollectionView data source methods
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 10;
+    
+    switch (collectionView.tag) {
+        case GeneralFilterMenuType:
+            return self.filterManager.generalFilters.count;
+            
+        case ToolFilterMenuType:
+            return self.filterManager.toolFilters.count;
+            
+        default:
+            return 0;
+    }
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     FLTMenuItemCell *cell = [collectView dequeueReusableCellWithReuseIdentifier:@"FLTMenuItemCell"
                                                                         forIndexPath:indexPath];
-    
-    cell.imageView.image = [UIImage imageNamed:@"contrast"];
+    FLTFilter *filter;
+    if (collectView.tag == GeneralFilterMenuType) {
+        filter = self.filterManager.generalFilters[indexPath.row];
+    } else {
+        filter = self.filterManager.toolFilters[indexPath.row];
+    }
+    cell.imageView.image = [UIImage imageNamed:filter.imageName];
     return cell;
 }
 
@@ -84,8 +104,10 @@ typedef NS_ENUM(NSInteger, MenuType) {
     
     FLTMenuItemTitleView *titleView = [collectionView dequeueReusableSupplementaryViewOfKind:@"title" withReuseIdentifier:@"FLTMenuItemTitleView" forIndexPath:indexPath];
     
-    if (collectionView.tag == FilterMenuType) {
-        titleView.label.text = @"hi";
+    FLTFilter *filter;
+    if (collectionView.tag == GeneralFilterMenuType) {
+        filter = self.filterManager.generalFilters[indexPath.row];
+        titleView.label.text = filter.filterName;
     }
     return titleView;
 }
@@ -111,12 +133,12 @@ typedef NS_ENUM(NSInteger, MenuType) {
         [self reconfigureImageViews];
         
         GPUImagePicture *imagePicture = [[GPUImagePicture alloc] initWithImage:self.image smoothlyScaleOutput:YES];
-        [imagePicture addTarget:self.originalImageView];
-        [imagePicture addTarget:self.filteredImageView];
         
         GPUImageFilter *dummyFilter = [[GPUImageFilter alloc] init];
         [imagePicture addTarget:dummyFilter];
         [dummyFilter useNextFrameForImageCapture];
+        [dummyFilter addTarget:self.originalImageView];
+        [dummyFilter addTarget:self.filteredImageView];
         
         [imagePicture processImage];
         self.filteredImage = [dummyFilter imageFromCurrentFramebuffer];
@@ -165,11 +187,11 @@ typedef NS_ENUM(NSInteger, MenuType) {
 }
 
 - (IBAction)showFilterMenu:(id)sender {
-    [self displayMenuOfType:FilterMenuType];
+    [self displayMenuOfType:GeneralFilterMenuType];
 }
 
 - (IBAction)showToolMenu:(id)sender {
-    [self displayMenuOfType:ToolMenuType];
+    [self displayMenuOfType:ToolFilterMenuType];
 }
 
 - (IBAction)shareImage:(id)sender {
@@ -246,8 +268,9 @@ typedef NS_ENUM(NSInteger, MenuType) {
     FLTHorizontalScrollMenuLayout *scrollMenuLayout = [[FLTHorizontalScrollMenuLayout alloc] init];
     
     // The tool menu items have no title, so we adjust the edge insets
-    if (type == ToolMenuType) {
+    if (type == ToolFilterMenuType) {
         scrollMenuLayout.edgeInsets = UIEdgeInsetsMake(5.0f, 10.0f, 5.0f, 10.0f);
+        scrollMenuLayout.itemSize = CGSizeMake(22.0f, 22.0f);
         scrollMenuLayout.titleHeight = 0.0f;
     }
     

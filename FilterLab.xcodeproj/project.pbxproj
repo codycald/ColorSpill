@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		030726987C1E44C48ED32425 /* libPods-FilterLab.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EC4995A616B4AEBB9590483 /* libPods-FilterLab.a */; };
+		06178342195F9A7E0038F5F1 /* FLTFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06178341195F9A7E0038F5F1 /* FLTFilter.m */; };
 		063034B41953A32000E7A927 /* FLTPhotoEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 063034B21953A32000E7A927 /* FLTPhotoEditorViewController.m */; };
 		063034B51953A32000E7A927 /* FLTPhotoEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 063034B31953A32000E7A927 /* FLTPhotoEditorViewController.xib */; };
 		06349245194EB0C700D6E052 /* FLTCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06349243194EB0C700D6E052 /* FLTCameraViewController.m */; };
@@ -16,6 +17,7 @@
 		068DB9A6195BA18B00B5B29C /* FLTMenuItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 068DB9A5195BA18B00B5B29C /* FLTMenuItemCell.xib */; };
 		069505A3194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 069505A1194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.m */; };
 		069505A4194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 069505A2194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.xib */; };
+		06A1A381195EAB3000A986F8 /* FLTFilterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A1A380195EAB3000A986F8 /* FLTFilterManager.m */; };
 		06B6DAD7195BE29200D1B4E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06E2EE5A194B9807004C6FE8 /* Images.xcassets */; };
 		06B6DADA195BF43100D1B4E6 /* FLTHorizontalScrollMenuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B6DAD9195BF43100D1B4E6 /* FLTHorizontalScrollMenuLayout.m */; };
 		06B6DADD195C05C700D1B4E6 /* FLTMenuItemTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B6DADC195C05C700D1B4E6 /* FLTMenuItemTitleView.m */; };
@@ -45,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06178340195F9A7E0038F5F1 /* FLTFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTFilter.h; sourceTree = "<group>"; };
+		06178341195F9A7E0038F5F1 /* FLTFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTFilter.m; sourceTree = "<group>"; };
+		06178343195FA4390038F5F1 /* FLTImageEffectType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLTImageEffectType.h; sourceTree = "<group>"; };
 		063034B11953A32000E7A927 /* FLTPhotoEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTPhotoEditorViewController.h; sourceTree = "<group>"; };
 		063034B21953A32000E7A927 /* FLTPhotoEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTPhotoEditorViewController.m; sourceTree = "<group>"; };
 		063034B31953A32000E7A927 /* FLTPhotoEditorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLTPhotoEditorViewController.xib; sourceTree = "<group>"; };
@@ -57,6 +62,8 @@
 		069505A0194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTPhotoPreviewViewController.h; sourceTree = "<group>"; };
 		069505A1194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTPhotoPreviewViewController.m; sourceTree = "<group>"; };
 		069505A2194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLTPhotoPreviewViewController.xib; sourceTree = "<group>"; };
+		06A1A37F195EAB3000A986F8 /* FLTFilterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTFilterManager.h; sourceTree = "<group>"; };
+		06A1A380195EAB3000A986F8 /* FLTFilterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTFilterManager.m; sourceTree = "<group>"; };
 		06B6DAD8195BF43100D1B4E6 /* FLTHorizontalScrollMenuLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTHorizontalScrollMenuLayout.h; sourceTree = "<group>"; };
 		06B6DAD9195BF43100D1B4E6 /* FLTHorizontalScrollMenuLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTHorizontalScrollMenuLayout.m; sourceTree = "<group>"; };
 		06B6DADB195C05C700D1B4E6 /* FLTMenuItemTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTMenuItemTitleView.h; sourceTree = "<group>"; };
@@ -160,6 +167,11 @@
 				06B6DAD9195BF43100D1B4E6 /* FLTHorizontalScrollMenuLayout.m */,
 				06B6DADB195C05C700D1B4E6 /* FLTMenuItemTitleView.h */,
 				06B6DADC195C05C700D1B4E6 /* FLTMenuItemTitleView.m */,
+				06A1A37F195EAB3000A986F8 /* FLTFilterManager.h */,
+				06A1A380195EAB3000A986F8 /* FLTFilterManager.m */,
+				06178340195F9A7E0038F5F1 /* FLTFilter.h */,
+				06178341195F9A7E0038F5F1 /* FLTFilter.m */,
+				06178343195FA4390038F5F1 /* FLTImageEffectType.h */,
 				068DB9A5195BA18B00B5B29C /* FLTMenuItemCell.xib */,
 				063034B31953A32000E7A927 /* FLTPhotoEditorViewController.xib */,
 				069505A2194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.xib */,
@@ -337,9 +349,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				06E2EE79194BA1CA004C6FE8 /* FLTHomeScreenViewController.m in Sources */,
+				06178342195F9A7E0038F5F1 /* FLTFilter.m in Sources */,
 				06E2EE55194B9807004C6FE8 /* main.m in Sources */,
 				068DB9A1195B9CD000B5B29C /* FLTMenuItemCell.m in Sources */,
 				06349245194EB0C700D6E052 /* FLTCameraViewController.m in Sources */,
+				06A1A381195EAB3000A986F8 /* FLTFilterManager.m in Sources */,
 				06B6DADA195BF43100D1B4E6 /* FLTHorizontalScrollMenuLayout.m in Sources */,
 				06E2EE59194B9807004C6FE8 /* FLTAppDelegate.m in Sources */,
 				069505A3194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.m in Sources */,
