@@ -20,10 +20,12 @@
 @property (strong, nonatomic) UIImage *filteredImage;
 @property (strong, nonatomic) UICollectionView *currentMenu;
 @property (strong, nonatomic) FLTFilterManager *filterManager;
+@property (strong, nonatomic) FLTFilter *currentFilter;
 
 @property (weak, nonatomic) IBOutlet GPUImageView *originalImageView;
 @property (weak, nonatomic) IBOutlet GPUImageView *filteredImageView;
 @property (weak, nonatomic) IBOutlet UIToolbar *editingToolBar;
+@property (weak, nonatomic) IBOutlet UIToolbar *filterSlider;
 
 @end
 
@@ -66,6 +68,7 @@ typedef NS_ENUM(NSInteger, MenuType) {
     
     self.filteredImage = [filter imageFromCurrentFramebuffer];
     
+    [self.filterSlider setHidden:YES];
     [self.originalImageView setHidden:YES];
     [self.filteredImageView setHidden:NO];
 }
@@ -116,14 +119,21 @@ typedef NS_ENUM(NSInteger, MenuType) {
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    FLTFilter *filter;
     if (collectionView.tag == GeneralFilterMenuType) {
-        filter = self.filterManager.generalFilters[indexPath.row];
+        self.currentFilter = self.filterManager.generalFilters[indexPath.row];
     } else {
-        filter = self.filterManager.toolFilters[indexPath.row];
+        self.currentFilter = self.filterManager.toolFilters[indexPath.row];
     }
     
-    [filter filteredImageWithImage:self.filteredImage destinationViews:@[self.filteredImageView] intensity:100];
+    UISlider *slider = (UISlider *)[self.filterSlider viewWithTag:100];
+    slider.maximumValue = self.currentFilter.maximumFilterValue;
+    slider.minimumValue = self.currentFilter.minimumFilterValue;
+    slider.value = self.currentFilter.startingFilterValue;
+    
+    [self.filterSlider setHidden:NO];
+    [self.editingToolBar setHidden:YES];
+    [self.currentMenu setHidden:YES];
+    [self.currentFilter filteredImageWithImage:self.filteredImage destinationViews:@[self.filteredImageView] intensity:slider.value];
 }
 
 #pragma mark - UIAlertView delegate methods
@@ -217,6 +227,34 @@ typedef NS_ENUM(NSInteger, MenuType) {
     };
     [self presentViewController:avc animated:YES completion:NULL];
 }
+
+- (IBAction)sliderCancel:(id)sender {
+    
+    self.currentFilter = nil;
+    
+    GPUImagePicture *imagePicture = [[GPUImagePicture alloc] initWithImage:self.filteredImage smoothlyScaleOutput:YES];
+    [imagePicture addTarget:self.filteredImageView];
+    [imagePicture processImage];
+    
+    [self.currentMenu setHidden:NO];
+    [self.editingToolBar setHidden:NO];
+    [self.filterSlider setHidden:YES];
+}
+
+- (IBAction)sliderConfirm:(id)sender {
+    
+    UISlider *slider = (UISlider *)[self.filterSlider viewWithTag:100];
+    self.filteredImage  = [self.currentFilter filteredImageWithImage:self.filteredImage destinationViews:@[self.filteredImageView] intensity:slider.value];
+    
+    [self.currentMenu setHidden:NO];
+    [self.editingToolBar setHidden:NO];
+    [self.filterSlider setHidden:YES];
+}
+
+- (IBAction)sliderValueChanged:(id)sender {
+    [self.currentFilter filteredImageWithImage:self.filteredImage destinationViews:@[self.filteredImageView] intensity:[(UISlider *)sender value]];
+}
+
 
 #pragma mark - Helper methods
 

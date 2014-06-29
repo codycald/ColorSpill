@@ -7,6 +7,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FLTPhotoEditorViewController">
             <connections>
                 <outlet property="editingToolBar" destination="TFe-ss-rD0" id="8k0-i6-X8o"/>
+                <outlet property="filterSlider" destination="FMI-T8-uls" id="WE2-2J-9SZ"/>
                 <outlet property="filteredImageView" destination="zzh-BD-Vbf" id="k7a-EO-Y4y"/>
                 <outlet property="originalImageView" destination="eYp-zh-8DE" id="7Ij-kw-M1K"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -67,6 +68,31 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                 </view>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FMI-T8-uls" customClass="FLTConfirmationSlider">
+                    <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem title="No" id="SC2-W5-3ji">
+                            <connections>
+                                <action selector="sliderCancel:" destination="-1" id="JWf-IH-VPT"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" id="hW5-Mr-Xdv">
+                            <slider key="customView" opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="Cga-kJ-SWH">
+                                <rect key="frame" x="49" y="6" width="222" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="-1" eventType="valueChanged" id="sSS-GT-9QY"/>
+                                </connections>
+                            </slider>
+                        </barButtonItem>
+                        <barButtonItem title="Yes" id="Thm-gA-RCf">
+                            <connections>
+                                <action selector="sliderConfirm:" destination="-1" id="IfC-uE-NEU"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -82,7 +108,10 @@
                 <constraint firstAttribute="trailing" secondItem="zzh-BD-Vbf" secondAttribute="trailing" id="OGg-nI-rPa"/>
                 <constraint firstItem="eYp-zh-8DE" firstAttribute="top" secondItem="3Ra-8p-6kR" secondAttribute="bottom" id="Rgj-i6-dH5"/>
                 <constraint firstAttribute="trailing" secondItem="TFe-ss-rD0" secondAttribute="trailing" id="U3F-U6-HYE"/>
+                <constraint firstAttribute="trailing" secondItem="FMI-T8-uls" secondAttribute="trailing" id="Uue-MI-4yP"/>
+                <constraint firstAttribute="bottom" secondItem="FMI-T8-uls" secondAttribute="bottom" id="X4i-ex-OHF"/>
                 <constraint firstItem="TFe-ss-rD0" firstAttribute="top" secondItem="zzh-BD-Vbf" secondAttribute="bottom" id="bAe-rX-mPW"/>
+                <constraint firstItem="FMI-T8-uls" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lFg-XE-XHr"/>
                 <constraint firstAttribute="trailing" secondItem="eYp-zh-8DE" secondAttribute="trailing" id="neo-3z-UPo"/>
                 <constraint firstAttribute="centerX" secondItem="zzh-BD-Vbf" secondAttribute="centerX" id="nzD-cy-PX3"/>
                 <constraint firstItem="TFe-ss-rD0" firstAttribute="top" secondItem="eYp-zh-8DE" secondAttribute="bottom" id="r5T-FQ-o5u"/>

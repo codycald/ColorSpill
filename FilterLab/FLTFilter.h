@@ -15,7 +15,10 @@
 @property (copy, nonatomic) NSString *filterName;
 @property (copy, nonatomic) NSString *imageName;
 @property (assign, nonatomic) FLTImageEffectType type;
+@property (assign, nonatomic) CGFloat maximumFilterValue;
+@property (assign, nonatomic) CGFloat minimumFilterValue;
+@property (assign, nonatomic) CGFloat startingFilterValue;
 
-- (UIImage *)filteredImageWithImage:(UIImage *)image destinationViews:(NSArray *)imageView intensity:(NSInteger)intensity;
+- (UIImage *)filteredImageWithImage:(UIImage *)image destinationViews:(NSArray *)imageView intensity:(CGFloat)intensity;
 
 @end
