@@ -10,15 +10,29 @@
 
 @implementation FLTMenuItemCell
 
-- (id)initWithFrame:(CGRect)frame
-{
+#pragma mark - Initializers
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    
     self = [super initWithFrame:frame];
+    
     if (self) {
-        
-        self.backgroundColor = [UIColor whiteColor];
+        self.backgroundColor = [UIColor clearColor];
     }
     return self;
 }
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    
+    self = [super initWithCoder:aDecoder];
+    
+    if (self) {
+        self.backgroundColor = [UIColor clearColor];
+    }
+    return self;
+}
+
+#pragma mark - Overrides
 
 - (void)prepareForReuse {
     [super prepareForReuse];
