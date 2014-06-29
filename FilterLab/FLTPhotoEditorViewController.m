@@ -58,7 +58,7 @@ typedef NS_ENUM(NSInteger, MenuType) {
     // Process image and display it in the image views
     GPUImagePicture *imagePicture = [[GPUImagePicture alloc] initWithImage:self.image smoothlyScaleOutput:YES];
     [imagePicture addTarget:self.originalImageView];
-    GPUImageSepiaFilter *filter = [[GPUImageSepiaFilter alloc] init];
+    GPUImageFilter *filter = [[GPUImageFilter alloc] init];
     [imagePicture addTarget:filter];
     [filter addTarget:self.filteredImageView];
     [filter useNextFrameForImageCapture];
@@ -115,7 +115,15 @@ typedef NS_ENUM(NSInteger, MenuType) {
 #pragma mark - UICollectionView delegate methods
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"Selected item #%ld", indexPath.row);
+    
+    FLTFilter *filter;
+    if (collectionView.tag == GeneralFilterMenuType) {
+        filter = self.filterManager.generalFilters[indexPath.row];
+    } else {
+        filter = self.filterManager.toolFilters[indexPath.row];
+    }
+    
+    [filter filteredImageWithImage:self.filteredImage destinationViews:@[self.filteredImageView] intensity:100];
 }
 
 #pragma mark - UIAlertView delegate methods
