@@ -19,6 +19,6 @@
 @property (assign, nonatomic) CGFloat minimumFilterValue;
 @property (assign, nonatomic) CGFloat startingFilterValue;
 
-- (UIImage *)filteredImageWithImage:(UIImage *)image destinationViews:(NSArray *)imageView intensity:(CGFloat)intensity;
+- (UIImage *)filteredImageWithImage:(UIImage *)image destinationView:(GPUImageView *)imageView intensity:(CGFloat)intensity;
 
 @end

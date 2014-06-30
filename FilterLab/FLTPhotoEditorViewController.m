@@ -133,7 +133,9 @@ typedef NS_ENUM(NSInteger, MenuType) {
     [self.filterSlider setHidden:NO];
     [self.editingToolBar setHidden:YES];
     [self.currentMenu setHidden:YES];
-    [self.currentFilter filteredImageWithImage:self.filteredImage destinationViews:@[self.filteredImageView] intensity:slider.value];
+    [self.currentFilter filteredImageWithImage:self.filteredImage
+                               destinationView:self.filteredImageView
+                                     intensity:slider.value];
 }
 
 #pragma mark - UIAlertView delegate methods
@@ -244,7 +246,9 @@ typedef NS_ENUM(NSInteger, MenuType) {
 - (IBAction)sliderConfirm:(id)sender {
     
     UISlider *slider = (UISlider *)[self.filterSlider viewWithTag:100];
-    self.filteredImage  = [self.currentFilter filteredImageWithImage:self.filteredImage destinationViews:@[self.filteredImageView] intensity:slider.value];
+    self.filteredImage  = [self.currentFilter filteredImageWithImage:self.filteredImage
+                                                     destinationView:self.filteredImageView
+                                                           intensity:slider.value];
     
     [self.currentMenu setHidden:NO];
     [self.editingToolBar setHidden:NO];
@@ -252,9 +256,10 @@ typedef NS_ENUM(NSInteger, MenuType) {
 }
 
 - (IBAction)sliderValueChanged:(id)sender {
-    [self.currentFilter filteredImageWithImage:self.filteredImage destinationViews:@[self.filteredImageView] intensity:[(UISlider *)sender value]];
+    [self.currentFilter filteredImageWithImage:self.filteredImage
+                               destinationView:self.filteredImageView
+                                     intensity:[(UISlider *)sender value]];
 }
-
 
 #pragma mark - Helper methods
 

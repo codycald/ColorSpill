@@ -34,6 +34,7 @@
 		06E2EE6E194B9807004C6FE8 /* FilterLabTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E2EE6D194B9807004C6FE8 /* FilterLabTests.m */; };
 		06E2EE79194BA1CA004C6FE8 /* FLTHomeScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E2EE78194BA1CA004C6FE8 /* FLTHomeScreenViewController.m */; };
 		06E2EE7B194BA292004C6FE8 /* FLTHomeScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06E2EE7A194BA292004C6FE8 /* FLTHomeScreenViewController.xib */; };
+		06ECC5391961089400FC79D8 /* FLTSharpnessFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06ECC5381961089400FC79D8 /* FLTSharpnessFilter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,8 @@
 		06E2EE77194BA1CA004C6FE8 /* FLTHomeScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTHomeScreenViewController.h; sourceTree = "<group>"; };
 		06E2EE78194BA1CA004C6FE8 /* FLTHomeScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTHomeScreenViewController.m; sourceTree = "<group>"; };
 		06E2EE7A194BA292004C6FE8 /* FLTHomeScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLTHomeScreenViewController.xib; sourceTree = "<group>"; };
+		06ECC5371961089400FC79D8 /* FLTSharpnessFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTSharpnessFilter.h; sourceTree = "<group>"; };
+		06ECC5381961089400FC79D8 /* FLTSharpnessFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTSharpnessFilter.m; sourceTree = "<group>"; };
 		9EC4995A616B4AEBB9590483 /* libPods-FilterLab.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FilterLab.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4FAAEA04A69427795CB873A /* Pods-FilterLab.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilterLab.xcconfig"; path = "Pods/Pods-FilterLab.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -171,6 +174,8 @@
 				06A1A380195EAB3000A986F8 /* FLTFilterManager.m */,
 				06178340195F9A7E0038F5F1 /* FLTFilter.h */,
 				06178341195F9A7E0038F5F1 /* FLTFilter.m */,
+				06ECC5371961089400FC79D8 /* FLTSharpnessFilter.h */,
+				06ECC5381961089400FC79D8 /* FLTSharpnessFilter.m */,
 				06178343195FA4390038F5F1 /* FLTImageEffectType.h */,
 				068DB9A5195BA18B00B5B29C /* FLTMenuItemCell.xib */,
 				063034B31953A32000E7A927 /* FLTPhotoEditorViewController.xib */,
@@ -350,6 +355,7 @@
 			files = (
 				06E2EE79194BA1CA004C6FE8 /* FLTHomeScreenViewController.m in Sources */,
 				06178342195F9A7E0038F5F1 /* FLTFilter.m in Sources */,
+				06ECC5391961089400FC79D8 /* FLTSharpnessFilter.m in Sources */,
 				06E2EE55194B9807004C6FE8 /* main.m in Sources */,
 				068DB9A1195B9CD000B5B29C /* FLTMenuItemCell.m in Sources */,
 				06349245194EB0C700D6E052 /* FLTCameraViewController.m in Sources */,

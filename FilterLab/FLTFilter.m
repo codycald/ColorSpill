@@ -26,20 +26,16 @@
     return self;
 }
 
-- (UIImage *)filteredImageWithImage:(UIImage *)image destinationViews:(NSArray *)imageViews intensity:(CGFloat)intensity {
+- (UIImage *)filteredImageWithImage:(UIImage *)image destinationView:(GPUImageView *)imageView intensity:(CGFloat)intensity {
     
     GPUImagePicture *imagePicture = [[GPUImagePicture alloc] initWithImage:image smoothlyScaleOutput:YES];
     
     GPUImageSepiaFilter *dummyFilter = [[GPUImageSepiaFilter alloc] init];
-    dummyFilter.intensity = intensity;
     [imagePicture addTarget:dummyFilter];
     
-    for (GPUImageView *imageView in imageViews) {
-        [dummyFilter addTarget:imageView];
-    }
+    [dummyFilter addTarget:imageView];
     [dummyFilter useNextFrameForImageCapture];
-    GPUImageView *view = [imageViews firstObject];
-    [dummyFilter forceProcessingAtSizeRespectingAspectRatio:view.bounds.size];
+    [dummyFilter forceProcessingAtSizeRespectingAspectRatio:imageView.bounds.size];
     [imagePicture processImage];
     return [dummyFilter imageFromCurrentFramebuffer];
     
