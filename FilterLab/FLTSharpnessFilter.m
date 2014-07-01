@@ -31,7 +31,7 @@
     
     GPUImageSharpenFilter *sharpnessFilter = [[GPUImageSharpenFilter alloc] init];
     sharpnessFilter.sharpness = intensity;
-    [imagePicture addTarget:dummyFilter];
+    [imagePicture addTarget:sharpnessFilter];
     
     [sharpnessFilter addTarget:imageView];
     [sharpnessFilter useNextFrameForImageCapture];
