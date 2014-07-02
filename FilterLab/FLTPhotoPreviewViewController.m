@@ -41,6 +41,7 @@
             break;
     }
     
+    self.imageView.contentMode = UIViewContentModeScaleAspectFit;
     [imagePicture addTarget:self.imageView];
     [self.imageView setInputRotation:rotationMode atIndex:0];
     [imagePicture processImage];
