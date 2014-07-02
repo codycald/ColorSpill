@@ -9,5 +9,4 @@
 #import "FLTFilter.h"
 
 @interface FLTSharpnessFilter : FLTFilter
-
 @end

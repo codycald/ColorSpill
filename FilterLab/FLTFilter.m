@@ -8,6 +8,7 @@
 
 #import "FLTFilter.h"
 #import "GPUImage.h"
+#import "FLTImageEffectType.h"
 
 @implementation FLTFilter
 
@@ -22,23 +23,71 @@
         self.maximumFilterValue = 1.0;
         self.minimumFilterValue = 0.0;
         self.startingFilterValue = 1.0;
+        self.intensity = 1.0;
+        self.gpuFilter = [[GPUImageSepiaFilter alloc] init];
     }
     return self;
 }
 
-- (UIImage *)filteredImageWithImage:(UIImage *)image destinationView:(GPUImageView *)imageView intensity:(CGFloat)intensity {
-    
-    GPUImagePicture *imagePicture = [[GPUImagePicture alloc] initWithImage:image smoothlyScaleOutput:YES];
-    
-    GPUImageSepiaFilter *dummyFilter = [[GPUImageSepiaFilter alloc] init];
-    [imagePicture addTarget:dummyFilter];
-    
-    [dummyFilter addTarget:imageView];
-    [dummyFilter useNextFrameForImageCapture];
-    [dummyFilter forceProcessingAtSizeRespectingAspectRatio:imageView.bounds.size];
-    [imagePicture processImage];
-    return [dummyFilter imageFromCurrentFramebuffer];
-    
+- (void)setIntensity:(CGFloat)intensity {
+    GPUImageSepiaFilter *filter = (GPUImageSepiaFilter *)self.gpuFilter;
+    filter.intensity = intensity;
+}
+
+#pragma mark - GPUImageOutput overrides
+
+- (void)addTarget:(id<GPUImageInput>)newTarget {
+    [self.gpuFilter addTarget:newTarget];
+}
+
+- (void)useNextFrameForImageCapture {
+    [self.gpuFilter useNextFrameForImageCapture];
+}
+
+- (UIImage *)imageFromCurrentFramebuffer {
+    return [self.gpuFilter imageFromCurrentFramebuffer];
+}
+
+- (UIImage *)imageFromCurrentFramebufferWithOrientation:(UIImageOrientation)imageOrientation {
+    return [self.gpuFilter imageFromCurrentFramebufferWithOrientation:imageOrientation];
+}
+
+#pragma mark - GPUImageInput protocol
+
+- (CGSize)maximumOutputSize {
+    return [self.gpuFilter maximumOutputSize];
+}
+
+- (void)newFrameReadyAtTime:(CMTime)frameTime atIndex:(NSInteger)textureIndex {
+    [self.gpuFilter newFrameReadyAtTime:frameTime atIndex:textureIndex];
+}
+
+- (BOOL)wantsMonochromeInput {
+    return [self.gpuFilter wantsMonochromeInput];
+}
+
+- (NSInteger)nextAvailableTextureIndex {
+    return [self.gpuFilter nextAvailableTextureIndex];
+}
+
+- (void)setInputSize:(CGSize)newSize atIndex:(NSInteger)textureIndex {
+    [self.gpuFilter setInputSize:newSize atIndex:textureIndex];
+}
+
+- (void)setCurrentlyReceivingMonochromeInput:(BOOL)newValue {
+    [self.gpuFilter setCurrentlyReceivingMonochromeInput:newValue];
+}
+
+- (void)setInputFramebuffer:(GPUImageFramebuffer *)newInputFramebuffer atIndex:(NSInteger)textureIndex {
+    [self.gpuFilter setInputFramebuffer:newInputFramebuffer atIndex:textureIndex];
+}
+
+- (void)setInputRotation:(GPUImageRotationMode)newInputRotation atIndex:(NSInteger)textureIndex {
+    [self.gpuFilter setInputRotation:newInputRotation atIndex:textureIndex];
+}
+
+- (void)endProcessing {
+    [self.gpuFilter endProcessing];
 }
 
 @end

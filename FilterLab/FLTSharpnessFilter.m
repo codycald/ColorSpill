@@ -16,28 +16,24 @@
     
     if (self) {
         self.filterName = @"Sharpness";
-        self.imageName = @"contrast"; // placeholder
+        self.imageName = @"contrast";
         self.type = FLTToolFilterType;
         self.maximumFilterValue = 4.0;
         self.minimumFilterValue = -1.0;
         self.startingFilterValue = 0.0;
+        self.gpuFilter = [[GPUImageSharpenFilter alloc] init];
+        self.intensity = 0.0;
     }
     return self;
 }
 
-- (UIImage *)filteredImageWithImage:(UIImage *)image destinationView:(GPUImageView *)imageView intensity:(CGFloat)intensity {
-    
-    GPUImagePicture *imagePicture = [[GPUImagePicture alloc] initWithImage:image smoothlyScaleOutput:YES];
-    
-    GPUImageSharpenFilter *sharpnessFilter = [[GPUImageSharpenFilter alloc] init];
-    sharpnessFilter.sharpness = intensity;
-    [imagePicture addTarget:sharpnessFilter];
-    
-    [sharpnessFilter addTarget:imageView];
-    [sharpnessFilter useNextFrameForImageCapture];
-    [sharpnessFilter forceProcessingAtSizeRespectingAspectRatio:imageView.bounds.size];
-    [imagePicture processImage];
-    return [sharpnessFilter imageFromCurrentFramebuffer];
+- (void)setIntensity:(CGFloat)intensity {
+    GPUImageSharpenFilter *filter = (GPUImageSharpenFilter *)self.gpuFilter;
+    filter.sharpness = intensity;
+}
+
+- (void)addTarget:(id<GPUImageInput>)newTarget {
+    [self.gpuFilter addTarget:newTarget];
 }
 
 @end

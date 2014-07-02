@@ -10,15 +10,15 @@
 #import "FLTImageEffectType.h"
 #import "GPUImage.h"
 
-@interface FLTFilter : NSObject
+@interface FLTFilter : GPUImageOutput<GPUImageInput>
 
 @property (copy, nonatomic) NSString *filterName;
 @property (copy, nonatomic) NSString *imageName;
 @property (assign, nonatomic) FLTImageEffectType type;
+@property (assign, nonatomic) CGFloat intensity;
 @property (assign, nonatomic) CGFloat maximumFilterValue;
 @property (assign, nonatomic) CGFloat minimumFilterValue;
 @property (assign, nonatomic) CGFloat startingFilterValue;
-
-- (UIImage *)filteredImageWithImage:(UIImage *)image destinationView:(GPUImageView *)imageView intensity:(CGFloat)intensity;
+@property (strong, nonatomic) GPUImageOutput<GPUImageInput> *gpuFilter;
 
 @end

@@ -17,6 +17,7 @@
 
 @interface FLTPhotoEditorViewController () <UICollectionViewDataSource, UICollectionViewDelegate, UIAlertViewDelegate>
 
+@property (strong, nonatomic) GPUImagePicture *filteredImagePicture;
 @property (strong, nonatomic) UIImage *filteredImage;
 @property (strong, nonatomic) UICollectionView *currentMenu;
 @property (strong, nonatomic) FLTFilterManager *filterManager;
@@ -58,14 +59,13 @@ typedef NS_ENUM(NSInteger, MenuType) {
     [self reconfigureImageViews];
     
     // Process image and display it in the image views
-    GPUImagePicture *imagePicture = [[GPUImagePicture alloc] initWithImage:self.image smoothlyScaleOutput:YES];
-    [imagePicture addTarget:self.originalImageView];
+    self.filteredImagePicture = [[GPUImagePicture alloc] initWithImage:self.image smoothlyScaleOutput:YES];
+    [self.filteredImagePicture addTarget:self.originalImageView];
     GPUImageFilter *filter = [[GPUImageFilter alloc] init];
-    [imagePicture addTarget:filter];
+    [self.filteredImagePicture addTarget:filter];
     [filter addTarget:self.filteredImageView];
     [filter useNextFrameForImageCapture];
-    [imagePicture processImage];
-    
+    [self.filteredImagePicture processImage];
     self.filteredImage = [filter imageFromCurrentFramebuffer];
     
     [self.filterSlider setHidden:YES];
@@ -134,10 +134,13 @@ typedef NS_ENUM(NSInteger, MenuType) {
     [self.editingToolBar setHidden:YES];
     [self.currentMenu setHidden:YES];
     
+    [self.filteredImagePicture removeAllTargets];
+    [self.filteredImagePicture addTarget:self.currentFilter];
+    [self.currentFilter addTarget:self.filteredImageView];
+    self.currentFilter.intensity = slider.value;
+    [self.currentFilter forceProcessingAtSizeRespectingAspectRatio:self.filteredImageView.bounds.size];
     [self reconfigureImageViews];
-    [self.currentFilter filteredImageWithImage:self.filteredImage
-                               destinationView:self.filteredImageView
-                                     intensity:slider.value];
+    [self.filteredImagePicture processImage];
 }
 
 #pragma mark - UIAlertView delegate methods
@@ -154,16 +157,15 @@ typedef NS_ENUM(NSInteger, MenuType) {
         
         [self reconfigureImageViews];
         
-        GPUImagePicture *imagePicture = [[GPUImagePicture alloc] initWithImage:self.image smoothlyScaleOutput:YES];
+        [self.filteredImagePicture removeAllTargets];
         
         GPUImageFilter *dummyFilter = [[GPUImageFilter alloc] init];
-        [imagePicture addTarget:dummyFilter];
+        [self.filteredImagePicture addTarget:dummyFilter];
         [dummyFilter useNextFrameForImageCapture];
         [dummyFilter addTarget:self.originalImageView];
         [dummyFilter addTarget:self.filteredImageView];
         
-        [imagePicture processImage];
-        self.filteredImage = [dummyFilter imageFromCurrentFramebuffer];
+        [self.filteredImagePicture processImage];
         
         [self.originalImageView setHidden:YES];
         [self.filteredImageView setHidden:NO];
@@ -238,9 +240,9 @@ typedef NS_ENUM(NSInteger, MenuType) {
     
     [self reconfigureImageViews];
     
-    GPUImagePicture *imagePicture = [[GPUImagePicture alloc] initWithImage:self.filteredImage smoothlyScaleOutput:YES];
-    [imagePicture addTarget:self.filteredImageView];
-    [imagePicture processImage];
+    [self.filteredImagePicture removeAllTargets];
+    [self.filteredImagePicture addTarget:self.filteredImageView];
+    [self.filteredImagePicture processImage];
     
     [self.currentMenu setHidden:NO];
     [self.editingToolBar setHidden:NO];
@@ -251,9 +253,12 @@ typedef NS_ENUM(NSInteger, MenuType) {
     
     UISlider *slider = (UISlider *)[self.filterSlider viewWithTag:100];
     [self reconfigureImageViews];
-    self.filteredImage  = [self.currentFilter filteredImageWithImage:self.filteredImage
-                                                     destinationView:self.filteredImageView
-                                                           intensity:slider.value];
+    
+    [self.currentFilter useNextFrameForImageCapture];
+    self.currentFilter.intensity = slider.value;
+    [self.filteredImagePicture processImage];
+    self.filteredImage = [self.currentFilter imageFromCurrentFramebuffer];
+    self.filteredImagePicture = [[GPUImagePicture alloc] initWithImage:self.filteredImage];
     
     [self.currentMenu setHidden:NO];
     [self.editingToolBar setHidden:NO];
@@ -262,9 +267,8 @@ typedef NS_ENUM(NSInteger, MenuType) {
 
 - (IBAction)sliderValueChanged:(id)sender {
     [self reconfigureImageViews];
-    [self.currentFilter filteredImageWithImage:self.filteredImage
-                               destinationView:self.filteredImageView
-                                     intensity:[(UISlider *)sender value]];
+    self.currentFilter.intensity = [(UISlider *)sender value];
+    [self.filteredImagePicture processImage];
 }
 
 #pragma mark - Helper methods
