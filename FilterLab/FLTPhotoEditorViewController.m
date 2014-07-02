@@ -133,6 +133,8 @@ typedef NS_ENUM(NSInteger, MenuType) {
     [self.filterSlider setHidden:NO];
     [self.editingToolBar setHidden:YES];
     [self.currentMenu setHidden:YES];
+    
+    [self reconfigureImageViews];
     [self.currentFilter filteredImageWithImage:self.filteredImage
                                destinationView:self.filteredImageView
                                      intensity:slider.value];
@@ -234,6 +236,8 @@ typedef NS_ENUM(NSInteger, MenuType) {
     
     self.currentFilter = nil;
     
+    [self reconfigureImageViews];
+    
     GPUImagePicture *imagePicture = [[GPUImagePicture alloc] initWithImage:self.filteredImage smoothlyScaleOutput:YES];
     [imagePicture addTarget:self.filteredImageView];
     [imagePicture processImage];
@@ -246,6 +250,7 @@ typedef NS_ENUM(NSInteger, MenuType) {
 - (IBAction)sliderConfirm:(id)sender {
     
     UISlider *slider = (UISlider *)[self.filterSlider viewWithTag:100];
+    [self reconfigureImageViews];
     self.filteredImage  = [self.currentFilter filteredImageWithImage:self.filteredImage
                                                      destinationView:self.filteredImageView
                                                            intensity:slider.value];
@@ -256,6 +261,7 @@ typedef NS_ENUM(NSInteger, MenuType) {
 }
 
 - (IBAction)sliderValueChanged:(id)sender {
+    [self reconfigureImageViews];
     [self.currentFilter filteredImageWithImage:self.filteredImage
                                destinationView:self.filteredImageView
                                      intensity:[(UISlider *)sender value]];
