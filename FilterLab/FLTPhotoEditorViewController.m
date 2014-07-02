@@ -51,9 +51,9 @@ typedef NS_ENUM(NSInteger, MenuType) {
 
 #pragma mark - View life cycle
 
-- (void)viewDidLoad {
+- (void)viewDidAppear:(BOOL)animated {
     
-    [super viewDidLoad];
+    [super viewDidAppear:animated];
     
     [self reconfigureImageViews];
     
