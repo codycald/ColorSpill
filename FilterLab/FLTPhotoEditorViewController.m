@@ -157,7 +157,7 @@ typedef NS_ENUM(NSInteger, MenuType) {
         
         [self reconfigureImageViews];
         
-        [self.filteredImagePicture removeAllTargets];
+        self.filteredImagePicture = [[GPUImagePicture alloc] initWithImage:self.image];
         
         GPUImageFilter *dummyFilter = [[GPUImageFilter alloc] init];
         [self.filteredImagePicture addTarget:dummyFilter];
