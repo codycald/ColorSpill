@@ -26,7 +26,8 @@
     self = [super init];
     
     if (self) {
-        self.filterNames = @[@"FLTFilter", @"FLTSharpnessFilter", @"FLTBrightnessFilter", @"FLTContrastFilter"];
+        self.filterNames = @[@"FLTFilter", @"FLTSharpnessFilter", @"FLTBrightnessFilter",
+                             @"FLTContrastFilter", @"FLTSaturationFilter", @"FLTExposureFilter"];
         [self createFilters];
     }
     return self;

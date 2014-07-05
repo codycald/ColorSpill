@@ -1,13 +1,13 @@
 //
-//  FLTSharpnessFilter.h
+//  FLTSaturationFilter.h
 //  FilterLab
 //
-//  Created by Cody Caldwell on 6/29/14.
+//  Created by Cody Caldwell on 7/4/14.
 //  Copyright (c) 2014 Cody Caldwell. All rights reserved.
 //
 
 #import "FLTFilter.h"
 
-@interface FLTSharpnessFilter : FLTFilter
+@interface FLTSaturationFilter : FLTFilter
 
 @end
