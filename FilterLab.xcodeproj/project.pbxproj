@@ -26,6 +26,8 @@
 		06BCD22F196776F40042ACE3 /* FLTContrastFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BCD22E196776F40042ACE3 /* FLTContrastFilter.m */; };
 		06BCD23219677A8E0042ACE3 /* FLTSaturationFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BCD23119677A8E0042ACE3 /* FLTSaturationFilter.m */; };
 		06BCD23519677BD20042ACE3 /* FLTExposureFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BCD23419677BD20042ACE3 /* FLTExposureFilter.m */; };
+		06BCD23819677EA60042ACE3 /* FLTBlackVignetteFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BCD23719677EA60042ACE3 /* FLTBlackVignetteFilter.m */; };
+		06BCD23B196786B00042ACE3 /* FLTWhiteVignetteFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BCD23A196786B00042ACE3 /* FLTWhiteVignetteFilter.m */; };
 		06E2EE49194B9807004C6FE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E2EE48194B9807004C6FE8 /* Foundation.framework */; };
 		06E2EE4B194B9807004C6FE8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E2EE4A194B9807004C6FE8 /* CoreGraphics.framework */; };
 		06E2EE4D194B9807004C6FE8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E2EE4C194B9807004C6FE8 /* UIKit.framework */; };
@@ -84,6 +86,10 @@
 		06BCD23119677A8E0042ACE3 /* FLTSaturationFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTSaturationFilter.m; sourceTree = "<group>"; };
 		06BCD23319677BD20042ACE3 /* FLTExposureFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTExposureFilter.h; sourceTree = "<group>"; };
 		06BCD23419677BD20042ACE3 /* FLTExposureFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTExposureFilter.m; sourceTree = "<group>"; };
+		06BCD23619677EA60042ACE3 /* FLTBlackVignetteFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTBlackVignetteFilter.h; sourceTree = "<group>"; };
+		06BCD23719677EA60042ACE3 /* FLTBlackVignetteFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTBlackVignetteFilter.m; sourceTree = "<group>"; };
+		06BCD239196786B00042ACE3 /* FLTWhiteVignetteFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTWhiteVignetteFilter.h; sourceTree = "<group>"; };
+		06BCD23A196786B00042ACE3 /* FLTWhiteVignetteFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTWhiteVignetteFilter.m; sourceTree = "<group>"; };
 		06E2EE45194B9807004C6FE8 /* FilterLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilterLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06E2EE48194B9807004C6FE8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		06E2EE4A194B9807004C6FE8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -199,6 +205,10 @@
 				06BCD23119677A8E0042ACE3 /* FLTSaturationFilter.m */,
 				06BCD23319677BD20042ACE3 /* FLTExposureFilter.h */,
 				06BCD23419677BD20042ACE3 /* FLTExposureFilter.m */,
+				06BCD23619677EA60042ACE3 /* FLTBlackVignetteFilter.h */,
+				06BCD23719677EA60042ACE3 /* FLTBlackVignetteFilter.m */,
+				06BCD239196786B00042ACE3 /* FLTWhiteVignetteFilter.h */,
+				06BCD23A196786B00042ACE3 /* FLTWhiteVignetteFilter.m */,
 				06178343195FA4390038F5F1 /* FLTImageEffectType.h */,
 				06BCD22119671FD10042ACE3 /* GPUImageIntensityToneCurveFilter.h */,
 				06BCD22219671FD10042ACE3 /* GPUImageIntensityToneCurveFilter.m */,
@@ -386,6 +396,7 @@
 				06BCD22B196770660042ACE3 /* FLTBrightnessFilter.m in Sources */,
 				06BCD23219677A8E0042ACE3 /* FLTSaturationFilter.m in Sources */,
 				068DB9A1195B9CD000B5B29C /* FLTMenuItemCell.m in Sources */,
+				06BCD23819677EA60042ACE3 /* FLTBlackVignetteFilter.m in Sources */,
 				06349245194EB0C700D6E052 /* FLTCameraViewController.m in Sources */,
 				06BCD23519677BD20042ACE3 /* FLTExposureFilter.m in Sources */,
 				06A1A381195EAB3000A986F8 /* FLTFilterManager.m in Sources */,
@@ -395,6 +406,7 @@
 				069505A3194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.m in Sources */,
 				06B6DADD195C05C700D1B4E6 /* FLTMenuItemTitleView.m in Sources */,
 				063034B41953A32000E7A927 /* FLTPhotoEditorViewController.m in Sources */,
+				06BCD23B196786B00042ACE3 /* FLTWhiteVignetteFilter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
