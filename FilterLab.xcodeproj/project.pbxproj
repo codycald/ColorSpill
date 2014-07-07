@@ -28,6 +28,7 @@
 		06BCD23519677BD20042ACE3 /* FLTExposureFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BCD23419677BD20042ACE3 /* FLTExposureFilter.m */; };
 		06BCD23819677EA60042ACE3 /* FLTBlackVignetteFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BCD23719677EA60042ACE3 /* FLTBlackVignetteFilter.m */; };
 		06BCD23B196786B00042ACE3 /* FLTWhiteVignetteFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BCD23A196786B00042ACE3 /* FLTWhiteVignetteFilter.m */; };
+		06DA8E20196A5F990005A996 /* FLTTemperatureFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DA8E1F196A5F990005A996 /* FLTTemperatureFilter.m */; };
 		06E2EE49194B9807004C6FE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E2EE48194B9807004C6FE8 /* Foundation.framework */; };
 		06E2EE4B194B9807004C6FE8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E2EE4A194B9807004C6FE8 /* CoreGraphics.framework */; };
 		06E2EE4D194B9807004C6FE8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E2EE4C194B9807004C6FE8 /* UIKit.framework */; };
@@ -90,6 +91,8 @@
 		06BCD23719677EA60042ACE3 /* FLTBlackVignetteFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTBlackVignetteFilter.m; sourceTree = "<group>"; };
 		06BCD239196786B00042ACE3 /* FLTWhiteVignetteFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTWhiteVignetteFilter.h; sourceTree = "<group>"; };
 		06BCD23A196786B00042ACE3 /* FLTWhiteVignetteFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTWhiteVignetteFilter.m; sourceTree = "<group>"; };
+		06DA8E1E196A5F990005A996 /* FLTTemperatureFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTTemperatureFilter.h; sourceTree = "<group>"; };
+		06DA8E1F196A5F990005A996 /* FLTTemperatureFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTTemperatureFilter.m; sourceTree = "<group>"; };
 		06E2EE45194B9807004C6FE8 /* FilterLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilterLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06E2EE48194B9807004C6FE8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		06E2EE4A194B9807004C6FE8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -209,6 +212,8 @@
 				06BCD23719677EA60042ACE3 /* FLTBlackVignetteFilter.m */,
 				06BCD239196786B00042ACE3 /* FLTWhiteVignetteFilter.h */,
 				06BCD23A196786B00042ACE3 /* FLTWhiteVignetteFilter.m */,
+				06DA8E1E196A5F990005A996 /* FLTTemperatureFilter.h */,
+				06DA8E1F196A5F990005A996 /* FLTTemperatureFilter.m */,
 				06178343195FA4390038F5F1 /* FLTImageEffectType.h */,
 				06BCD22119671FD10042ACE3 /* GPUImageIntensityToneCurveFilter.h */,
 				06BCD22219671FD10042ACE3 /* GPUImageIntensityToneCurveFilter.m */,
@@ -391,6 +396,7 @@
 				06BCD22319671FD10042ACE3 /* GPUImageIntensityToneCurveFilter.m in Sources */,
 				06E2EE79194BA1CA004C6FE8 /* FLTHomeScreenViewController.m in Sources */,
 				06178342195F9A7E0038F5F1 /* FLTFilter.m in Sources */,
+				06DA8E20196A5F990005A996 /* FLTTemperatureFilter.m in Sources */,
 				06ECC5391961089400FC79D8 /* FLTSharpnessFilter.m in Sources */,
 				06E2EE55194B9807004C6FE8 /* main.m in Sources */,
 				06BCD22B196770660042ACE3 /* FLTBrightnessFilter.m in Sources */,

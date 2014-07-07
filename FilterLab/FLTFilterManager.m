@@ -28,7 +28,7 @@
     if (self) {
         self.filterNames = @[@"FLTFilter", @"FLTSharpnessFilter", @"FLTBrightnessFilter",
                              @"FLTContrastFilter", @"FLTSaturationFilter", @"FLTExposureFilter",
-                             @"FLTBlackVignetteFilter", @"FLTWhiteVignetteFilter"];
+                             @"FLTBlackVignetteFilter", @"FLTWhiteVignetteFilter", @"FLTTemperatureFilter"];
         [self createFilters];
     }
     return self;
