@@ -14,6 +14,7 @@
 #import "FLTFilterManager.h"
 #import "FLTImageEffectType.h"
 #import "FLTFilter.h"
+#import "MBProgressHUD.h"
 
 @interface FLTPhotoEditorViewController () <UICollectionViewDataSource, UICollectionViewDelegate, UIAlertViewDelegate>
 
@@ -50,6 +51,14 @@ typedef NS_ENUM(NSInteger, MenuType) {
     return self;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
+    
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.margin = 5.0f;
+}
+
 #pragma mark - View life cycle
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -65,7 +74,11 @@ typedef NS_ENUM(NSInteger, MenuType) {
     [self.filteredImagePicture addTarget:filter];
     [filter addTarget:self.filteredImageView];
     [filter useNextFrameForImageCapture];
-    [self.filteredImagePicture processImage];
+    [self.filteredImagePicture processImageWithCompletionHandler:^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [MBProgressHUD hideHUDForView:self.view animated:YES];
+        });
+    }];
     self.filteredImage = [filter imageFromCurrentFramebuffer];
     
     [self.filterSlider setHidden:YES];
