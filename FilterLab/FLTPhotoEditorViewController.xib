@@ -7,6 +7,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FLTPhotoEditorViewController">
             <connections>
                 <outlet property="editingToolBar" destination="TFe-ss-rD0" id="8k0-i6-X8o"/>
+                <outlet property="filterNameView" destination="4WK-yG-28i" id="jGx-eh-VXm"/>
                 <outlet property="filterSlider" destination="FMI-T8-uls" id="WE2-2J-9SZ"/>
                 <outlet property="filteredImageView" destination="zzh-BD-Vbf" id="k7a-EO-Y4y"/>
                 <outlet property="originalImageView" destination="eYp-zh-8DE" id="7Ij-kw-M1K"/>
@@ -93,6 +94,28 @@
                         </barButtonItem>
                     </items>
                 </toolbar>
+                <view opaque="NO" alpha="0.74999999999999978" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4WK-yG-28i">
+                    <rect key="frame" x="0.0" y="480" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dyc-e5-2vx">
+                            <rect key="frame" x="139" y="13" width="42" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="16"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="0VT-az-2bR"/>
+                        <constraint firstItem="dyc-e5-2vx" firstAttribute="leading" relation="lessThanOrEqual" secondItem="4WK-yG-28i" secondAttribute="leading" constant="139" id="PjD-j9-EUw"/>
+                        <constraint firstAttribute="centerY" secondItem="dyc-e5-2vx" secondAttribute="centerY" constant="0.5" id="hna-kA-eLn"/>
+                        <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="dyc-e5-2vx" secondAttribute="trailing" constant="139" id="t18-0O-2UD"/>
+                        <constraint firstAttribute="centerX" secondItem="dyc-e5-2vx" secondAttribute="centerX" id="yBY-Rv-IwK"/>
+                    </constraints>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -106,10 +129,13 @@
                 <constraint firstAttribute="centerY" secondItem="zzh-BD-Vbf" secondAttribute="centerY" id="ETq-J4-g1L"/>
                 <constraint firstAttribute="trailing" secondItem="3Ra-8p-6kR" secondAttribute="trailing" id="Nh3-Nl-aNM"/>
                 <constraint firstAttribute="trailing" secondItem="zzh-BD-Vbf" secondAttribute="trailing" id="OGg-nI-rPa"/>
+                <constraint firstItem="TFe-ss-rD0" firstAttribute="top" secondItem="4WK-yG-28i" secondAttribute="bottom" id="P2r-j5-nLc"/>
                 <constraint firstItem="eYp-zh-8DE" firstAttribute="top" secondItem="3Ra-8p-6kR" secondAttribute="bottom" id="Rgj-i6-dH5"/>
+                <constraint firstAttribute="trailing" secondItem="4WK-yG-28i" secondAttribute="trailing" id="THM-cM-MsW"/>
                 <constraint firstAttribute="trailing" secondItem="TFe-ss-rD0" secondAttribute="trailing" id="U3F-U6-HYE"/>
                 <constraint firstAttribute="trailing" secondItem="FMI-T8-uls" secondAttribute="trailing" id="Uue-MI-4yP"/>
                 <constraint firstAttribute="bottom" secondItem="FMI-T8-uls" secondAttribute="bottom" id="X4i-ex-OHF"/>
+                <constraint firstItem="4WK-yG-28i" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Yvd-sd-QaT"/>
                 <constraint firstItem="TFe-ss-rD0" firstAttribute="top" secondItem="zzh-BD-Vbf" secondAttribute="bottom" id="bAe-rX-mPW"/>
                 <constraint firstItem="FMI-T8-uls" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lFg-XE-XHr"/>
                 <constraint firstAttribute="trailing" secondItem="eYp-zh-8DE" secondAttribute="trailing" id="neo-3z-UPo"/>

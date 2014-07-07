@@ -29,6 +29,8 @@
 @property (weak, nonatomic) IBOutlet UIToolbar *editingToolBar;
 @property (weak, nonatomic) IBOutlet UIToolbar *filterSlider;
 
+@property (weak, nonatomic) IBOutlet UIView *filterNameView;
+
 @end
 
 typedef NS_ENUM(NSInteger, MenuType) {
@@ -81,7 +83,8 @@ typedef NS_ENUM(NSInteger, MenuType) {
     }];
     self.filteredImage = [filter imageFromCurrentFramebuffer];
     
-    [self.filterSlider setHidden:YES];
+    [self displayFilterSlider:NO];
+    
     [self.originalImageView setHidden:YES];
     [self.filteredImageView setHidden:NO];
 }
@@ -138,15 +141,19 @@ typedef NS_ENUM(NSInteger, MenuType) {
         self.currentFilter = self.filterManager.toolFilters[indexPath.row];
     }
     
+    // Setup the filter name view
+    UILabel *filterName = (UILabel *)[self.filterNameView viewWithTag:100];
+    filterName.text = self.currentFilter.filterName;
+    
+    // Set up filter slider
     UISlider *slider = (UISlider *)[self.filterSlider viewWithTag:100];
     slider.maximumValue = self.currentFilter.maximumFilterValue;
     slider.minimumValue = self.currentFilter.minimumFilterValue;
     slider.value = self.currentFilter.startingFilterValue;
     
-    [self.filterSlider setHidden:NO];
-    [self.editingToolBar setHidden:YES];
-    [self.currentMenu setHidden:YES];
+    [self displayFilterSlider:YES];
     
+    // Setup fiter chain and process image
     [self.filteredImagePicture removeAllTargets];
     [self.filteredImagePicture addTarget:self.currentFilter];
     [self.currentFilter addTarget:self.filteredImageView];
@@ -257,9 +264,7 @@ typedef NS_ENUM(NSInteger, MenuType) {
     [self.filteredImagePicture addTarget:self.filteredImageView];
     [self.filteredImagePicture processImage];
     
-    [self.currentMenu setHidden:NO];
-    [self.editingToolBar setHidden:NO];
-    [self.filterSlider setHidden:YES];
+    [self displayFilterSlider:NO];
 }
 
 - (IBAction)sliderConfirm:(id)sender {
@@ -273,9 +278,7 @@ typedef NS_ENUM(NSInteger, MenuType) {
     self.filteredImage = [self.currentFilter imageFromCurrentFramebuffer];
     self.filteredImagePicture = [[GPUImagePicture alloc] initWithImage:self.filteredImage];
     
-    [self.currentMenu setHidden:NO];
-    [self.editingToolBar setHidden:NO];
-    [self.filterSlider setHidden:YES];
+    [self displayFilterSlider:NO];
 }
 
 - (IBAction)sliderValueChanged:(id)sender {
@@ -365,6 +368,14 @@ typedef NS_ENUM(NSInteger, MenuType) {
     [self.currentMenu setShowsHorizontalScrollIndicator:NO];
     self.currentMenu.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.5];
 
+}
+
+- (void)displayFilterSlider:(BOOL)shouldDisplaySlider {
+    
+    [self.currentMenu setHidden:shouldDisplaySlider];
+    [self.editingToolBar setHidden:shouldDisplaySlider];
+    [self.filterSlider setHidden:!shouldDisplaySlider];
+    [self.filterNameView setHidden:!shouldDisplaySlider];
 }
 
 @end
