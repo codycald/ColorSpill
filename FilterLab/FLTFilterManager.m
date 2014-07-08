@@ -30,7 +30,7 @@
                              @"FLTSaturationFilter", @"FLTExposureFilter", @"FLTBlackVignetteFilter",
                              @"FLTWhiteVignetteFilter", @"FLTTemperatureFilter", @"FLTHighlightsFilter",
                              @"FLTShadowsFilter", @"FLTLucidityFilter", @"FLTDaydreamFilter",
-                             @"FLTUtopiaFilter"];
+                             @"FLTUtopiaFilter", @"FLTVeniceFilter"];
         [self createFilters];
     }
     return self;
