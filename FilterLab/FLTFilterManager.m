@@ -30,7 +30,8 @@
                              @"FLTSaturationFilter", @"FLTExposureFilter", @"FLTBlackVignetteFilter",
                              @"FLTWhiteVignetteFilter", @"FLTTemperatureFilter", @"FLTHighlightsFilter",
                              @"FLTShadowsFilter", @"FLTLucidityFilter", @"FLTDaydreamFilter",
-                             @"FLTUtopiaFilter", @"FLTVeniceFilter"];
+                             @"FLTUtopiaFilter", @"FLTVeniceFilter", @"FLTFinesseFilter",
+                             @"FLTSonataFilter", @"FLTBlissFilter", @"FLTArcadiaFilter"];
         [self createFilters];
     }
     return self;

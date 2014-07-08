@@ -27,6 +27,14 @@
 		06A06FA7196CA96E000D64AF /* FLTUtopiaFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A06FA6196CA96E000D64AF /* FLTUtopiaFilter.m */; };
 		06A06FA9196CAB4A000D64AF /* venice.acv in Resources */ = {isa = PBXBuildFile; fileRef = 06A06FA8196CAB4A000D64AF /* venice.acv */; };
 		06A06FAC196CAC16000D64AF /* FLTVeniceFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A06FAB196CAC16000D64AF /* FLTVeniceFilter.m */; };
+		06A06FAE196CAD11000D64AF /* finesse.acv in Resources */ = {isa = PBXBuildFile; fileRef = 06A06FAD196CAD11000D64AF /* finesse.acv */; };
+		06A06FB0196CAD20000D64AF /* sonata.acv in Resources */ = {isa = PBXBuildFile; fileRef = 06A06FAF196CAD20000D64AF /* sonata.acv */; };
+		06A06FB3196CAD3F000D64AF /* FLTFinesseFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A06FB2196CAD3F000D64AF /* FLTFinesseFilter.m */; };
+		06A06FB6196CAD77000D64AF /* FLTSonataFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A06FB5196CAD77000D64AF /* FLTSonataFilter.m */; };
+		06A06FB9196CAE89000D64AF /* FLTBlissFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A06FB8196CAE89000D64AF /* FLTBlissFilter.m */; };
+		06A06FBC196CAE95000D64AF /* FLTArcadiaFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A06FBB196CAE95000D64AF /* FLTArcadiaFilter.m */; };
+		06A06FBE196CAEF1000D64AF /* bliss.acv in Resources */ = {isa = PBXBuildFile; fileRef = 06A06FBD196CAEF1000D64AF /* bliss.acv */; };
+		06A06FC2196CAF13000D64AF /* arcadia.acv in Resources */ = {isa = PBXBuildFile; fileRef = 06A06FC1196CAF13000D64AF /* arcadia.acv */; };
 		06A1A381195EAB3000A986F8 /* FLTFilterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A1A380195EAB3000A986F8 /* FLTFilterManager.m */; };
 		06B6DAD7195BE29200D1B4E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06E2EE5A194B9807004C6FE8 /* Images.xcassets */; };
 		06B6DADA195BF43100D1B4E6 /* FLTHorizontalScrollMenuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B6DAD9195BF43100D1B4E6 /* FLTHorizontalScrollMenuLayout.m */; };
@@ -97,6 +105,18 @@
 		06A06FA8196CAB4A000D64AF /* venice.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = venice.acv; sourceTree = "<group>"; };
 		06A06FAA196CAC16000D64AF /* FLTVeniceFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTVeniceFilter.h; sourceTree = "<group>"; };
 		06A06FAB196CAC16000D64AF /* FLTVeniceFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTVeniceFilter.m; sourceTree = "<group>"; };
+		06A06FAD196CAD11000D64AF /* finesse.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = finesse.acv; sourceTree = "<group>"; };
+		06A06FAF196CAD20000D64AF /* sonata.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = sonata.acv; sourceTree = "<group>"; };
+		06A06FB1196CAD3F000D64AF /* FLTFinesseFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTFinesseFilter.h; sourceTree = "<group>"; };
+		06A06FB2196CAD3F000D64AF /* FLTFinesseFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTFinesseFilter.m; sourceTree = "<group>"; };
+		06A06FB4196CAD77000D64AF /* FLTSonataFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTSonataFilter.h; sourceTree = "<group>"; };
+		06A06FB5196CAD77000D64AF /* FLTSonataFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTSonataFilter.m; sourceTree = "<group>"; };
+		06A06FB7196CAE89000D64AF /* FLTBlissFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTBlissFilter.h; sourceTree = "<group>"; };
+		06A06FB8196CAE89000D64AF /* FLTBlissFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTBlissFilter.m; sourceTree = "<group>"; };
+		06A06FBA196CAE95000D64AF /* FLTArcadiaFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTArcadiaFilter.h; sourceTree = "<group>"; };
+		06A06FBB196CAE95000D64AF /* FLTArcadiaFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTArcadiaFilter.m; sourceTree = "<group>"; };
+		06A06FBD196CAEF1000D64AF /* bliss.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = bliss.acv; sourceTree = "<group>"; };
+		06A06FC1196CAF13000D64AF /* arcadia.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = arcadia.acv; sourceTree = "<group>"; };
 		06A1A37F195EAB3000A986F8 /* FLTFilterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTFilterManager.h; sourceTree = "<group>"; };
 		06A1A380195EAB3000A986F8 /* FLTFilterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTFilterManager.m; sourceTree = "<group>"; };
 		06B6DAD8195BF43100D1B4E6 /* FLTHorizontalScrollMenuLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTHorizontalScrollMenuLayout.h; sourceTree = "<group>"; };
@@ -172,6 +192,10 @@
 		06A06F9B196CA544000D64AF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				06A06FC1196CAF13000D64AF /* arcadia.acv */,
+				06A06FBD196CAEF1000D64AF /* bliss.acv */,
+				06A06FAF196CAD20000D64AF /* sonata.acv */,
+				06A06FAD196CAD11000D64AF /* finesse.acv */,
 				06A06FA8196CAB4A000D64AF /* venice.acv */,
 				06A06FA3196CA946000D64AF /* utopia.acv */,
 				06A06F9E196CA7A6000D64AF /* daydream.acv */,
@@ -264,6 +288,14 @@
 				06A06FA6196CA96E000D64AF /* FLTUtopiaFilter.m */,
 				06A06FAA196CAC16000D64AF /* FLTVeniceFilter.h */,
 				06A06FAB196CAC16000D64AF /* FLTVeniceFilter.m */,
+				06A06FB1196CAD3F000D64AF /* FLTFinesseFilter.h */,
+				06A06FB2196CAD3F000D64AF /* FLTFinesseFilter.m */,
+				06A06FB4196CAD77000D64AF /* FLTSonataFilter.h */,
+				06A06FB5196CAD77000D64AF /* FLTSonataFilter.m */,
+				06A06FB7196CAE89000D64AF /* FLTBlissFilter.h */,
+				06A06FB8196CAE89000D64AF /* FLTBlissFilter.m */,
+				06A06FBA196CAE95000D64AF /* FLTArcadiaFilter.h */,
+				06A06FBB196CAE95000D64AF /* FLTArcadiaFilter.m */,
 				06178343195FA4390038F5F1 /* FLTImageEffectType.h */,
 				06BCD22119671FD10042ACE3 /* GPUImageIntensityToneCurveFilter.h */,
 				06BCD22219671FD10042ACE3 /* GPUImageIntensityToneCurveFilter.m */,
@@ -385,12 +417,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06A06FAE196CAD11000D64AF /* finesse.acv in Resources */,
 				06E2EE53194B9807004C6FE8 /* InfoPlist.strings in Resources */,
+				06A06FB0196CAD20000D64AF /* sonata.acv in Resources */,
 				06A06F9F196CA7A6000D64AF /* daydream.acv in Resources */,
 				069505A4194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.xib in Resources */,
 				06B6DAD7195BE29200D1B4E6 /* Images.xcassets in Resources */,
+				06A06FC2196CAF13000D64AF /* arcadia.acv in Resources */,
 				06A06F9D196CA555000D64AF /* lucidity.acv in Resources */,
 				06A06FA9196CAB4A000D64AF /* venice.acv in Resources */,
+				06A06FBE196CAEF1000D64AF /* bliss.acv in Resources */,
 				06E2EE7B194BA292004C6FE8 /* FLTHomeScreenViewController.xib in Resources */,
 				06349246194EB0C700D6E052 /* FLTCameraViewController.xib in Resources */,
 				063034B51953A32000E7A927 /* FLTPhotoEditorViewController.xib in Resources */,
@@ -451,8 +487,10 @@
 				06BCD22319671FD10042ACE3 /* GPUImageIntensityToneCurveFilter.m in Sources */,
 				06E2EE79194BA1CA004C6FE8 /* FLTHomeScreenViewController.m in Sources */,
 				0610C818196B6067007C4BAD /* FLTHighlightsFilter.m in Sources */,
+				06A06FB9196CAE89000D64AF /* FLTBlissFilter.m in Sources */,
 				06178342195F9A7E0038F5F1 /* FLTFilter.m in Sources */,
 				06DA8E20196A5F990005A996 /* FLTTemperatureFilter.m in Sources */,
+				06A06FB6196CAD77000D64AF /* FLTSonataFilter.m in Sources */,
 				06A06FA7196CA96E000D64AF /* FLTUtopiaFilter.m in Sources */,
 				06ECC5391961089400FC79D8 /* FLTSharpnessFilter.m in Sources */,
 				06A06FAC196CAC16000D64AF /* FLTVeniceFilter.m in Sources */,
@@ -467,11 +505,13 @@
 				06BCD22F196776F40042ACE3 /* FLTContrastFilter.m in Sources */,
 				06B6DADA195BF43100D1B4E6 /* FLTHorizontalScrollMenuLayout.m in Sources */,
 				06A06FA2196CA7CD000D64AF /* FLTDaydreamFilter.m in Sources */,
+				06A06FB3196CAD3F000D64AF /* FLTFinesseFilter.m in Sources */,
 				06E2EE59194B9807004C6FE8 /* FLTAppDelegate.m in Sources */,
 				06A06F9A196CA46F000D64AF /* FLTLucidityFilter.m in Sources */,
 				069505A3194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.m in Sources */,
 				06B6DADD195C05C700D1B4E6 /* FLTMenuItemTitleView.m in Sources */,
 				063034B41953A32000E7A927 /* FLTPhotoEditorViewController.m in Sources */,
+				06A06FBC196CAE95000D64AF /* FLTArcadiaFilter.m in Sources */,
 				06BCD23B196786B00042ACE3 /* FLTWhiteVignetteFilter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
