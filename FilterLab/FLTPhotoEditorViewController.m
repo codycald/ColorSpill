@@ -274,11 +274,17 @@ typedef NS_ENUM(NSInteger, MenuType) {
     
     [self.currentFilter useNextFrameForImageCapture];
     self.currentFilter.intensity = slider.value;
-    [self.filteredImagePicture processImage];
-    self.filteredImage = [self.currentFilter imageFromCurrentFramebuffer];
-    self.filteredImagePicture = [[GPUImagePicture alloc] initWithImage:self.filteredImage];
-    
-    [self displayFilterSlider:NO];
+    [self.filteredImagePicture processImageWithCompletionHandler:^{
+        
+        // Grab filtered image once processing completes
+        self.filteredImage = [self.currentFilter imageFromCurrentFramebuffer];
+        self.filteredImagePicture = [[GPUImagePicture alloc] initWithImage:self.filteredImage];
+        
+        // Update UI
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self displayFilterSlider:NO];
+        });
+    }];
 }
 
 - (IBAction)sliderValueChanged:(id)sender {
