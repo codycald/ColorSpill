@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		030726987C1E44C48ED32425 /* libPods-FilterLab.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EC4995A616B4AEBB9590483 /* libPods-FilterLab.a */; };
+		0610C818196B6067007C4BAD /* FLTHighlightsFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0610C817196B6067007C4BAD /* FLTHighlightsFilter.m */; };
+		0610C81C196B65F4007C4BAD /* FLTShadowsFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0610C81B196B65F4007C4BAD /* FLTShadowsFilter.m */; };
 		06178342195F9A7E0038F5F1 /* FLTFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06178341195F9A7E0038F5F1 /* FLTFilter.m */; };
 		063034B41953A32000E7A927 /* FLTPhotoEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 063034B21953A32000E7A927 /* FLTPhotoEditorViewController.m */; };
 		063034B51953A32000E7A927 /* FLTPhotoEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 063034B31953A32000E7A927 /* FLTPhotoEditorViewController.xib */; };
@@ -56,6 +58,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0610C816196B6067007C4BAD /* FLTHighlightsFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTHighlightsFilter.h; sourceTree = "<group>"; };
+		0610C817196B6067007C4BAD /* FLTHighlightsFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTHighlightsFilter.m; sourceTree = "<group>"; };
+		0610C81A196B65F4007C4BAD /* FLTShadowsFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTShadowsFilter.h; sourceTree = "<group>"; };
+		0610C81B196B65F4007C4BAD /* FLTShadowsFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTShadowsFilter.m; sourceTree = "<group>"; };
 		06178340195F9A7E0038F5F1 /* FLTFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTFilter.h; sourceTree = "<group>"; };
 		06178341195F9A7E0038F5F1 /* FLTFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTFilter.m; sourceTree = "<group>"; };
 		06178343195FA4390038F5F1 /* FLTImageEffectType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLTImageEffectType.h; sourceTree = "<group>"; };
@@ -214,6 +220,10 @@
 				06BCD23A196786B00042ACE3 /* FLTWhiteVignetteFilter.m */,
 				06DA8E1E196A5F990005A996 /* FLTTemperatureFilter.h */,
 				06DA8E1F196A5F990005A996 /* FLTTemperatureFilter.m */,
+				0610C816196B6067007C4BAD /* FLTHighlightsFilter.h */,
+				0610C817196B6067007C4BAD /* FLTHighlightsFilter.m */,
+				0610C81A196B65F4007C4BAD /* FLTShadowsFilter.h */,
+				0610C81B196B65F4007C4BAD /* FLTShadowsFilter.m */,
 				06178343195FA4390038F5F1 /* FLTImageEffectType.h */,
 				06BCD22119671FD10042ACE3 /* GPUImageIntensityToneCurveFilter.h */,
 				06BCD22219671FD10042ACE3 /* GPUImageIntensityToneCurveFilter.m */,
@@ -393,8 +403,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0610C81C196B65F4007C4BAD /* FLTShadowsFilter.m in Sources */,
 				06BCD22319671FD10042ACE3 /* GPUImageIntensityToneCurveFilter.m in Sources */,
 				06E2EE79194BA1CA004C6FE8 /* FLTHomeScreenViewController.m in Sources */,
+				0610C818196B6067007C4BAD /* FLTHighlightsFilter.m in Sources */,
 				06178342195F9A7E0038F5F1 /* FLTFilter.m in Sources */,
 				06DA8E20196A5F990005A996 /* FLTTemperatureFilter.m in Sources */,
 				06ECC5391961089400FC79D8 /* FLTSharpnessFilter.m in Sources */,
