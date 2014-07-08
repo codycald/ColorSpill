@@ -57,6 +57,9 @@ typedef NS_ENUM(NSInteger, MenuType) {
     
     [super viewWillAppear:animated];
     
+    [self.originalImageView setBackgroundColorRed:1.0 green:1.0 blue:1.0 alpha:1.0];
+    [self.filteredImageView setBackgroundColorRed:1.0 green:1.0 blue:1.0 alpha:1.0];
+    
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     hud.margin = 5.0f;
 }

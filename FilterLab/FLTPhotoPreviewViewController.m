@@ -41,6 +41,7 @@
             break;
     }
     
+    [self.imageView setBackgroundColorRed:1.0 green:1.0 blue:1.0 alpha:1.0];
     self.imageView.contentMode = UIViewContentModeScaleAspectFit;
     [imagePicture addTarget:self.imageView];
     [self.imageView setInputRotation:rotationMode atIndex:0];
