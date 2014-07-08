@@ -9,6 +9,7 @@
 #import "FLTCameraViewController.h"
 #import "GPUImage.h"
 #import "FLTPhotoPreviewViewController.h"
+#import "MBProgressHUD.h"
 
 @interface FLTCameraViewController () <FLTPhotoPreviewViewControllerDelegate>
 
@@ -68,8 +69,12 @@
 
 - (IBAction)capturePhoto:(id)sender {
     
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.margin = 15.0f;
     self.captureButton.enabled = NO;
     [self.camera capturePhotoAsImageProcessedUpToFilter:self.currentFilter withCompletionHandler:^(UIImage *processedImage, NSError *error) {
+        
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
         if (!error) {
             FLTPhotoPreviewViewController *pvc = [[FLTPhotoPreviewViewController alloc] init];
             pvc.image = processedImage;
