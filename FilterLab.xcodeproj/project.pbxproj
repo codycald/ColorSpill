@@ -21,6 +21,10 @@
 		069505A4194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 069505A2194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.xib */; };
 		06A06F9A196CA46F000D64AF /* FLTLucidityFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A06F99196CA46F000D64AF /* FLTLucidityFilter.m */; };
 		06A06F9D196CA555000D64AF /* lucidity.acv in Resources */ = {isa = PBXBuildFile; fileRef = 06A06F9C196CA555000D64AF /* lucidity.acv */; };
+		06A06F9F196CA7A6000D64AF /* daydream.acv in Resources */ = {isa = PBXBuildFile; fileRef = 06A06F9E196CA7A6000D64AF /* daydream.acv */; };
+		06A06FA2196CA7CD000D64AF /* FLTDaydreamFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A06FA1196CA7CD000D64AF /* FLTDaydreamFilter.m */; };
+		06A06FA4196CA946000D64AF /* utopia.acv in Resources */ = {isa = PBXBuildFile; fileRef = 06A06FA3196CA946000D64AF /* utopia.acv */; };
+		06A06FA7196CA96E000D64AF /* FLTUtopiaFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A06FA6196CA96E000D64AF /* FLTUtopiaFilter.m */; };
 		06A1A381195EAB3000A986F8 /* FLTFilterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A1A380195EAB3000A986F8 /* FLTFilterManager.m */; };
 		06B6DAD7195BE29200D1B4E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06E2EE5A194B9807004C6FE8 /* Images.xcassets */; };
 		06B6DADA195BF43100D1B4E6 /* FLTHorizontalScrollMenuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B6DAD9195BF43100D1B4E6 /* FLTHorizontalScrollMenuLayout.m */; };
@@ -82,6 +86,12 @@
 		06A06F98196CA46F000D64AF /* FLTLucidityFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTLucidityFilter.h; sourceTree = "<group>"; };
 		06A06F99196CA46F000D64AF /* FLTLucidityFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTLucidityFilter.m; sourceTree = "<group>"; };
 		06A06F9C196CA555000D64AF /* lucidity.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = lucidity.acv; sourceTree = "<group>"; };
+		06A06F9E196CA7A6000D64AF /* daydream.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = daydream.acv; sourceTree = "<group>"; };
+		06A06FA0196CA7CD000D64AF /* FLTDaydreamFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTDaydreamFilter.h; sourceTree = "<group>"; };
+		06A06FA1196CA7CD000D64AF /* FLTDaydreamFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTDaydreamFilter.m; sourceTree = "<group>"; };
+		06A06FA3196CA946000D64AF /* utopia.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = utopia.acv; sourceTree = "<group>"; };
+		06A06FA5196CA96E000D64AF /* FLTUtopiaFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTUtopiaFilter.h; sourceTree = "<group>"; };
+		06A06FA6196CA96E000D64AF /* FLTUtopiaFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTUtopiaFilter.m; sourceTree = "<group>"; };
 		06A1A37F195EAB3000A986F8 /* FLTFilterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTFilterManager.h; sourceTree = "<group>"; };
 		06A1A380195EAB3000A986F8 /* FLTFilterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTFilterManager.m; sourceTree = "<group>"; };
 		06B6DAD8195BF43100D1B4E6 /* FLTHorizontalScrollMenuLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTHorizontalScrollMenuLayout.h; sourceTree = "<group>"; };
@@ -157,6 +167,8 @@
 		06A06F9B196CA544000D64AF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				06A06FA3196CA946000D64AF /* utopia.acv */,
+				06A06F9E196CA7A6000D64AF /* daydream.acv */,
 				06A06F9C196CA555000D64AF /* lucidity.acv */,
 			);
 			name = Resources;
@@ -240,6 +252,10 @@
 				0610C81B196B65F4007C4BAD /* FLTShadowsFilter.m */,
 				06A06F98196CA46F000D64AF /* FLTLucidityFilter.h */,
 				06A06F99196CA46F000D64AF /* FLTLucidityFilter.m */,
+				06A06FA0196CA7CD000D64AF /* FLTDaydreamFilter.h */,
+				06A06FA1196CA7CD000D64AF /* FLTDaydreamFilter.m */,
+				06A06FA5196CA96E000D64AF /* FLTUtopiaFilter.h */,
+				06A06FA6196CA96E000D64AF /* FLTUtopiaFilter.m */,
 				06178343195FA4390038F5F1 /* FLTImageEffectType.h */,
 				06BCD22119671FD10042ACE3 /* GPUImageIntensityToneCurveFilter.h */,
 				06BCD22219671FD10042ACE3 /* GPUImageIntensityToneCurveFilter.m */,
@@ -362,12 +378,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				06E2EE53194B9807004C6FE8 /* InfoPlist.strings in Resources */,
+				06A06F9F196CA7A6000D64AF /* daydream.acv in Resources */,
 				069505A4194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.xib in Resources */,
 				06B6DAD7195BE29200D1B4E6 /* Images.xcassets in Resources */,
 				06A06F9D196CA555000D64AF /* lucidity.acv in Resources */,
 				06E2EE7B194BA292004C6FE8 /* FLTHomeScreenViewController.xib in Resources */,
 				06349246194EB0C700D6E052 /* FLTCameraViewController.xib in Resources */,
 				063034B51953A32000E7A927 /* FLTPhotoEditorViewController.xib in Resources */,
+				06A06FA4196CA946000D64AF /* utopia.acv in Resources */,
 				068DB9A6195BA18B00B5B29C /* FLTMenuItemCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +444,7 @@
 				0610C818196B6067007C4BAD /* FLTHighlightsFilter.m in Sources */,
 				06178342195F9A7E0038F5F1 /* FLTFilter.m in Sources */,
 				06DA8E20196A5F990005A996 /* FLTTemperatureFilter.m in Sources */,
+				06A06FA7196CA96E000D64AF /* FLTUtopiaFilter.m in Sources */,
 				06ECC5391961089400FC79D8 /* FLTSharpnessFilter.m in Sources */,
 				06E2EE55194B9807004C6FE8 /* main.m in Sources */,
 				06BCD22B196770660042ACE3 /* FLTBrightnessFilter.m in Sources */,
@@ -437,6 +456,7 @@
 				06A1A381195EAB3000A986F8 /* FLTFilterManager.m in Sources */,
 				06BCD22F196776F40042ACE3 /* FLTContrastFilter.m in Sources */,
 				06B6DADA195BF43100D1B4E6 /* FLTHorizontalScrollMenuLayout.m in Sources */,
+				06A06FA2196CA7CD000D64AF /* FLTDaydreamFilter.m in Sources */,
 				06E2EE59194B9807004C6FE8 /* FLTAppDelegate.m in Sources */,
 				06A06F9A196CA46F000D64AF /* FLTLucidityFilter.m in Sources */,
 				069505A3194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.m in Sources */,

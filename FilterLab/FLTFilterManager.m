@@ -29,7 +29,8 @@
         self.filterNames = @[@"FLTSharpnessFilter", @"FLTBrightnessFilter", @"FLTContrastFilter",
                              @"FLTSaturationFilter", @"FLTExposureFilter", @"FLTBlackVignetteFilter",
                              @"FLTWhiteVignetteFilter", @"FLTTemperatureFilter", @"FLTHighlightsFilter",
-                             @"FLTShadowsFilter", @"FLTLucidityFilter"];
+                             @"FLTShadowsFilter", @"FLTLucidityFilter", @"FLTDaydreamFilter",
+                             @"FLTUtopiaFilter"];
         [self createFilters];
     }
     return self;
