@@ -26,10 +26,10 @@
     self = [super init];
     
     if (self) {
-        self.filterNames = @[@"FLTFilter", @"FLTSharpnessFilter", @"FLTBrightnessFilter",
-                             @"FLTContrastFilter", @"FLTSaturationFilter", @"FLTExposureFilter",
-                             @"FLTBlackVignetteFilter", @"FLTWhiteVignetteFilter", @"FLTTemperatureFilter",
-                             @"FLTHighlightsFilter", @"FLTShadowsFilter"];
+        self.filterNames = @[@"FLTSharpnessFilter", @"FLTBrightnessFilter", @"FLTContrastFilter",
+                             @"FLTSaturationFilter", @"FLTExposureFilter", @"FLTBlackVignetteFilter",
+                             @"FLTWhiteVignetteFilter", @"FLTTemperatureFilter", @"FLTHighlightsFilter",
+                             @"FLTShadowsFilter", @"FLTLucidityFilter"];
         [self createFilters];
     }
     return self;

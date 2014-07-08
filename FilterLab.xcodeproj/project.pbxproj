@@ -19,6 +19,8 @@
 		068DB9A6195BA18B00B5B29C /* FLTMenuItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 068DB9A5195BA18B00B5B29C /* FLTMenuItemCell.xib */; };
 		069505A3194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 069505A1194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.m */; };
 		069505A4194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 069505A2194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.xib */; };
+		06A06F9A196CA46F000D64AF /* FLTLucidityFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A06F99196CA46F000D64AF /* FLTLucidityFilter.m */; };
+		06A06F9D196CA555000D64AF /* lucidity.acv in Resources */ = {isa = PBXBuildFile; fileRef = 06A06F9C196CA555000D64AF /* lucidity.acv */; };
 		06A1A381195EAB3000A986F8 /* FLTFilterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A1A380195EAB3000A986F8 /* FLTFilterManager.m */; };
 		06B6DAD7195BE29200D1B4E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06E2EE5A194B9807004C6FE8 /* Images.xcassets */; };
 		06B6DADA195BF43100D1B4E6 /* FLTHorizontalScrollMenuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B6DAD9195BF43100D1B4E6 /* FLTHorizontalScrollMenuLayout.m */; };
@@ -77,6 +79,9 @@
 		069505A0194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTPhotoPreviewViewController.h; sourceTree = "<group>"; };
 		069505A1194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTPhotoPreviewViewController.m; sourceTree = "<group>"; };
 		069505A2194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLTPhotoPreviewViewController.xib; sourceTree = "<group>"; };
+		06A06F98196CA46F000D64AF /* FLTLucidityFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTLucidityFilter.h; sourceTree = "<group>"; };
+		06A06F99196CA46F000D64AF /* FLTLucidityFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTLucidityFilter.m; sourceTree = "<group>"; };
+		06A06F9C196CA555000D64AF /* lucidity.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = lucidity.acv; sourceTree = "<group>"; };
 		06A1A37F195EAB3000A986F8 /* FLTFilterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTFilterManager.h; sourceTree = "<group>"; };
 		06A1A380195EAB3000A986F8 /* FLTFilterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTFilterManager.m; sourceTree = "<group>"; };
 		06B6DAD8195BF43100D1B4E6 /* FLTHorizontalScrollMenuLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTHorizontalScrollMenuLayout.h; sourceTree = "<group>"; };
@@ -149,6 +154,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06A06F9B196CA544000D64AF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				06A06F9C196CA555000D64AF /* lucidity.acv */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		06E2EE3C194B9807004C6FE8 = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +197,7 @@
 		06E2EE4E194B9807004C6FE8 /* FilterLab */ = {
 			isa = PBXGroup;
 			children = (
+				06A06F9B196CA544000D64AF /* Resources */,
 				06E2EE57194B9807004C6FE8 /* FLTAppDelegate.h */,
 				06E2EE58194B9807004C6FE8 /* FLTAppDelegate.m */,
 				06E2EE77194BA1CA004C6FE8 /* FLTHomeScreenViewController.h */,
@@ -224,6 +238,8 @@
 				0610C817196B6067007C4BAD /* FLTHighlightsFilter.m */,
 				0610C81A196B65F4007C4BAD /* FLTShadowsFilter.h */,
 				0610C81B196B65F4007C4BAD /* FLTShadowsFilter.m */,
+				06A06F98196CA46F000D64AF /* FLTLucidityFilter.h */,
+				06A06F99196CA46F000D64AF /* FLTLucidityFilter.m */,
 				06178343195FA4390038F5F1 /* FLTImageEffectType.h */,
 				06BCD22119671FD10042ACE3 /* GPUImageIntensityToneCurveFilter.h */,
 				06BCD22219671FD10042ACE3 /* GPUImageIntensityToneCurveFilter.m */,
@@ -348,6 +364,7 @@
 				06E2EE53194B9807004C6FE8 /* InfoPlist.strings in Resources */,
 				069505A4194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.xib in Resources */,
 				06B6DAD7195BE29200D1B4E6 /* Images.xcassets in Resources */,
+				06A06F9D196CA555000D64AF /* lucidity.acv in Resources */,
 				06E2EE7B194BA292004C6FE8 /* FLTHomeScreenViewController.xib in Resources */,
 				06349246194EB0C700D6E052 /* FLTCameraViewController.xib in Resources */,
 				063034B51953A32000E7A927 /* FLTPhotoEditorViewController.xib in Resources */,
@@ -421,6 +438,7 @@
 				06BCD22F196776F40042ACE3 /* FLTContrastFilter.m in Sources */,
 				06B6DADA195BF43100D1B4E6 /* FLTHorizontalScrollMenuLayout.m in Sources */,
 				06E2EE59194B9807004C6FE8 /* FLTAppDelegate.m in Sources */,
+				06A06F9A196CA46F000D64AF /* FLTLucidityFilter.m in Sources */,
 				069505A3194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.m in Sources */,
 				06B6DADD195C05C700D1B4E6 /* FLTMenuItemTitleView.m in Sources */,
 				063034B41953A32000E7A927 /* FLTPhotoEditorViewController.m in Sources */,
