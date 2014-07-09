@@ -20,18 +20,18 @@
         self.type = FLTToolFilterType;
         self.maximumFilterValue = 0.9;
         self.minimumFilterValue = 0.5;
-        self.startingFilterValue = 0.75;
+        self.startingFilterValue = 0.5;
         GPUImageVignetteFilter *filter = [[GPUImageVignetteFilter alloc] init];
         filter.vignetteColor = (GPUVector3){ 1.0f, 1.0f, 1.0f };
         self.gpuFilter = filter;
-        self.intensity = 1.0;
+        self.intensity = 0.5;
     }
     return self;
 }
 
 - (void)setIntensity:(CGFloat)intensity {
     GPUImageVignetteFilter *filter = (GPUImageVignetteFilter *)self.gpuFilter;
-    filter.vignetteEnd = intensity;
+    filter.vignetteEnd = self.minimumFilterValue + (self.maximumFilterValue - intensity);
 }
 
 @end
