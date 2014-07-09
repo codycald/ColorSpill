@@ -53,6 +53,8 @@ typedef NS_ENUM(NSInteger, MenuType) {
     return self;
 }
 
+#pragma mark - View life cycle
+
 - (void)viewWillAppear:(BOOL)animated {
     
     [super viewWillAppear:animated];
@@ -63,8 +65,6 @@ typedef NS_ENUM(NSInteger, MenuType) {
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     hud.margin = 5.0f;
 }
-
-#pragma mark - View life cycle
 
 - (void)viewDidAppear:(BOOL)animated {
     
@@ -90,6 +90,12 @@ typedef NS_ENUM(NSInteger, MenuType) {
     
     [self.originalImageView setHidden:YES];
     [self.filteredImageView setHidden:NO];
+}
+
+#pragma mark - UIViewController overrides
+
+- (BOOL)shouldAutorotate {
+    return NO;
 }
 
 #pragma mark - UICollectionView data source methods
