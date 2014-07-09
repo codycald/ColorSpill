@@ -35,6 +35,12 @@
 		06A06FBC196CAE95000D64AF /* FLTArcadiaFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A06FBB196CAE95000D64AF /* FLTArcadiaFilter.m */; };
 		06A06FBE196CAEF1000D64AF /* bliss.acv in Resources */ = {isa = PBXBuildFile; fileRef = 06A06FBD196CAEF1000D64AF /* bliss.acv */; };
 		06A06FC2196CAF13000D64AF /* arcadia.acv in Resources */ = {isa = PBXBuildFile; fileRef = 06A06FC1196CAF13000D64AF /* arcadia.acv */; };
+		06A06FC5196CBEDF000D64AF /* FLTEssenceFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A06FC4196CBEDF000D64AF /* FLTEssenceFilter.m */; };
+		06A06FC7196CBF2F000D64AF /* essence.acv in Resources */ = {isa = PBXBuildFile; fileRef = 06A06FC6196CBF2F000D64AF /* essence.acv */; };
+		06A06FC9196CBF4E000D64AF /* lockewood.acv in Resources */ = {isa = PBXBuildFile; fileRef = 06A06FC8196CBF4E000D64AF /* lockewood.acv */; };
+		06A06FCB196CBF5B000D64AF /* timeless.acv in Resources */ = {isa = PBXBuildFile; fileRef = 06A06FCA196CBF5B000D64AF /* timeless.acv */; };
+		06A06FCE196CBFC8000D64AF /* FLTLockewoodFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A06FCD196CBFC8000D64AF /* FLTLockewoodFilter.m */; };
+		06A06FD1196CC03B000D64AF /* FLTTimelessFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A06FD0196CC03B000D64AF /* FLTTimelessFilter.m */; };
 		06A1A381195EAB3000A986F8 /* FLTFilterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A1A380195EAB3000A986F8 /* FLTFilterManager.m */; };
 		06B6DAD7195BE29200D1B4E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06E2EE5A194B9807004C6FE8 /* Images.xcassets */; };
 		06B6DADA195BF43100D1B4E6 /* FLTHorizontalScrollMenuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B6DAD9195BF43100D1B4E6 /* FLTHorizontalScrollMenuLayout.m */; };
@@ -117,6 +123,15 @@
 		06A06FBB196CAE95000D64AF /* FLTArcadiaFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTArcadiaFilter.m; sourceTree = "<group>"; };
 		06A06FBD196CAEF1000D64AF /* bliss.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = bliss.acv; sourceTree = "<group>"; };
 		06A06FC1196CAF13000D64AF /* arcadia.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = arcadia.acv; sourceTree = "<group>"; };
+		06A06FC3196CBEDF000D64AF /* FLTEssenceFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTEssenceFilter.h; sourceTree = "<group>"; };
+		06A06FC4196CBEDF000D64AF /* FLTEssenceFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTEssenceFilter.m; sourceTree = "<group>"; };
+		06A06FC6196CBF2F000D64AF /* essence.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = essence.acv; sourceTree = "<group>"; };
+		06A06FC8196CBF4E000D64AF /* lockewood.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = lockewood.acv; sourceTree = "<group>"; };
+		06A06FCA196CBF5B000D64AF /* timeless.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = timeless.acv; sourceTree = "<group>"; };
+		06A06FCC196CBFC8000D64AF /* FLTLockewoodFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTLockewoodFilter.h; sourceTree = "<group>"; };
+		06A06FCD196CBFC8000D64AF /* FLTLockewoodFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTLockewoodFilter.m; sourceTree = "<group>"; };
+		06A06FCF196CC03B000D64AF /* FLTTimelessFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTTimelessFilter.h; sourceTree = "<group>"; };
+		06A06FD0196CC03B000D64AF /* FLTTimelessFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTTimelessFilter.m; sourceTree = "<group>"; };
 		06A1A37F195EAB3000A986F8 /* FLTFilterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTFilterManager.h; sourceTree = "<group>"; };
 		06A1A380195EAB3000A986F8 /* FLTFilterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTFilterManager.m; sourceTree = "<group>"; };
 		06B6DAD8195BF43100D1B4E6 /* FLTHorizontalScrollMenuLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTHorizontalScrollMenuLayout.h; sourceTree = "<group>"; };
@@ -192,6 +207,9 @@
 		06A06F9B196CA544000D64AF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				06A06FCA196CBF5B000D64AF /* timeless.acv */,
+				06A06FC8196CBF4E000D64AF /* lockewood.acv */,
+				06A06FC6196CBF2F000D64AF /* essence.acv */,
 				06A06FC1196CAF13000D64AF /* arcadia.acv */,
 				06A06FBD196CAEF1000D64AF /* bliss.acv */,
 				06A06FAF196CAD20000D64AF /* sonata.acv */,
@@ -296,6 +314,12 @@
 				06A06FB8196CAE89000D64AF /* FLTBlissFilter.m */,
 				06A06FBA196CAE95000D64AF /* FLTArcadiaFilter.h */,
 				06A06FBB196CAE95000D64AF /* FLTArcadiaFilter.m */,
+				06A06FC3196CBEDF000D64AF /* FLTEssenceFilter.h */,
+				06A06FC4196CBEDF000D64AF /* FLTEssenceFilter.m */,
+				06A06FCC196CBFC8000D64AF /* FLTLockewoodFilter.h */,
+				06A06FCD196CBFC8000D64AF /* FLTLockewoodFilter.m */,
+				06A06FCF196CC03B000D64AF /* FLTTimelessFilter.h */,
+				06A06FD0196CC03B000D64AF /* FLTTimelessFilter.m */,
 				06178343195FA4390038F5F1 /* FLTImageEffectType.h */,
 				06BCD22119671FD10042ACE3 /* GPUImageIntensityToneCurveFilter.h */,
 				06BCD22219671FD10042ACE3 /* GPUImageIntensityToneCurveFilter.m */,
@@ -424,8 +448,11 @@
 				069505A4194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.xib in Resources */,
 				06B6DAD7195BE29200D1B4E6 /* Images.xcassets in Resources */,
 				06A06FC2196CAF13000D64AF /* arcadia.acv in Resources */,
+				06A06FC9196CBF4E000D64AF /* lockewood.acv in Resources */,
+				06A06FCB196CBF5B000D64AF /* timeless.acv in Resources */,
 				06A06F9D196CA555000D64AF /* lucidity.acv in Resources */,
 				06A06FA9196CAB4A000D64AF /* venice.acv in Resources */,
+				06A06FC7196CBF2F000D64AF /* essence.acv in Resources */,
 				06A06FBE196CAEF1000D64AF /* bliss.acv in Resources */,
 				06E2EE7B194BA292004C6FE8 /* FLTHomeScreenViewController.xib in Resources */,
 				06349246194EB0C700D6E052 /* FLTCameraViewController.xib in Resources */,
@@ -484,6 +511,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0610C81C196B65F4007C4BAD /* FLTShadowsFilter.m in Sources */,
+				06A06FC5196CBEDF000D64AF /* FLTEssenceFilter.m in Sources */,
+				06A06FCE196CBFC8000D64AF /* FLTLockewoodFilter.m in Sources */,
+				06A06FD1196CC03B000D64AF /* FLTTimelessFilter.m in Sources */,
 				06BCD22319671FD10042ACE3 /* GPUImageIntensityToneCurveFilter.m in Sources */,
 				06E2EE79194BA1CA004C6FE8 /* FLTHomeScreenViewController.m in Sources */,
 				0610C818196B6067007C4BAD /* FLTHighlightsFilter.m in Sources */,

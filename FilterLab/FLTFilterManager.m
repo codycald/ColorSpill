@@ -31,7 +31,8 @@
                              @"FLTWhiteVignetteFilter", @"FLTTemperatureFilter", @"FLTHighlightsFilter",
                              @"FLTShadowsFilter", @"FLTLucidityFilter", @"FLTDaydreamFilter",
                              @"FLTUtopiaFilter", @"FLTVeniceFilter", @"FLTFinesseFilter",
-                             @"FLTSonataFilter", @"FLTBlissFilter", @"FLTArcadiaFilter"];
+                             @"FLTSonataFilter", @"FLTBlissFilter", @"FLTArcadiaFilter",
+                             @"FLTEssenceFilter", @"FLTLockewoodFilter", @"FLTTimelessFilter"];
         [self createFilters];
     }
     return self;
