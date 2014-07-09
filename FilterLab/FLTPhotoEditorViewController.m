@@ -355,9 +355,10 @@ typedef NS_ENUM(NSInteger, MenuType) {
     
     // The tool menu items have no title, so we adjust the edge insets
     if (type == ToolFilterMenuType) {
-        scrollMenuLayout.edgeInsets = UIEdgeInsetsMake(5.0f, 10.0f, 5.0f, 10.0f);
-        scrollMenuLayout.itemSize = CGSizeMake(22.0f, 22.0f);
+        scrollMenuLayout.edgeInsets = UIEdgeInsetsMake(10.0f, 10.0f, 10.0f, 10.0f);
+        scrollMenuLayout.itemSize = CGSizeMake(32.0f, 32.0f);
         scrollMenuLayout.titleHeight = 0.0f;
+        scrollMenuLayout.interItemSpacingX = 10.0f;
     }
     
     self.currentMenu = [[UICollectionView alloc] initWithFrame:CGRectZero
@@ -375,7 +376,7 @@ typedef NS_ENUM(NSInteger, MenuType) {
     self.currentMenu.delegate = self;
     self.currentMenu.tag = type;
     [self.currentMenu setShowsHorizontalScrollIndicator:NO];
-    self.currentMenu.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.5];
+    self.currentMenu.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.75];
 
 }
 

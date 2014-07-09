@@ -25,7 +25,7 @@
         self.label.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         self.label.backgroundColor = [UIColor clearColor];
         self.label.textAlignment = NSTextAlignmentCenter;
-        self.label.font = [UIFont systemFontOfSize:13];
+        self.label.font = [UIFont fontWithName:@"Palatino" size:11];
         self.label.textColor = [UIColor whiteColor];
         
         [self addSubview:self.label];
