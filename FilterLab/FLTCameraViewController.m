@@ -76,6 +76,9 @@
         
         [MBProgressHUD hideHUDForView:self.view animated:YES];
         if (!error) {
+            
+            UIImageWriteToSavedPhotosAlbum(processedImage, nil, nil, nil);
+            
             FLTPhotoPreviewViewController *pvc = [[FLTPhotoPreviewViewController alloc] init];
             pvc.image = processedImage;
             pvc.delegate = self;
