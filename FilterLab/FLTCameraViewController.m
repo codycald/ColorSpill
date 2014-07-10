@@ -101,7 +101,18 @@
 }
 
 - (IBAction)switchCamera:(id)sender {
+    
     [self.camera rotateCamera];
+    
+    // We must horizontally mirror the camera when the front facing
+    // camera is active, or the output will be upside down when in
+    // landscape mode.
+    if (self.camera.cameraPosition == AVCaptureDevicePositionFront) {
+        self.camera.horizontallyMirrorFrontFacingCamera = YES;
+    } else {
+        self.camera.horizontallyMirrorFrontFacingCamera = NO;
+        
+    }
 }
 
 @end
