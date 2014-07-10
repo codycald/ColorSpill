@@ -6,7 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FLTCameraViewController">
             <connections>
-                <outlet property="captureButton" destination="5BG-bO-bMN" id="vXa-WU-Ybe"/>
+                <outlet property="captureButton" destination="oJa-sP-3Et" id="Vw0-Sg-C4z"/>
                 <outlet property="imageView" destination="TXI-WA-vl8" id="svc-Xp-hOD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -17,47 +17,78 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TXI-WA-vl8" customClass="GPUImageView">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="478"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                 </view>
-                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llu-Fi-rNT">
-                    <rect key="frame" x="0.0" y="524" width="320" height="44"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oCq-CO-BQ9">
+                    <rect key="frame" x="0.0" y="478" width="320" height="90"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mpk-K6-mYg">
+                            <rect key="frame" x="20" y="20" width="50" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="GXR-Rx-q8L"/>
+                                <constraint firstAttribute="height" constant="50" id="W4E-NI-Lul"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <state key="normal" title="cancel">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelPhotoCapture:" destination="-1" eventType="touchUpInside" id="0bh-UA-7RB"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmd-Nv-RDO">
+                            <rect key="frame" x="250" y="20" width="50" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="6cR-yx-Hli"/>
+                                <constraint firstAttribute="width" constant="50" id="vg2-Us-VIq"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <state key="normal" image="Camera_Rotate"/>
+                            <connections>
+                                <action selector="switchCamera:" destination="-1" eventType="touchUpInside" id="y9i-WO-bT0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJa-sP-3Et">
+                            <rect key="frame" x="133" y="30" width="55" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <state key="normal" title="Capture">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="capturePhoto:" destination="-1" eventType="touchUpInside" id="oTG-WK-L8h"/>
+                            </connections>
+                        </button>
+                    </subviews>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="44" id="rsc-cC-YCe"/>
+                        <constraint firstAttribute="bottom" secondItem="Mpk-K6-mYg" secondAttribute="bottom" constant="20" id="01y-kb-OQG"/>
+                        <constraint firstAttribute="centerX" secondItem="oJa-sP-3Et" secondAttribute="centerX" constant="-0.5" id="Kby-Ad-dqI"/>
+                        <constraint firstItem="Mpk-K6-mYg" firstAttribute="leading" secondItem="oCq-CO-BQ9" secondAttribute="leading" constant="20" id="cE0-YL-JOG"/>
+                        <constraint firstAttribute="bottom" secondItem="wmd-Nv-RDO" secondAttribute="bottom" constant="20" id="gDG-jk-7Pg"/>
+                        <constraint firstAttribute="centerY" secondItem="oJa-sP-3Et" secondAttribute="centerY" id="oTM-rf-sOx"/>
+                        <constraint firstAttribute="trailing" secondItem="wmd-Nv-RDO" secondAttribute="trailing" constant="20" id="twX-j1-lCL"/>
                     </constraints>
-                    <items>
-                        <barButtonItem title="cancel" id="LsA-Sp-S3Y">
-                            <connections>
-                                <action selector="cancelPhotoCapture:" destination="-1" id="lcs-GD-3vj"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="6tS-rI-kLz"/>
-                        <barButtonItem title="Capture" id="5BG-bO-bMN">
-                            <connections>
-                                <action selector="capturePhoto:" destination="-1" id="wjJ-Do-QQO"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="q2W-7d-E2k"/>
-                        <barButtonItem title="Flip" id="edt-H1-KAP">
-                            <connections>
-                                <action selector="switchCamera:" destination="-1" id="pM1-ci-WHI"/>
-                            </connections>
-                        </barButtonItem>
-                    </items>
-                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                </toolbar>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <accessibility key="accessibilityConfiguration" label=""/>
             <constraints>
-                <constraint firstItem="llu-Fi-rNT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9Wt-hc-2sB"/>
+                <constraint firstAttribute="centerY" secondItem="TXI-WA-vl8" secondAttribute="centerY" constant="45" id="1wb-uF-aAj"/>
+                <constraint firstItem="oCq-CO-BQ9" firstAttribute="top" secondItem="TXI-WA-vl8" secondAttribute="bottom" id="5lB-S0-QAQ"/>
+                <constraint firstAttribute="trailing" secondItem="oCq-CO-BQ9" secondAttribute="trailing" id="CPT-Cr-32M"/>
+                <constraint firstAttribute="bottom" secondItem="oCq-CO-BQ9" secondAttribute="bottom" id="FFQ-pG-chN"/>
+                <constraint firstAttribute="centerX" secondItem="TXI-WA-vl8" secondAttribute="centerX" id="FJp-SC-WuW"/>
                 <constraint firstItem="TXI-WA-vl8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="FQP-yz-VwA"/>
-                <constraint firstAttribute="trailing" secondItem="llu-Fi-rNT" secondAttribute="trailing" id="V9X-Aa-Wqc"/>
-                <constraint firstAttribute="bottom" secondItem="llu-Fi-rNT" secondAttribute="bottom" id="a2R-iv-KVM"/>
-                <constraint firstItem="llu-Fi-rNT" firstAttribute="top" secondItem="TXI-WA-vl8" secondAttribute="bottom" id="afI-IU-pw6"/>
+                <constraint firstItem="oCq-CO-BQ9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jxb-xq-8bO"/>
                 <constraint firstItem="TXI-WA-vl8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lOD-tE-5i3"/>
                 <constraint firstAttribute="trailing" secondItem="TXI-WA-vl8" secondAttribute="trailing" id="xYb-mr-MaM"/>
             </constraints>
@@ -65,4 +96,7 @@
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
+    <resources>
+        <image name="Camera_Rotate" width="27" height="21"/>
+    </resources>
 </document>

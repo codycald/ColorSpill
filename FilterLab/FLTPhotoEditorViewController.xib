@@ -22,37 +22,38 @@
                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFe-ss-rD0" userLabel="Editing Toolbar">
                     <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <items>
-                        <barButtonItem title="Revert" id="xyf-ZQ-lLf">
+                        <barButtonItem systemItem="trash" id="xyf-ZQ-lLf">
                             <connections>
                                 <action selector="revertChanges:" destination="-1" id="d7g-Yw-z1t"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="me1-Rx-ust"/>
-                        <barButtonItem title="Tools" id="EM2-bM-fRl">
+                        <barButtonItem image="Horizontal_Slider" id="EM2-bM-fRl">
                             <connections>
                                 <action selector="showToolMenu:" destination="-1" id="qfr-cw-qVj"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="5UZ-02-X8B"/>
-                        <barButtonItem title="Filters" id="Wo2-aO-AQU">
+                        <barButtonItem image="Venn_Diagram" id="Wo2-aO-AQU">
                             <connections>
                                 <action selector="showFilterMenu:" destination="-1" id="sQ0-nR-cNQ"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="twf-Nb-e5I"/>
-                        <barButtonItem title="Share" id="wNM-Zk-IAC">
+                        <barButtonItem systemItem="action" id="wNM-Zk-IAC">
                             <connections>
                                 <action selector="shareImage:" destination="-1" id="kWK-et-CHZ"/>
                             </connections>
                         </barButtonItem>
                     </items>
+                    <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </toolbar>
                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ra-8p-6kR" userLabel="Top Toolbar">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <items>
                         <barButtonItem title="back" id="T9c-l1-Gv2">
                             <connections>
@@ -74,7 +75,7 @@
                 <toolbar hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FMI-T8-uls" userLabel="Slider">
                     <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <items>
                         <barButtonItem title="No" id="SC2-W5-3ji">
                             <connections>
@@ -85,6 +86,7 @@
                             <slider key="customView" opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="Cga-kJ-SWH">
                                 <rect key="frame" x="49" y="6" width="222" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="sliderValueChanged:" destination="-1" eventType="valueChanged" id="sSS-GT-9QY"/>
                                 </connections>
@@ -120,7 +122,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="zzh-BD-Vbf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="08n-aT-NUh"/>
                 <constraint firstItem="eYp-zh-8DE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0m3-JZ-hfH"/>
@@ -151,4 +153,8 @@
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
+    <resources>
+        <image name="Horizontal_Slider" width="24" height="23"/>
+        <image name="Venn_Diagram" width="24" height="23"/>
+    </resources>
 </document>

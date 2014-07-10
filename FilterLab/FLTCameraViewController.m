@@ -17,7 +17,8 @@
 @property (strong, nonatomic) GPUImageFilter *currentFilter;
 
 @property (weak, nonatomic) IBOutlet GPUImageView *imageView;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *captureButton;
+@property (weak, nonatomic) IBOutlet UIButton *captureButton;
+
 
 @end
 
