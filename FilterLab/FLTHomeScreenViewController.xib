@@ -44,7 +44,7 @@
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" red="0.25098040700000002" green="0.66274511810000003" blue="0.96078437569999997" alpha="1" colorSpace="deviceRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="Xb2-l2-kXy" firstAttribute="top" secondItem="eas-Ac-s6N" secondAttribute="bottom" constant="77" id="2OJ-SS-2SU"/>
                 <constraint firstItem="Xb2-l2-kXy" firstAttribute="leading" secondItem="TVY-tv-kDg" secondAttribute="leading" constant="133" id="4aw-Tp-1Qc"/>
