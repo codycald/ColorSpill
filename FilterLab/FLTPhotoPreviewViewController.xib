@@ -18,23 +18,26 @@
                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfj-Jl-kOH">
                     <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="LKl-GC-d9g"/>
                     </constraints>
                     <items>
                         <barButtonItem title="back" id="PTh-VE-U6G">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="back:" destination="-1" id="TTg-ND-a4e"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="xTV-hW-l1p"/>
                         <barButtonItem title="use" id="dJZ-7K-OpW">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="usePhoto:" destination="-1" id="1Hf-Jw-vtU"/>
                             </connections>
                         </barButtonItem>
                     </items>
+                    <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                 </toolbar>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preview" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDg-kw-fiC">
                     <rect key="frame" x="130" y="535" width="61" height="21"/>
@@ -44,6 +47,7 @@
                         <constraint firstAttribute="width" constant="61" id="qPQ-m6-jUC"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dsN-E9-W3P" customClass="GPUImageView">
@@ -54,11 +58,12 @@
                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zw4-0n-e8s">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     <items/>
+                    <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                 </toolbar>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.2348134566" green="0.2348134566" blue="0.2348134566" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="dsN-E9-W3P" secondAttribute="trailing" id="2ea-lk-8DB"/>
                 <constraint firstItem="Zw4-0n-e8s" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2k1-4q-Lih"/>

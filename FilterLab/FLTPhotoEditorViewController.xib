@@ -22,45 +22,51 @@
                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFe-ss-rD0" userLabel="Editing Toolbar">
                     <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     <items>
                         <barButtonItem systemItem="trash" id="xyf-ZQ-lLf">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="revertChanges:" destination="-1" id="d7g-Yw-z1t"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="me1-Rx-ust"/>
                         <barButtonItem image="Horizontal_Slider" id="EM2-bM-fRl">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="showToolMenu:" destination="-1" id="qfr-cw-qVj"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="5UZ-02-X8B"/>
                         <barButtonItem image="Venn_Diagram" id="Wo2-aO-AQU">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="showFilterMenu:" destination="-1" id="sQ0-nR-cNQ"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="twf-Nb-e5I"/>
                         <barButtonItem systemItem="action" id="wNM-Zk-IAC">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="shareImage:" destination="-1" id="kWK-et-CHZ"/>
                             </connections>
                         </barButtonItem>
                     </items>
-                    <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                 </toolbar>
                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ra-8p-6kR" userLabel="Top Toolbar">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     <items>
                         <barButtonItem title="back" id="T9c-l1-Gv2">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="back:" destination="-1" id="F59-Up-shO"/>
                             </connections>
                         </barButtonItem>
                     </items>
+                    <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                 </toolbar>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eYp-zh-8DE" userLabel="Original Image View" customClass="GPUImageView">
                     <rect key="frame" x="0.0" y="44" width="320" height="480"/>
@@ -75,9 +81,10 @@
                 <toolbar hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FMI-T8-uls" userLabel="Slider">
                     <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     <items>
                         <barButtonItem title="No" id="SC2-W5-3ji">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="sliderCancel:" destination="-1" id="JWf-IH-VPT"/>
                             </connections>
@@ -87,17 +94,21 @@
                                 <rect key="frame" x="49" y="6" width="222" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="minimumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="sliderValueChanged:" destination="-1" eventType="valueChanged" id="sSS-GT-9QY"/>
                                 </connections>
                             </slider>
                         </barButtonItem>
                         <barButtonItem title="Yes" id="Thm-gA-RCf">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="sliderConfirm:" destination="-1" id="IfC-uE-NEU"/>
                             </connections>
                         </barButtonItem>
                     </items>
+                    <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                 </toolbar>
                 <view hidden="YES" opaque="NO" alpha="0.74999999999999978" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4WK-yG-28i" userLabel="Filter Name Label">
                     <rect key="frame" x="0.0" y="480" width="320" height="44"/>

@@ -59,8 +59,8 @@ typedef NS_ENUM(NSInteger, MenuType) {
     
     [super viewWillAppear:animated];
     
-    [self.originalImageView setBackgroundColorRed:1.0 green:1.0 blue:1.0 alpha:1.0];
-    [self.filteredImageView setBackgroundColorRed:1.0 green:1.0 blue:1.0 alpha:1.0];
+    [self.originalImageView setBackgroundColorRed:0.0 green:0.0 blue:0.0 alpha:1.0];
+    [self.filteredImageView setBackgroundColorRed:0.0 green:0.0 blue:0.0 alpha:1.0];
     
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     hud.margin = 5.0f;
@@ -382,7 +382,7 @@ typedef NS_ENUM(NSInteger, MenuType) {
     self.currentMenu.delegate = self;
     self.currentMenu.tag = type;
     [self.currentMenu setShowsHorizontalScrollIndicator:NO];
-    self.currentMenu.backgroundColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.75];
+    self.currentMenu.backgroundColor = [UIColor colorWithRed:0.1 green:0.1 blue:0.1 alpha:0.75];
 
 }
 
