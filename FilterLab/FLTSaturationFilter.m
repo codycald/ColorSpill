@@ -16,7 +16,7 @@
     
     if (self) {
         self.filterName = @"Saturation";
-        self.imageName = @"contrast";
+        self.imageName = @"saturation";
         self.type = FLTToolFilterType;
         self.maximumFilterValue = 2.0;
         self.minimumFilterValue = 0.0;
