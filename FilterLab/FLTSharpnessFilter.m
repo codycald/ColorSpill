@@ -16,7 +16,7 @@
     
     if (self) {
         self.filterName = @"Sharpness";
-        self.imageName = @"contrast";
+        self.imageName = @"sharpness";
         self.type = FLTToolFilterType;
         self.maximumFilterValue = 4.0;
         self.minimumFilterValue = -1.0;

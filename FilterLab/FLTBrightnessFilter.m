@@ -16,7 +16,7 @@
     
     if (self) {
         self.filterName = @"Brightness";
-        self.imageName = @"contrast";
+        self.imageName = @"brightness";
         self.type = FLTToolFilterType;
         self.maximumFilterValue = 1.0;
         self.minimumFilterValue = -1.0;

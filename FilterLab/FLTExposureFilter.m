@@ -16,7 +16,7 @@
     
     if (self) {
         self.filterName = @"Exposure";
-        self.imageName = @"contrast";
+        self.imageName = @"exposure";
         self.type = FLTToolFilterType;
         self.maximumFilterValue = 4.0;
         self.minimumFilterValue = -4.0;
