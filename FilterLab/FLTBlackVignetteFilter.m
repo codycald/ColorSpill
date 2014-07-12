@@ -17,7 +17,7 @@
     
     if (self) {
         self.filterName = @"Black Vignette";
-        self.imageName = @"contrast";
+        self.imageName = @"blackvignette";
         self.type = FLTToolFilterType;
         self.maximumFilterValue = 0.9;
         self.minimumFilterValue = 0.5;

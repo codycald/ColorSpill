@@ -16,7 +16,7 @@
     
     if (self) {
         self.filterName = @"Temperature";
-        self.imageName = @"contrast";
+        self.imageName = @"temperature";
         self.type = FLTToolFilterType;
         self.maximumFilterValue = 7500.0;
         self.minimumFilterValue = 2500.0;
