@@ -17,7 +17,7 @@
     
     if (self) {
         self.filterName = @"Venice";
-        self.imageName = @"contrast";
+        self.imageName = @"venice";
         self.type = FLTGeneralFilterType;
         self.maximumFilterValue = 1.0;
         self.minimumFilterValue = 0.0;

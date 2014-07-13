@@ -159,7 +159,7 @@ static NSString *const FLTMenuItemTitleLayout = @"FLTMenuItemTitleLayout";
     
     self.layoutInfo = [NSMutableDictionary dictionary];
     self.edgeInsets = UIEdgeInsetsMake(5.0f, 10.0f, 0.0f, 10.0f);
-    self.itemSize = CGSizeMake(44.0f, 44.0f);
+    self.itemSize = CGSizeMake(50.0f, 50.0f);
     self.interItemSpacingX = 20.0f;
     self.titleHeight = 20.0f;
 }

@@ -83,15 +83,15 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     <items>
-                        <barButtonItem title="No" id="SC2-W5-3ji">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <barButtonItem image="cancelbutton" style="plain" id="SC2-W5-3ji">
+                            <color key="tintColor" red="0.84939014668367352" green="0.0061094139062082093" blue="0.079949924472086084" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="sliderCancel:" destination="-1" id="JWf-IH-VPT"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" id="hW5-Mr-Xdv">
                             <slider key="customView" opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="Cga-kJ-SWH">
-                                <rect key="frame" x="49" y="6" width="222" height="32"/>
+                                <rect key="frame" x="48" y="6" width="222" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <color key="minimumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -101,8 +101,8 @@
                                 </connections>
                             </slider>
                         </barButtonItem>
-                        <barButtonItem title="Yes" id="Thm-gA-RCf">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <barButtonItem image="confirmbutton" id="Thm-gA-RCf">
+                            <color key="tintColor" red="0.0067727340649564524" green="0.68670280612244894" blue="0.027918306526116654" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="sliderConfirm:" destination="-1" id="IfC-uE-NEU"/>
                             </connections>
@@ -167,5 +167,7 @@
     <resources>
         <image name="Horizontal_Slider" width="24" height="23"/>
         <image name="Venn_Diagram" width="24" height="23"/>
+        <image name="cancelbutton" width="22" height="22"/>
+        <image name="confirmbutton" width="22" height="17"/>
     </resources>
 </document>

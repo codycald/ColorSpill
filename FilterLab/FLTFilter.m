@@ -17,21 +17,16 @@
     self = [super init];
     
     if (self) {
-        self.filterName = @"Filter";
-        self.imageName = @"contrast";
+        self.filterName = @"Original";
+        self.imageName = @"none";
         self.type = FLTGeneralFilterType;
         self.maximumFilterValue = 1.0;
         self.minimumFilterValue = 0.0;
         self.startingFilterValue = 1.0;
         self.intensity = 1.0;
-        self.gpuFilter = [[GPUImageSepiaFilter alloc] init];
+        self.gpuFilter = [[GPUImageFilter alloc] init];
     }
     return self;
-}
-
-- (void)setIntensity:(CGFloat)intensity {
-    GPUImageSepiaFilter *filter = (GPUImageSepiaFilter *)self.gpuFilter;
-    filter.intensity = intensity;
 }
 
 #pragma mark - GPUImageOutput overrides

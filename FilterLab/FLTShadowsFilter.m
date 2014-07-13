@@ -16,7 +16,7 @@
     
     if (self) {
         self.filterName = @"Shadows";
-        self.imageName = @"contrast";
+        self.imageName = @"shadows";
         self.type = FLTToolFilterType;
         self.maximumFilterValue = 1.0;
         self.minimumFilterValue = 0.0;

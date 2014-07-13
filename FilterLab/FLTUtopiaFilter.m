@@ -17,7 +17,7 @@
     
     if (self) {
         self.filterName = @"Utopia";
-        self.imageName = @"contrast";
+        self.imageName = @"utopia";
         self.type = FLTGeneralFilterType;
         self.maximumFilterValue = 1.0;
         self.minimumFilterValue = 0.0;
