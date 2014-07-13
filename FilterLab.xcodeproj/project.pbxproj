@@ -15,6 +15,9 @@
 		063034B51953A32000E7A927 /* FLTPhotoEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 063034B31953A32000E7A927 /* FLTPhotoEditorViewController.xib */; };
 		06349245194EB0C700D6E052 /* FLTCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06349243194EB0C700D6E052 /* FLTCameraViewController.m */; };
 		06349246194EB0C700D6E052 /* FLTCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06349244194EB0C700D6E052 /* FLTCameraViewController.xib */; };
+		0652D7401972FBAA00D3041C /* FLTLithiumFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0652D73F1972FBAA00D3041C /* FLTLithiumFilter.m */; };
+		0652D7441973068700D3041C /* lithium.acv in Resources */ = {isa = PBXBuildFile; fileRef = 0652D7431973068700D3041C /* lithium.acv */; };
+		0652D74719730D3000D3041C /* GPUImageIntensityGrayscaleFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0652D74619730D3000D3041C /* GPUImageIntensityGrayscaleFilter.m */; };
 		068DB9A1195B9CD000B5B29C /* FLTMenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 068DB9A0195B9CD000B5B29C /* FLTMenuItemCell.m */; };
 		068DB9A6195BA18B00B5B29C /* FLTMenuItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 068DB9A5195BA18B00B5B29C /* FLTMenuItemCell.xib */; };
 		069505A3194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 069505A1194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.m */; };
@@ -93,6 +96,11 @@
 		06349242194EB0C700D6E052 /* FLTCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTCameraViewController.h; sourceTree = "<group>"; };
 		06349243194EB0C700D6E052 /* FLTCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTCameraViewController.m; sourceTree = "<group>"; };
 		06349244194EB0C700D6E052 /* FLTCameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLTCameraViewController.xib; sourceTree = "<group>"; };
+		0652D73E1972FBAA00D3041C /* FLTLithiumFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTLithiumFilter.h; sourceTree = "<group>"; };
+		0652D73F1972FBAA00D3041C /* FLTLithiumFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTLithiumFilter.m; sourceTree = "<group>"; };
+		0652D7431973068700D3041C /* lithium.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = lithium.acv; sourceTree = "<group>"; };
+		0652D74519730D3000D3041C /* GPUImageIntensityGrayscaleFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageIntensityGrayscaleFilter.h; sourceTree = "<group>"; };
+		0652D74619730D3000D3041C /* GPUImageIntensityGrayscaleFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageIntensityGrayscaleFilter.m; sourceTree = "<group>"; };
 		068DB99F195B9CD000B5B29C /* FLTMenuItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTMenuItemCell.h; sourceTree = "<group>"; };
 		068DB9A0195B9CD000B5B29C /* FLTMenuItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTMenuItemCell.m; sourceTree = "<group>"; };
 		068DB9A5195BA18B00B5B29C /* FLTMenuItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLTMenuItemCell.xib; sourceTree = "<group>"; };
@@ -207,6 +215,7 @@
 		06A06F9B196CA544000D64AF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0652D7431973068700D3041C /* lithium.acv */,
 				06A06FCA196CBF5B000D64AF /* timeless.acv */,
 				06A06FC8196CBF4E000D64AF /* lockewood.acv */,
 				06A06FC6196CBF2F000D64AF /* essence.acv */,
@@ -298,6 +307,8 @@
 				0610C817196B6067007C4BAD /* FLTHighlightsFilter.m */,
 				0610C81A196B65F4007C4BAD /* FLTShadowsFilter.h */,
 				0610C81B196B65F4007C4BAD /* FLTShadowsFilter.m */,
+				0652D73E1972FBAA00D3041C /* FLTLithiumFilter.h */,
+				0652D73F1972FBAA00D3041C /* FLTLithiumFilter.m */,
 				06A06F98196CA46F000D64AF /* FLTLucidityFilter.h */,
 				06A06F99196CA46F000D64AF /* FLTLucidityFilter.m */,
 				06A06FA0196CA7CD000D64AF /* FLTDaydreamFilter.h */,
@@ -321,6 +332,8 @@
 				06A06FCF196CC03B000D64AF /* FLTTimelessFilter.h */,
 				06A06FD0196CC03B000D64AF /* FLTTimelessFilter.m */,
 				06178343195FA4390038F5F1 /* FLTImageEffectType.h */,
+				0652D74519730D3000D3041C /* GPUImageIntensityGrayscaleFilter.h */,
+				0652D74619730D3000D3041C /* GPUImageIntensityGrayscaleFilter.m */,
 				06BCD22119671FD10042ACE3 /* GPUImageIntensityToneCurveFilter.h */,
 				06BCD22219671FD10042ACE3 /* GPUImageIntensityToneCurveFilter.m */,
 				068DB9A5195BA18B00B5B29C /* FLTMenuItemCell.xib */,
@@ -452,6 +465,7 @@
 				06A06FCB196CBF5B000D64AF /* timeless.acv in Resources */,
 				06A06F9D196CA555000D64AF /* lucidity.acv in Resources */,
 				06A06FA9196CAB4A000D64AF /* venice.acv in Resources */,
+				0652D7441973068700D3041C /* lithium.acv in Resources */,
 				06A06FC7196CBF2F000D64AF /* essence.acv in Resources */,
 				06A06FBE196CAEF1000D64AF /* bliss.acv in Resources */,
 				06E2EE7B194BA292004C6FE8 /* FLTHomeScreenViewController.xib in Resources */,
@@ -513,6 +527,7 @@
 				0610C81C196B65F4007C4BAD /* FLTShadowsFilter.m in Sources */,
 				06A06FC5196CBEDF000D64AF /* FLTEssenceFilter.m in Sources */,
 				06A06FCE196CBFC8000D64AF /* FLTLockewoodFilter.m in Sources */,
+				0652D7401972FBAA00D3041C /* FLTLithiumFilter.m in Sources */,
 				06A06FD1196CC03B000D64AF /* FLTTimelessFilter.m in Sources */,
 				06BCD22319671FD10042ACE3 /* GPUImageIntensityToneCurveFilter.m in Sources */,
 				06E2EE79194BA1CA004C6FE8 /* FLTHomeScreenViewController.m in Sources */,
@@ -541,6 +556,7 @@
 				069505A3194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.m in Sources */,
 				06B6DADD195C05C700D1B4E6 /* FLTMenuItemTitleView.m in Sources */,
 				063034B41953A32000E7A927 /* FLTPhotoEditorViewController.m in Sources */,
+				0652D74719730D3000D3041C /* GPUImageIntensityGrayscaleFilter.m in Sources */,
 				06A06FBC196CAE95000D64AF /* FLTArcadiaFilter.m in Sources */,
 				06BCD23B196786B00042ACE3 /* FLTWhiteVignetteFilter.m in Sources */,
 			);
