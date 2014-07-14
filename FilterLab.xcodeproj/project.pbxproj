@@ -18,6 +18,12 @@
 		0652D7401972FBAA00D3041C /* FLTLithiumFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0652D73F1972FBAA00D3041C /* FLTLithiumFilter.m */; };
 		0652D7441973068700D3041C /* lithium.acv in Resources */ = {isa = PBXBuildFile; fileRef = 0652D7431973068700D3041C /* lithium.acv */; };
 		0652D74719730D3000D3041C /* GPUImageIntensityGrayscaleFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0652D74619730D3000D3041C /* GPUImageIntensityGrayscaleFilter.m */; };
+		0652D74A197356C400D3041C /* FLTNimbusFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0652D749197356C400D3041C /* FLTNimbusFilter.m */; };
+		0652D74C1973572800D3041C /* nimbus.acv in Resources */ = {isa = PBXBuildFile; fileRef = 0652D74B1973572800D3041C /* nimbus.acv */; };
+		0652D74F19735C5A00D3041C /* FLTWidowFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0652D74E19735C5A00D3041C /* FLTWidowFilter.m */; };
+		0652D75119735CF400D3041C /* widow.acv in Resources */ = {isa = PBXBuildFile; fileRef = 0652D75019735CF400D3041C /* widow.acv */; };
+		0652D7541973623400D3041C /* FLTCobaltFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0652D7531973623400D3041C /* FLTCobaltFilter.m */; };
+		0652D756197362AE00D3041C /* cobalt.acv in Resources */ = {isa = PBXBuildFile; fileRef = 0652D755197362AE00D3041C /* cobalt.acv */; };
 		068DB9A1195B9CD000B5B29C /* FLTMenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 068DB9A0195B9CD000B5B29C /* FLTMenuItemCell.m */; };
 		068DB9A6195BA18B00B5B29C /* FLTMenuItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 068DB9A5195BA18B00B5B29C /* FLTMenuItemCell.xib */; };
 		069505A3194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 069505A1194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.m */; };
@@ -101,6 +107,15 @@
 		0652D7431973068700D3041C /* lithium.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = lithium.acv; sourceTree = "<group>"; };
 		0652D74519730D3000D3041C /* GPUImageIntensityGrayscaleFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageIntensityGrayscaleFilter.h; sourceTree = "<group>"; };
 		0652D74619730D3000D3041C /* GPUImageIntensityGrayscaleFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageIntensityGrayscaleFilter.m; sourceTree = "<group>"; };
+		0652D748197356C400D3041C /* FLTNimbusFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTNimbusFilter.h; sourceTree = "<group>"; };
+		0652D749197356C400D3041C /* FLTNimbusFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTNimbusFilter.m; sourceTree = "<group>"; };
+		0652D74B1973572800D3041C /* nimbus.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = nimbus.acv; sourceTree = "<group>"; };
+		0652D74D19735C5900D3041C /* FLTWidowFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTWidowFilter.h; sourceTree = "<group>"; };
+		0652D74E19735C5A00D3041C /* FLTWidowFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTWidowFilter.m; sourceTree = "<group>"; };
+		0652D75019735CF400D3041C /* widow.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = widow.acv; sourceTree = "<group>"; };
+		0652D7521973623400D3041C /* FLTCobaltFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTCobaltFilter.h; sourceTree = "<group>"; };
+		0652D7531973623400D3041C /* FLTCobaltFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTCobaltFilter.m; sourceTree = "<group>"; };
+		0652D755197362AE00D3041C /* cobalt.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = cobalt.acv; sourceTree = "<group>"; };
 		068DB99F195B9CD000B5B29C /* FLTMenuItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTMenuItemCell.h; sourceTree = "<group>"; };
 		068DB9A0195B9CD000B5B29C /* FLTMenuItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTMenuItemCell.m; sourceTree = "<group>"; };
 		068DB9A5195BA18B00B5B29C /* FLTMenuItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLTMenuItemCell.xib; sourceTree = "<group>"; };
@@ -215,6 +230,9 @@
 		06A06F9B196CA544000D64AF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0652D755197362AE00D3041C /* cobalt.acv */,
+				0652D75019735CF400D3041C /* widow.acv */,
+				0652D74B1973572800D3041C /* nimbus.acv */,
 				0652D7431973068700D3041C /* lithium.acv */,
 				06A06FCA196CBF5B000D64AF /* timeless.acv */,
 				06A06FC8196CBF4E000D64AF /* lockewood.acv */,
@@ -309,6 +327,12 @@
 				0610C81B196B65F4007C4BAD /* FLTShadowsFilter.m */,
 				0652D73E1972FBAA00D3041C /* FLTLithiumFilter.h */,
 				0652D73F1972FBAA00D3041C /* FLTLithiumFilter.m */,
+				0652D748197356C400D3041C /* FLTNimbusFilter.h */,
+				0652D749197356C400D3041C /* FLTNimbusFilter.m */,
+				0652D74D19735C5900D3041C /* FLTWidowFilter.h */,
+				0652D74E19735C5A00D3041C /* FLTWidowFilter.m */,
+				0652D7521973623400D3041C /* FLTCobaltFilter.h */,
+				0652D7531973623400D3041C /* FLTCobaltFilter.m */,
 				06A06F98196CA46F000D64AF /* FLTLucidityFilter.h */,
 				06A06F99196CA46F000D64AF /* FLTLucidityFilter.m */,
 				06A06FA0196CA7CD000D64AF /* FLTDaydreamFilter.h */,
@@ -454,8 +478,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0652D74C1973572800D3041C /* nimbus.acv in Resources */,
 				06A06FAE196CAD11000D64AF /* finesse.acv in Resources */,
 				06E2EE53194B9807004C6FE8 /* InfoPlist.strings in Resources */,
+				0652D756197362AE00D3041C /* cobalt.acv in Resources */,
 				06A06FB0196CAD20000D64AF /* sonata.acv in Resources */,
 				06A06F9F196CA7A6000D64AF /* daydream.acv in Resources */,
 				069505A4194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.xib in Resources */,
@@ -463,6 +489,7 @@
 				06A06FC2196CAF13000D64AF /* arcadia.acv in Resources */,
 				06A06FC9196CBF4E000D64AF /* lockewood.acv in Resources */,
 				06A06FCB196CBF5B000D64AF /* timeless.acv in Resources */,
+				0652D75119735CF400D3041C /* widow.acv in Resources */,
 				06A06F9D196CA555000D64AF /* lucidity.acv in Resources */,
 				06A06FA9196CAB4A000D64AF /* venice.acv in Resources */,
 				0652D7441973068700D3041C /* lithium.acv in Resources */,
@@ -530,6 +557,7 @@
 				0652D7401972FBAA00D3041C /* FLTLithiumFilter.m in Sources */,
 				06A06FD1196CC03B000D64AF /* FLTTimelessFilter.m in Sources */,
 				06BCD22319671FD10042ACE3 /* GPUImageIntensityToneCurveFilter.m in Sources */,
+				0652D74A197356C400D3041C /* FLTNimbusFilter.m in Sources */,
 				06E2EE79194BA1CA004C6FE8 /* FLTHomeScreenViewController.m in Sources */,
 				0610C818196B6067007C4BAD /* FLTHighlightsFilter.m in Sources */,
 				06A06FB9196CAE89000D64AF /* FLTBlissFilter.m in Sources */,
@@ -546,6 +574,7 @@
 				06BCD23819677EA60042ACE3 /* FLTBlackVignetteFilter.m in Sources */,
 				06349245194EB0C700D6E052 /* FLTCameraViewController.m in Sources */,
 				06BCD23519677BD20042ACE3 /* FLTExposureFilter.m in Sources */,
+				0652D74F19735C5A00D3041C /* FLTWidowFilter.m in Sources */,
 				06A1A381195EAB3000A986F8 /* FLTFilterManager.m in Sources */,
 				06BCD22F196776F40042ACE3 /* FLTContrastFilter.m in Sources */,
 				06B6DADA195BF43100D1B4E6 /* FLTHorizontalScrollMenuLayout.m in Sources */,
@@ -559,6 +588,7 @@
 				0652D74719730D3000D3041C /* GPUImageIntensityGrayscaleFilter.m in Sources */,
 				06A06FBC196CAE95000D64AF /* FLTArcadiaFilter.m in Sources */,
 				06BCD23B196786B00042ACE3 /* FLTWhiteVignetteFilter.m in Sources */,
+				0652D7541973623400D3041C /* FLTCobaltFilter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

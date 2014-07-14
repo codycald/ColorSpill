@@ -1,31 +1,31 @@
 //
-//  FLTLithiumFilter.m
+//  FLTWidowFilter.m
 //  FilterLab
 //
 //  Created by Cody Caldwell on 7/13/14.
 //  Copyright (c) 2014 Cody Caldwell. All rights reserved.
 //
 
-#import "FLTLithiumFilter.h"
+#import "FLTWidowFilter.h"
 #import "GPUImageIntensityToneCurveFilter.h"
 #import "GPUImageIntensityGrayscaleFilter.h"
 
-@interface FLTLithiumFilter ()
+@interface FLTWidowFilter ()
 
 @property (strong, nonatomic) GPUImageIntensityToneCurveFilter *intensityFilter;
 @property (strong, nonatomic) GPUImageIntensityGrayscaleFilter *grayscaleFilter;
 
 @end
 
-@implementation FLTLithiumFilter
+@implementation FLTWidowFilter
 
 - (instancetype)init {
     
     self = [super init];
     
     if (self) {
-        self.filterName = @"Lithium";
-        self.imageName = @"lithium";
+        self.filterName = @"Widow";
+        self.imageName = @"widow";
         self.type = FLTGeneralFilterType;
         self.maximumFilterValue = 1.0;
         self.minimumFilterValue = 0.0;
@@ -45,7 +45,7 @@
     
     GPUImageFilterGroup *filterGroup = [[GPUImageFilterGroup alloc] init];
     self.grayscaleFilter = [[GPUImageIntensityGrayscaleFilter alloc] init];
-    self.intensityFilter = [[GPUImageIntensityToneCurveFilter alloc] initWithACV:@"lithium"];
+    self.intensityFilter = [[GPUImageIntensityToneCurveFilter alloc] initWithACV:@"widow"];
     [filterGroup addFilter:self.grayscaleFilter];
     [filterGroup addFilter:self.intensityFilter];
     [self.grayscaleFilter addTarget:self.intensityFilter];
