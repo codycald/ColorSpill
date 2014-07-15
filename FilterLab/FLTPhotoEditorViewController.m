@@ -249,7 +249,12 @@ typedef NS_ENUM(NSInteger, MenuType) {
 
 - (IBAction)shareImage:(id)sender {
 
-    NSArray *imageToShare = @[self.filteredImage];
+    // Create a copy of the filtered image with the same orientation as the original image
+    UIImage *finalImage = [UIImage imageWithCGImage:self.filteredImage.CGImage
+                                              scale:1.0f
+                                        orientation:self.image.imageOrientation];
+    
+    NSArray *imageToShare = @[finalImage];
     UIActivityViewController *avc = [[UIActivityViewController alloc]
                                      initWithActivityItems:imageToShare applicationActivities:nil];
     avc.excludedActivityTypes = @[UIActivityTypeAssignToContact, UIActivityTypePrint];
