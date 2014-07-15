@@ -18,3 +18,9 @@
 #define COCOAPODS_VERSION_MINOR_MBProgressHUD 8
 #define COCOAPODS_VERSION_PATCH_MBProgressHUD 0
 
+// MRoundedButton
+#define COCOAPODS_POD_AVAILABLE_MRoundedButton
+#define COCOAPODS_VERSION_MAJOR_MRoundedButton 1
+#define COCOAPODS_VERSION_MINOR_MRoundedButton 0
+#define COCOAPODS_VERSION_PATCH_MRoundedButton 0
+

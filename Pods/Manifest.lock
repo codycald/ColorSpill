@@ -1,13 +1,16 @@
 PODS:
   - GPUImage (0.1.4)
   - MBProgressHUD (0.8)
+  - MRoundedButton (1.0)
 
 DEPENDENCIES:
   - GPUImage (~> 0.1.4)
   - MBProgressHUD
+  - MRoundedButton
 
 SPEC CHECKSUMS:
   GPUImage: ac2bde5f4dbea02a81ced6313964cec1f2043ca9
   MBProgressHUD: c356980b0cd097f19acec959b49dca5eb8ec31be
+  MRoundedButton: 89d8c570f39a565810a5f20d0d0620e466204fb1
 
 COCOAPODS: 0.33.1

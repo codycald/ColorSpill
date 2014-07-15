@@ -74,7 +74,6 @@
 		06E2EE6C194B9807004C6FE8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06E2EE6A194B9807004C6FE8 /* InfoPlist.strings */; };
 		06E2EE6E194B9807004C6FE8 /* FilterLabTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E2EE6D194B9807004C6FE8 /* FilterLabTests.m */; };
 		06E2EE79194BA1CA004C6FE8 /* FLTHomeScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E2EE78194BA1CA004C6FE8 /* FLTHomeScreenViewController.m */; };
-		06E2EE7B194BA292004C6FE8 /* FLTHomeScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06E2EE7A194BA292004C6FE8 /* FLTHomeScreenViewController.xib */; };
 		06ECC5391961089400FC79D8 /* FLTSharpnessFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06ECC5381961089400FC79D8 /* FLTSharpnessFilter.m */; };
 /* End PBXBuildFile section */
 
@@ -195,7 +194,6 @@
 		06E2EE6D194B9807004C6FE8 /* FilterLabTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilterLabTests.m; sourceTree = "<group>"; };
 		06E2EE77194BA1CA004C6FE8 /* FLTHomeScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTHomeScreenViewController.h; sourceTree = "<group>"; };
 		06E2EE78194BA1CA004C6FE8 /* FLTHomeScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTHomeScreenViewController.m; sourceTree = "<group>"; };
-		06E2EE7A194BA292004C6FE8 /* FLTHomeScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLTHomeScreenViewController.xib; sourceTree = "<group>"; };
 		06ECC5371961089400FC79D8 /* FLTSharpnessFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTSharpnessFilter.h; sourceTree = "<group>"; };
 		06ECC5381961089400FC79D8 /* FLTSharpnessFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTSharpnessFilter.m; sourceTree = "<group>"; };
 		9EC4995A616B4AEBB9590483 /* libPods-FilterLab.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FilterLab.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -364,7 +362,6 @@
 				063034B31953A32000E7A927 /* FLTPhotoEditorViewController.xib */,
 				069505A2194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.xib */,
 				06349244194EB0C700D6E052 /* FLTCameraViewController.xib */,
-				06E2EE7A194BA292004C6FE8 /* FLTHomeScreenViewController.xib */,
 				06E2EE5A194B9807004C6FE8 /* Images.xcassets */,
 				06E2EE4F194B9807004C6FE8 /* Supporting Files */,
 			);
@@ -495,7 +492,6 @@
 				0652D7441973068700D3041C /* lithium.acv in Resources */,
 				06A06FC7196CBF2F000D64AF /* essence.acv in Resources */,
 				06A06FBE196CAEF1000D64AF /* bliss.acv in Resources */,
-				06E2EE7B194BA292004C6FE8 /* FLTHomeScreenViewController.xib in Resources */,
 				06349246194EB0C700D6E052 /* FLTCameraViewController.xib in Resources */,
 				063034B51953A32000E7A927 /* FLTPhotoEditorViewController.xib in Resources */,
 				06A06FA4196CA946000D64AF /* utopia.acv in Resources */,
