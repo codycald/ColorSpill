@@ -8,60 +8,62 @@
 
 /* Begin PBXBuildFile section */
 		030726987C1E44C48ED32425 /* libPods-FilterLab.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EC4995A616B4AEBB9590483 /* libPods-FilterLab.a */; };
-		0610C818196B6067007C4BAD /* FLTHighlightsFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0610C817196B6067007C4BAD /* FLTHighlightsFilter.m */; };
-		0610C81C196B65F4007C4BAD /* FLTShadowsFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0610C81B196B65F4007C4BAD /* FLTShadowsFilter.m */; };
-		06178342195F9A7E0038F5F1 /* FLTFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06178341195F9A7E0038F5F1 /* FLTFilter.m */; };
+		061FE689197744C2007C4122 /* FLTArcadiaFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE652197744C2007C4122 /* FLTArcadiaFilter.m */; };
+		061FE68A197744C2007C4122 /* FLTBlackVignetteFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE654197744C2007C4122 /* FLTBlackVignetteFilter.m */; };
+		061FE68B197744C2007C4122 /* FLTBlissFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE656197744C2007C4122 /* FLTBlissFilter.m */; };
+		061FE68C197744C2007C4122 /* FLTBrightnessFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE658197744C2007C4122 /* FLTBrightnessFilter.m */; };
+		061FE68D197744C2007C4122 /* FLTCobaltFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE65A197744C2007C4122 /* FLTCobaltFilter.m */; };
+		061FE68E197744C2007C4122 /* FLTContrastFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE65C197744C2007C4122 /* FLTContrastFilter.m */; };
+		061FE68F197744C2007C4122 /* FLTDaydreamFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE65E197744C2007C4122 /* FLTDaydreamFilter.m */; };
+		061FE690197744C2007C4122 /* FLTEssenceFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE660197744C2007C4122 /* FLTEssenceFilter.m */; };
+		061FE691197744C2007C4122 /* FLTExposureFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE662197744C2007C4122 /* FLTExposureFilter.m */; };
+		061FE692197744C2007C4122 /* FLTFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE664197744C2007C4122 /* FLTFilter.m */; };
+		061FE693197744C2007C4122 /* FLTFinesseFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE666197744C2007C4122 /* FLTFinesseFilter.m */; };
+		061FE694197744C2007C4122 /* FLTHighlightsFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE668197744C2007C4122 /* FLTHighlightsFilter.m */; };
+		061FE695197744C2007C4122 /* FLTLithiumFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE66A197744C2007C4122 /* FLTLithiumFilter.m */; };
+		061FE696197744C2007C4122 /* FLTLockewoodFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE66C197744C2007C4122 /* FLTLockewoodFilter.m */; };
+		061FE697197744C2007C4122 /* FLTLucidityFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE66E197744C2007C4122 /* FLTLucidityFilter.m */; };
+		061FE698197744C2007C4122 /* FLTNimbusFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE670197744C2007C4122 /* FLTNimbusFilter.m */; };
+		061FE699197744C2007C4122 /* FLTSaturationFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE672197744C2007C4122 /* FLTSaturationFilter.m */; };
+		061FE69A197744C2007C4122 /* FLTShadowsFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE674197744C2007C4122 /* FLTShadowsFilter.m */; };
+		061FE69B197744C2007C4122 /* FLTSharpnessFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE676197744C2007C4122 /* FLTSharpnessFilter.m */; };
+		061FE69C197744C2007C4122 /* FLTSonataFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE678197744C2007C4122 /* FLTSonataFilter.m */; };
+		061FE69D197744C2007C4122 /* FLTTemperatureFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE67A197744C2007C4122 /* FLTTemperatureFilter.m */; };
+		061FE69E197744C2007C4122 /* FLTTimelessFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE67C197744C2007C4122 /* FLTTimelessFilter.m */; };
+		061FE69F197744C2007C4122 /* FLTUtopiaFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE67E197744C2007C4122 /* FLTUtopiaFilter.m */; };
+		061FE6A0197744C2007C4122 /* FLTVeniceFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE680197744C2007C4122 /* FLTVeniceFilter.m */; };
+		061FE6A1197744C2007C4122 /* FLTWhiteVignetteFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE682197744C2007C4122 /* FLTWhiteVignetteFilter.m */; };
+		061FE6A2197744C2007C4122 /* FLTWidowFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE684197744C2007C4122 /* FLTWidowFilter.m */; };
+		061FE6A3197744C2007C4122 /* GPUImageIntensityGrayscaleFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE686197744C2007C4122 /* GPUImageIntensityGrayscaleFilter.m */; };
+		061FE6A4197744C2007C4122 /* GPUImageIntensityToneCurveFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE688197744C2007C4122 /* GPUImageIntensityToneCurveFilter.m */; };
+		061FE6B5197744E0007C4122 /* arcadia.acv in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6A6197744E0007C4122 /* arcadia.acv */; };
+		061FE6B6197744E0007C4122 /* bliss.acv in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6A7197744E0007C4122 /* bliss.acv */; };
+		061FE6B7197744E0007C4122 /* cobalt.acv in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6A8197744E0007C4122 /* cobalt.acv */; };
+		061FE6B8197744E0007C4122 /* daydream.acv in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6A9197744E0007C4122 /* daydream.acv */; };
+		061FE6B9197744E0007C4122 /* essence.acv in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6AA197744E0007C4122 /* essence.acv */; };
+		061FE6BA197744E0007C4122 /* finesse.acv in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6AB197744E0007C4122 /* finesse.acv */; };
+		061FE6BB197744E0007C4122 /* lithium.acv in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6AC197744E0007C4122 /* lithium.acv */; };
+		061FE6BC197744E0007C4122 /* lockewood.acv in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6AD197744E0007C4122 /* lockewood.acv */; };
+		061FE6BD197744E0007C4122 /* lucidity.acv in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6AE197744E0007C4122 /* lucidity.acv */; };
+		061FE6BE197744E0007C4122 /* nimbus.acv in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6AF197744E0007C4122 /* nimbus.acv */; };
+		061FE6BF197744E0007C4122 /* sonata.acv in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6B0197744E0007C4122 /* sonata.acv */; };
+		061FE6C0197744E0007C4122 /* timeless.acv in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6B1197744E0007C4122 /* timeless.acv */; };
+		061FE6C1197744E0007C4122 /* utopia.acv in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6B2197744E0007C4122 /* utopia.acv */; };
+		061FE6C2197744E0007C4122 /* venice.acv in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6B3197744E0007C4122 /* venice.acv */; };
+		061FE6C3197744E0007C4122 /* widow.acv in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6B4197744E0007C4122 /* widow.acv */; };
+		061FE6C5197746CA007C4122 /* Dancing Script OT.otf in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6C4197746CA007C4122 /* Dancing Script OT.otf */; };
 		063034B41953A32000E7A927 /* FLTPhotoEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 063034B21953A32000E7A927 /* FLTPhotoEditorViewController.m */; };
 		063034B51953A32000E7A927 /* FLTPhotoEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 063034B31953A32000E7A927 /* FLTPhotoEditorViewController.xib */; };
 		06349245194EB0C700D6E052 /* FLTCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06349243194EB0C700D6E052 /* FLTCameraViewController.m */; };
 		06349246194EB0C700D6E052 /* FLTCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06349244194EB0C700D6E052 /* FLTCameraViewController.xib */; };
-		0652D7401972FBAA00D3041C /* FLTLithiumFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0652D73F1972FBAA00D3041C /* FLTLithiumFilter.m */; };
-		0652D7441973068700D3041C /* lithium.acv in Resources */ = {isa = PBXBuildFile; fileRef = 0652D7431973068700D3041C /* lithium.acv */; };
-		0652D74719730D3000D3041C /* GPUImageIntensityGrayscaleFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0652D74619730D3000D3041C /* GPUImageIntensityGrayscaleFilter.m */; };
-		0652D74A197356C400D3041C /* FLTNimbusFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0652D749197356C400D3041C /* FLTNimbusFilter.m */; };
-		0652D74C1973572800D3041C /* nimbus.acv in Resources */ = {isa = PBXBuildFile; fileRef = 0652D74B1973572800D3041C /* nimbus.acv */; };
-		0652D74F19735C5A00D3041C /* FLTWidowFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0652D74E19735C5A00D3041C /* FLTWidowFilter.m */; };
-		0652D75119735CF400D3041C /* widow.acv in Resources */ = {isa = PBXBuildFile; fileRef = 0652D75019735CF400D3041C /* widow.acv */; };
-		0652D7541973623400D3041C /* FLTCobaltFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0652D7531973623400D3041C /* FLTCobaltFilter.m */; };
-		0652D756197362AE00D3041C /* cobalt.acv in Resources */ = {isa = PBXBuildFile; fileRef = 0652D755197362AE00D3041C /* cobalt.acv */; };
 		068DB9A1195B9CD000B5B29C /* FLTMenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 068DB9A0195B9CD000B5B29C /* FLTMenuItemCell.m */; };
 		068DB9A6195BA18B00B5B29C /* FLTMenuItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 068DB9A5195BA18B00B5B29C /* FLTMenuItemCell.xib */; };
 		069505A3194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 069505A1194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.m */; };
 		069505A4194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 069505A2194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.xib */; };
-		06A06F9A196CA46F000D64AF /* FLTLucidityFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A06F99196CA46F000D64AF /* FLTLucidityFilter.m */; };
-		06A06F9D196CA555000D64AF /* lucidity.acv in Resources */ = {isa = PBXBuildFile; fileRef = 06A06F9C196CA555000D64AF /* lucidity.acv */; };
-		06A06F9F196CA7A6000D64AF /* daydream.acv in Resources */ = {isa = PBXBuildFile; fileRef = 06A06F9E196CA7A6000D64AF /* daydream.acv */; };
-		06A06FA2196CA7CD000D64AF /* FLTDaydreamFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A06FA1196CA7CD000D64AF /* FLTDaydreamFilter.m */; };
-		06A06FA4196CA946000D64AF /* utopia.acv in Resources */ = {isa = PBXBuildFile; fileRef = 06A06FA3196CA946000D64AF /* utopia.acv */; };
-		06A06FA7196CA96E000D64AF /* FLTUtopiaFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A06FA6196CA96E000D64AF /* FLTUtopiaFilter.m */; };
-		06A06FA9196CAB4A000D64AF /* venice.acv in Resources */ = {isa = PBXBuildFile; fileRef = 06A06FA8196CAB4A000D64AF /* venice.acv */; };
-		06A06FAC196CAC16000D64AF /* FLTVeniceFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A06FAB196CAC16000D64AF /* FLTVeniceFilter.m */; };
-		06A06FAE196CAD11000D64AF /* finesse.acv in Resources */ = {isa = PBXBuildFile; fileRef = 06A06FAD196CAD11000D64AF /* finesse.acv */; };
-		06A06FB0196CAD20000D64AF /* sonata.acv in Resources */ = {isa = PBXBuildFile; fileRef = 06A06FAF196CAD20000D64AF /* sonata.acv */; };
-		06A06FB3196CAD3F000D64AF /* FLTFinesseFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A06FB2196CAD3F000D64AF /* FLTFinesseFilter.m */; };
-		06A06FB6196CAD77000D64AF /* FLTSonataFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A06FB5196CAD77000D64AF /* FLTSonataFilter.m */; };
-		06A06FB9196CAE89000D64AF /* FLTBlissFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A06FB8196CAE89000D64AF /* FLTBlissFilter.m */; };
-		06A06FBC196CAE95000D64AF /* FLTArcadiaFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A06FBB196CAE95000D64AF /* FLTArcadiaFilter.m */; };
-		06A06FBE196CAEF1000D64AF /* bliss.acv in Resources */ = {isa = PBXBuildFile; fileRef = 06A06FBD196CAEF1000D64AF /* bliss.acv */; };
-		06A06FC2196CAF13000D64AF /* arcadia.acv in Resources */ = {isa = PBXBuildFile; fileRef = 06A06FC1196CAF13000D64AF /* arcadia.acv */; };
-		06A06FC5196CBEDF000D64AF /* FLTEssenceFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A06FC4196CBEDF000D64AF /* FLTEssenceFilter.m */; };
-		06A06FC7196CBF2F000D64AF /* essence.acv in Resources */ = {isa = PBXBuildFile; fileRef = 06A06FC6196CBF2F000D64AF /* essence.acv */; };
-		06A06FC9196CBF4E000D64AF /* lockewood.acv in Resources */ = {isa = PBXBuildFile; fileRef = 06A06FC8196CBF4E000D64AF /* lockewood.acv */; };
-		06A06FCB196CBF5B000D64AF /* timeless.acv in Resources */ = {isa = PBXBuildFile; fileRef = 06A06FCA196CBF5B000D64AF /* timeless.acv */; };
-		06A06FCE196CBFC8000D64AF /* FLTLockewoodFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A06FCD196CBFC8000D64AF /* FLTLockewoodFilter.m */; };
-		06A06FD1196CC03B000D64AF /* FLTTimelessFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A06FD0196CC03B000D64AF /* FLTTimelessFilter.m */; };
 		06A1A381195EAB3000A986F8 /* FLTFilterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A1A380195EAB3000A986F8 /* FLTFilterManager.m */; };
 		06B6DAD7195BE29200D1B4E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06E2EE5A194B9807004C6FE8 /* Images.xcassets */; };
 		06B6DADA195BF43100D1B4E6 /* FLTHorizontalScrollMenuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B6DAD9195BF43100D1B4E6 /* FLTHorizontalScrollMenuLayout.m */; };
 		06B6DADD195C05C700D1B4E6 /* FLTMenuItemTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B6DADC195C05C700D1B4E6 /* FLTMenuItemTitleView.m */; };
-		06BCD22319671FD10042ACE3 /* GPUImageIntensityToneCurveFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BCD22219671FD10042ACE3 /* GPUImageIntensityToneCurveFilter.m */; };
-		06BCD22B196770660042ACE3 /* FLTBrightnessFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BCD22A196770660042ACE3 /* FLTBrightnessFilter.m */; };
-		06BCD22F196776F40042ACE3 /* FLTContrastFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BCD22E196776F40042ACE3 /* FLTContrastFilter.m */; };
-		06BCD23219677A8E0042ACE3 /* FLTSaturationFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BCD23119677A8E0042ACE3 /* FLTSaturationFilter.m */; };
-		06BCD23519677BD20042ACE3 /* FLTExposureFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BCD23419677BD20042ACE3 /* FLTExposureFilter.m */; };
-		06BCD23819677EA60042ACE3 /* FLTBlackVignetteFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BCD23719677EA60042ACE3 /* FLTBlackVignetteFilter.m */; };
-		06BCD23B196786B00042ACE3 /* FLTWhiteVignetteFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06BCD23A196786B00042ACE3 /* FLTWhiteVignetteFilter.m */; };
-		06DA8E20196A5F990005A996 /* FLTTemperatureFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DA8E1F196A5F990005A996 /* FLTTemperatureFilter.m */; };
 		06E2EE49194B9807004C6FE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E2EE48194B9807004C6FE8 /* Foundation.framework */; };
 		06E2EE4B194B9807004C6FE8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E2EE4A194B9807004C6FE8 /* CoreGraphics.framework */; };
 		06E2EE4D194B9807004C6FE8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E2EE4C194B9807004C6FE8 /* UIKit.framework */; };
@@ -74,7 +76,6 @@
 		06E2EE6C194B9807004C6FE8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06E2EE6A194B9807004C6FE8 /* InfoPlist.strings */; };
 		06E2EE6E194B9807004C6FE8 /* FilterLabTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E2EE6D194B9807004C6FE8 /* FilterLabTests.m */; };
 		06E2EE79194BA1CA004C6FE8 /* FLTHomeScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E2EE78194BA1CA004C6FE8 /* FLTHomeScreenViewController.m */; };
-		06ECC5391961089400FC79D8 /* FLTSharpnessFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 06ECC5381961089400FC79D8 /* FLTSharpnessFilter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,94 +89,97 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0610C816196B6067007C4BAD /* FLTHighlightsFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTHighlightsFilter.h; sourceTree = "<group>"; };
-		0610C817196B6067007C4BAD /* FLTHighlightsFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTHighlightsFilter.m; sourceTree = "<group>"; };
-		0610C81A196B65F4007C4BAD /* FLTShadowsFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTShadowsFilter.h; sourceTree = "<group>"; };
-		0610C81B196B65F4007C4BAD /* FLTShadowsFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTShadowsFilter.m; sourceTree = "<group>"; };
-		06178340195F9A7E0038F5F1 /* FLTFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTFilter.h; sourceTree = "<group>"; };
-		06178341195F9A7E0038F5F1 /* FLTFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTFilter.m; sourceTree = "<group>"; };
 		06178343195FA4390038F5F1 /* FLTImageEffectType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLTImageEffectType.h; sourceTree = "<group>"; };
+		061FE651197744C2007C4122 /* FLTArcadiaFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTArcadiaFilter.h; sourceTree = "<group>"; };
+		061FE652197744C2007C4122 /* FLTArcadiaFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTArcadiaFilter.m; sourceTree = "<group>"; };
+		061FE653197744C2007C4122 /* FLTBlackVignetteFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTBlackVignetteFilter.h; sourceTree = "<group>"; };
+		061FE654197744C2007C4122 /* FLTBlackVignetteFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTBlackVignetteFilter.m; sourceTree = "<group>"; };
+		061FE655197744C2007C4122 /* FLTBlissFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTBlissFilter.h; sourceTree = "<group>"; };
+		061FE656197744C2007C4122 /* FLTBlissFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTBlissFilter.m; sourceTree = "<group>"; };
+		061FE657197744C2007C4122 /* FLTBrightnessFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTBrightnessFilter.h; sourceTree = "<group>"; };
+		061FE658197744C2007C4122 /* FLTBrightnessFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTBrightnessFilter.m; sourceTree = "<group>"; };
+		061FE659197744C2007C4122 /* FLTCobaltFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTCobaltFilter.h; sourceTree = "<group>"; };
+		061FE65A197744C2007C4122 /* FLTCobaltFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTCobaltFilter.m; sourceTree = "<group>"; };
+		061FE65B197744C2007C4122 /* FLTContrastFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTContrastFilter.h; sourceTree = "<group>"; };
+		061FE65C197744C2007C4122 /* FLTContrastFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTContrastFilter.m; sourceTree = "<group>"; };
+		061FE65D197744C2007C4122 /* FLTDaydreamFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTDaydreamFilter.h; sourceTree = "<group>"; };
+		061FE65E197744C2007C4122 /* FLTDaydreamFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTDaydreamFilter.m; sourceTree = "<group>"; };
+		061FE65F197744C2007C4122 /* FLTEssenceFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTEssenceFilter.h; sourceTree = "<group>"; };
+		061FE660197744C2007C4122 /* FLTEssenceFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTEssenceFilter.m; sourceTree = "<group>"; };
+		061FE661197744C2007C4122 /* FLTExposureFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTExposureFilter.h; sourceTree = "<group>"; };
+		061FE662197744C2007C4122 /* FLTExposureFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTExposureFilter.m; sourceTree = "<group>"; };
+		061FE663197744C2007C4122 /* FLTFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTFilter.h; sourceTree = "<group>"; };
+		061FE664197744C2007C4122 /* FLTFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTFilter.m; sourceTree = "<group>"; };
+		061FE665197744C2007C4122 /* FLTFinesseFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTFinesseFilter.h; sourceTree = "<group>"; };
+		061FE666197744C2007C4122 /* FLTFinesseFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTFinesseFilter.m; sourceTree = "<group>"; };
+		061FE667197744C2007C4122 /* FLTHighlightsFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTHighlightsFilter.h; sourceTree = "<group>"; };
+		061FE668197744C2007C4122 /* FLTHighlightsFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTHighlightsFilter.m; sourceTree = "<group>"; };
+		061FE669197744C2007C4122 /* FLTLithiumFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTLithiumFilter.h; sourceTree = "<group>"; };
+		061FE66A197744C2007C4122 /* FLTLithiumFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTLithiumFilter.m; sourceTree = "<group>"; };
+		061FE66B197744C2007C4122 /* FLTLockewoodFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTLockewoodFilter.h; sourceTree = "<group>"; };
+		061FE66C197744C2007C4122 /* FLTLockewoodFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTLockewoodFilter.m; sourceTree = "<group>"; };
+		061FE66D197744C2007C4122 /* FLTLucidityFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTLucidityFilter.h; sourceTree = "<group>"; };
+		061FE66E197744C2007C4122 /* FLTLucidityFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTLucidityFilter.m; sourceTree = "<group>"; };
+		061FE66F197744C2007C4122 /* FLTNimbusFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTNimbusFilter.h; sourceTree = "<group>"; };
+		061FE670197744C2007C4122 /* FLTNimbusFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTNimbusFilter.m; sourceTree = "<group>"; };
+		061FE671197744C2007C4122 /* FLTSaturationFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTSaturationFilter.h; sourceTree = "<group>"; };
+		061FE672197744C2007C4122 /* FLTSaturationFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTSaturationFilter.m; sourceTree = "<group>"; };
+		061FE673197744C2007C4122 /* FLTShadowsFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTShadowsFilter.h; sourceTree = "<group>"; };
+		061FE674197744C2007C4122 /* FLTShadowsFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTShadowsFilter.m; sourceTree = "<group>"; };
+		061FE675197744C2007C4122 /* FLTSharpnessFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTSharpnessFilter.h; sourceTree = "<group>"; };
+		061FE676197744C2007C4122 /* FLTSharpnessFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTSharpnessFilter.m; sourceTree = "<group>"; };
+		061FE677197744C2007C4122 /* FLTSonataFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTSonataFilter.h; sourceTree = "<group>"; };
+		061FE678197744C2007C4122 /* FLTSonataFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTSonataFilter.m; sourceTree = "<group>"; };
+		061FE679197744C2007C4122 /* FLTTemperatureFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTTemperatureFilter.h; sourceTree = "<group>"; };
+		061FE67A197744C2007C4122 /* FLTTemperatureFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTTemperatureFilter.m; sourceTree = "<group>"; };
+		061FE67B197744C2007C4122 /* FLTTimelessFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTTimelessFilter.h; sourceTree = "<group>"; };
+		061FE67C197744C2007C4122 /* FLTTimelessFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTTimelessFilter.m; sourceTree = "<group>"; };
+		061FE67D197744C2007C4122 /* FLTUtopiaFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTUtopiaFilter.h; sourceTree = "<group>"; };
+		061FE67E197744C2007C4122 /* FLTUtopiaFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTUtopiaFilter.m; sourceTree = "<group>"; };
+		061FE67F197744C2007C4122 /* FLTVeniceFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTVeniceFilter.h; sourceTree = "<group>"; };
+		061FE680197744C2007C4122 /* FLTVeniceFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTVeniceFilter.m; sourceTree = "<group>"; };
+		061FE681197744C2007C4122 /* FLTWhiteVignetteFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTWhiteVignetteFilter.h; sourceTree = "<group>"; };
+		061FE682197744C2007C4122 /* FLTWhiteVignetteFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTWhiteVignetteFilter.m; sourceTree = "<group>"; };
+		061FE683197744C2007C4122 /* FLTWidowFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTWidowFilter.h; sourceTree = "<group>"; };
+		061FE684197744C2007C4122 /* FLTWidowFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTWidowFilter.m; sourceTree = "<group>"; };
+		061FE685197744C2007C4122 /* GPUImageIntensityGrayscaleFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageIntensityGrayscaleFilter.h; sourceTree = "<group>"; };
+		061FE686197744C2007C4122 /* GPUImageIntensityGrayscaleFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageIntensityGrayscaleFilter.m; sourceTree = "<group>"; };
+		061FE687197744C2007C4122 /* GPUImageIntensityToneCurveFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageIntensityToneCurveFilter.h; sourceTree = "<group>"; };
+		061FE688197744C2007C4122 /* GPUImageIntensityToneCurveFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageIntensityToneCurveFilter.m; sourceTree = "<group>"; };
+		061FE6A6197744E0007C4122 /* arcadia.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = arcadia.acv; sourceTree = "<group>"; };
+		061FE6A7197744E0007C4122 /* bliss.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = bliss.acv; sourceTree = "<group>"; };
+		061FE6A8197744E0007C4122 /* cobalt.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = cobalt.acv; sourceTree = "<group>"; };
+		061FE6A9197744E0007C4122 /* daydream.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = daydream.acv; sourceTree = "<group>"; };
+		061FE6AA197744E0007C4122 /* essence.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = essence.acv; sourceTree = "<group>"; };
+		061FE6AB197744E0007C4122 /* finesse.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = finesse.acv; sourceTree = "<group>"; };
+		061FE6AC197744E0007C4122 /* lithium.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = lithium.acv; sourceTree = "<group>"; };
+		061FE6AD197744E0007C4122 /* lockewood.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = lockewood.acv; sourceTree = "<group>"; };
+		061FE6AE197744E0007C4122 /* lucidity.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = lucidity.acv; sourceTree = "<group>"; };
+		061FE6AF197744E0007C4122 /* nimbus.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = nimbus.acv; sourceTree = "<group>"; };
+		061FE6B0197744E0007C4122 /* sonata.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = sonata.acv; sourceTree = "<group>"; };
+		061FE6B1197744E0007C4122 /* timeless.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = timeless.acv; sourceTree = "<group>"; };
+		061FE6B2197744E0007C4122 /* utopia.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = utopia.acv; sourceTree = "<group>"; };
+		061FE6B3197744E0007C4122 /* venice.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = venice.acv; sourceTree = "<group>"; };
+		061FE6B4197744E0007C4122 /* widow.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = widow.acv; sourceTree = "<group>"; };
+		061FE6C4197746CA007C4122 /* Dancing Script OT.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dancing Script OT.otf"; sourceTree = "<group>"; };
 		063034B11953A32000E7A927 /* FLTPhotoEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTPhotoEditorViewController.h; sourceTree = "<group>"; };
 		063034B21953A32000E7A927 /* FLTPhotoEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTPhotoEditorViewController.m; sourceTree = "<group>"; };
 		063034B31953A32000E7A927 /* FLTPhotoEditorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLTPhotoEditorViewController.xib; sourceTree = "<group>"; };
 		06349242194EB0C700D6E052 /* FLTCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTCameraViewController.h; sourceTree = "<group>"; };
 		06349243194EB0C700D6E052 /* FLTCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTCameraViewController.m; sourceTree = "<group>"; };
 		06349244194EB0C700D6E052 /* FLTCameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLTCameraViewController.xib; sourceTree = "<group>"; };
-		0652D73E1972FBAA00D3041C /* FLTLithiumFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTLithiumFilter.h; sourceTree = "<group>"; };
-		0652D73F1972FBAA00D3041C /* FLTLithiumFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTLithiumFilter.m; sourceTree = "<group>"; };
-		0652D7431973068700D3041C /* lithium.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = lithium.acv; sourceTree = "<group>"; };
-		0652D74519730D3000D3041C /* GPUImageIntensityGrayscaleFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageIntensityGrayscaleFilter.h; sourceTree = "<group>"; };
-		0652D74619730D3000D3041C /* GPUImageIntensityGrayscaleFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageIntensityGrayscaleFilter.m; sourceTree = "<group>"; };
-		0652D748197356C400D3041C /* FLTNimbusFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTNimbusFilter.h; sourceTree = "<group>"; };
-		0652D749197356C400D3041C /* FLTNimbusFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTNimbusFilter.m; sourceTree = "<group>"; };
-		0652D74B1973572800D3041C /* nimbus.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = nimbus.acv; sourceTree = "<group>"; };
-		0652D74D19735C5900D3041C /* FLTWidowFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTWidowFilter.h; sourceTree = "<group>"; };
-		0652D74E19735C5A00D3041C /* FLTWidowFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTWidowFilter.m; sourceTree = "<group>"; };
-		0652D75019735CF400D3041C /* widow.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = widow.acv; sourceTree = "<group>"; };
-		0652D7521973623400D3041C /* FLTCobaltFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTCobaltFilter.h; sourceTree = "<group>"; };
-		0652D7531973623400D3041C /* FLTCobaltFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTCobaltFilter.m; sourceTree = "<group>"; };
-		0652D755197362AE00D3041C /* cobalt.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = cobalt.acv; sourceTree = "<group>"; };
 		068DB99F195B9CD000B5B29C /* FLTMenuItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTMenuItemCell.h; sourceTree = "<group>"; };
 		068DB9A0195B9CD000B5B29C /* FLTMenuItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTMenuItemCell.m; sourceTree = "<group>"; };
 		068DB9A5195BA18B00B5B29C /* FLTMenuItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLTMenuItemCell.xib; sourceTree = "<group>"; };
 		069505A0194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTPhotoPreviewViewController.h; sourceTree = "<group>"; };
 		069505A1194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTPhotoPreviewViewController.m; sourceTree = "<group>"; };
 		069505A2194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLTPhotoPreviewViewController.xib; sourceTree = "<group>"; };
-		06A06F98196CA46F000D64AF /* FLTLucidityFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTLucidityFilter.h; sourceTree = "<group>"; };
-		06A06F99196CA46F000D64AF /* FLTLucidityFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTLucidityFilter.m; sourceTree = "<group>"; };
-		06A06F9C196CA555000D64AF /* lucidity.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = lucidity.acv; sourceTree = "<group>"; };
-		06A06F9E196CA7A6000D64AF /* daydream.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = daydream.acv; sourceTree = "<group>"; };
-		06A06FA0196CA7CD000D64AF /* FLTDaydreamFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTDaydreamFilter.h; sourceTree = "<group>"; };
-		06A06FA1196CA7CD000D64AF /* FLTDaydreamFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTDaydreamFilter.m; sourceTree = "<group>"; };
-		06A06FA3196CA946000D64AF /* utopia.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = utopia.acv; sourceTree = "<group>"; };
-		06A06FA5196CA96E000D64AF /* FLTUtopiaFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTUtopiaFilter.h; sourceTree = "<group>"; };
-		06A06FA6196CA96E000D64AF /* FLTUtopiaFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTUtopiaFilter.m; sourceTree = "<group>"; };
-		06A06FA8196CAB4A000D64AF /* venice.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = venice.acv; sourceTree = "<group>"; };
-		06A06FAA196CAC16000D64AF /* FLTVeniceFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTVeniceFilter.h; sourceTree = "<group>"; };
-		06A06FAB196CAC16000D64AF /* FLTVeniceFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTVeniceFilter.m; sourceTree = "<group>"; };
-		06A06FAD196CAD11000D64AF /* finesse.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = finesse.acv; sourceTree = "<group>"; };
-		06A06FAF196CAD20000D64AF /* sonata.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = sonata.acv; sourceTree = "<group>"; };
-		06A06FB1196CAD3F000D64AF /* FLTFinesseFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTFinesseFilter.h; sourceTree = "<group>"; };
-		06A06FB2196CAD3F000D64AF /* FLTFinesseFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTFinesseFilter.m; sourceTree = "<group>"; };
-		06A06FB4196CAD77000D64AF /* FLTSonataFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTSonataFilter.h; sourceTree = "<group>"; };
-		06A06FB5196CAD77000D64AF /* FLTSonataFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTSonataFilter.m; sourceTree = "<group>"; };
-		06A06FB7196CAE89000D64AF /* FLTBlissFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTBlissFilter.h; sourceTree = "<group>"; };
-		06A06FB8196CAE89000D64AF /* FLTBlissFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTBlissFilter.m; sourceTree = "<group>"; };
-		06A06FBA196CAE95000D64AF /* FLTArcadiaFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTArcadiaFilter.h; sourceTree = "<group>"; };
-		06A06FBB196CAE95000D64AF /* FLTArcadiaFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTArcadiaFilter.m; sourceTree = "<group>"; };
-		06A06FBD196CAEF1000D64AF /* bliss.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = bliss.acv; sourceTree = "<group>"; };
-		06A06FC1196CAF13000D64AF /* arcadia.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = arcadia.acv; sourceTree = "<group>"; };
-		06A06FC3196CBEDF000D64AF /* FLTEssenceFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTEssenceFilter.h; sourceTree = "<group>"; };
-		06A06FC4196CBEDF000D64AF /* FLTEssenceFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTEssenceFilter.m; sourceTree = "<group>"; };
-		06A06FC6196CBF2F000D64AF /* essence.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = essence.acv; sourceTree = "<group>"; };
-		06A06FC8196CBF4E000D64AF /* lockewood.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = lockewood.acv; sourceTree = "<group>"; };
-		06A06FCA196CBF5B000D64AF /* timeless.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = timeless.acv; sourceTree = "<group>"; };
-		06A06FCC196CBFC8000D64AF /* FLTLockewoodFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTLockewoodFilter.h; sourceTree = "<group>"; };
-		06A06FCD196CBFC8000D64AF /* FLTLockewoodFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTLockewoodFilter.m; sourceTree = "<group>"; };
-		06A06FCF196CC03B000D64AF /* FLTTimelessFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTTimelessFilter.h; sourceTree = "<group>"; };
-		06A06FD0196CC03B000D64AF /* FLTTimelessFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTTimelessFilter.m; sourceTree = "<group>"; };
 		06A1A37F195EAB3000A986F8 /* FLTFilterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTFilterManager.h; sourceTree = "<group>"; };
 		06A1A380195EAB3000A986F8 /* FLTFilterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTFilterManager.m; sourceTree = "<group>"; };
 		06B6DAD8195BF43100D1B4E6 /* FLTHorizontalScrollMenuLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTHorizontalScrollMenuLayout.h; sourceTree = "<group>"; };
 		06B6DAD9195BF43100D1B4E6 /* FLTHorizontalScrollMenuLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTHorizontalScrollMenuLayout.m; sourceTree = "<group>"; };
 		06B6DADB195C05C700D1B4E6 /* FLTMenuItemTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTMenuItemTitleView.h; sourceTree = "<group>"; };
 		06B6DADC195C05C700D1B4E6 /* FLTMenuItemTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTMenuItemTitleView.m; sourceTree = "<group>"; };
-		06BCD22119671FD10042ACE3 /* GPUImageIntensityToneCurveFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageIntensityToneCurveFilter.h; sourceTree = "<group>"; };
-		06BCD22219671FD10042ACE3 /* GPUImageIntensityToneCurveFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageIntensityToneCurveFilter.m; sourceTree = "<group>"; };
-		06BCD229196770660042ACE3 /* FLTBrightnessFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTBrightnessFilter.h; sourceTree = "<group>"; };
-		06BCD22A196770660042ACE3 /* FLTBrightnessFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTBrightnessFilter.m; sourceTree = "<group>"; };
-		06BCD22D196776F40042ACE3 /* FLTContrastFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTContrastFilter.h; sourceTree = "<group>"; };
-		06BCD22E196776F40042ACE3 /* FLTContrastFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTContrastFilter.m; sourceTree = "<group>"; };
-		06BCD23019677A8D0042ACE3 /* FLTSaturationFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTSaturationFilter.h; sourceTree = "<group>"; };
-		06BCD23119677A8E0042ACE3 /* FLTSaturationFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTSaturationFilter.m; sourceTree = "<group>"; };
-		06BCD23319677BD20042ACE3 /* FLTExposureFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTExposureFilter.h; sourceTree = "<group>"; };
-		06BCD23419677BD20042ACE3 /* FLTExposureFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTExposureFilter.m; sourceTree = "<group>"; };
-		06BCD23619677EA60042ACE3 /* FLTBlackVignetteFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTBlackVignetteFilter.h; sourceTree = "<group>"; };
-		06BCD23719677EA60042ACE3 /* FLTBlackVignetteFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTBlackVignetteFilter.m; sourceTree = "<group>"; };
-		06BCD239196786B00042ACE3 /* FLTWhiteVignetteFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTWhiteVignetteFilter.h; sourceTree = "<group>"; };
-		06BCD23A196786B00042ACE3 /* FLTWhiteVignetteFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTWhiteVignetteFilter.m; sourceTree = "<group>"; };
-		06DA8E1E196A5F990005A996 /* FLTTemperatureFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTTemperatureFilter.h; sourceTree = "<group>"; };
-		06DA8E1F196A5F990005A996 /* FLTTemperatureFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTTemperatureFilter.m; sourceTree = "<group>"; };
 		06E2EE45194B9807004C6FE8 /* FilterLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilterLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06E2EE48194B9807004C6FE8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		06E2EE4A194B9807004C6FE8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -194,8 +198,6 @@
 		06E2EE6D194B9807004C6FE8 /* FilterLabTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilterLabTests.m; sourceTree = "<group>"; };
 		06E2EE77194BA1CA004C6FE8 /* FLTHomeScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTHomeScreenViewController.h; sourceTree = "<group>"; };
 		06E2EE78194BA1CA004C6FE8 /* FLTHomeScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTHomeScreenViewController.m; sourceTree = "<group>"; };
-		06ECC5371961089400FC79D8 /* FLTSharpnessFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTSharpnessFilter.h; sourceTree = "<group>"; };
-		06ECC5381961089400FC79D8 /* FLTSharpnessFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTSharpnessFilter.m; sourceTree = "<group>"; };
 		9EC4995A616B4AEBB9590483 /* libPods-FilterLab.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FilterLab.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4FAAEA04A69427795CB873A /* Pods-FilterLab.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilterLab.xcconfig"; path = "Pods/Pods-FilterLab.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -225,26 +227,90 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		06A06F9B196CA544000D64AF /* Resources */ = {
+		061FE650197744C2007C4122 /* Filters */ = {
 			isa = PBXGroup;
 			children = (
-				0652D755197362AE00D3041C /* cobalt.acv */,
-				0652D75019735CF400D3041C /* widow.acv */,
-				0652D74B1973572800D3041C /* nimbus.acv */,
-				0652D7431973068700D3041C /* lithium.acv */,
-				06A06FCA196CBF5B000D64AF /* timeless.acv */,
-				06A06FC8196CBF4E000D64AF /* lockewood.acv */,
-				06A06FC6196CBF2F000D64AF /* essence.acv */,
-				06A06FC1196CAF13000D64AF /* arcadia.acv */,
-				06A06FBD196CAEF1000D64AF /* bliss.acv */,
-				06A06FAF196CAD20000D64AF /* sonata.acv */,
-				06A06FAD196CAD11000D64AF /* finesse.acv */,
-				06A06FA8196CAB4A000D64AF /* venice.acv */,
-				06A06FA3196CA946000D64AF /* utopia.acv */,
-				06A06F9E196CA7A6000D64AF /* daydream.acv */,
-				06A06F9C196CA555000D64AF /* lucidity.acv */,
+				061FE651197744C2007C4122 /* FLTArcadiaFilter.h */,
+				061FE652197744C2007C4122 /* FLTArcadiaFilter.m */,
+				061FE653197744C2007C4122 /* FLTBlackVignetteFilter.h */,
+				061FE654197744C2007C4122 /* FLTBlackVignetteFilter.m */,
+				061FE655197744C2007C4122 /* FLTBlissFilter.h */,
+				061FE656197744C2007C4122 /* FLTBlissFilter.m */,
+				061FE657197744C2007C4122 /* FLTBrightnessFilter.h */,
+				061FE658197744C2007C4122 /* FLTBrightnessFilter.m */,
+				061FE659197744C2007C4122 /* FLTCobaltFilter.h */,
+				061FE65A197744C2007C4122 /* FLTCobaltFilter.m */,
+				061FE65B197744C2007C4122 /* FLTContrastFilter.h */,
+				061FE65C197744C2007C4122 /* FLTContrastFilter.m */,
+				061FE65D197744C2007C4122 /* FLTDaydreamFilter.h */,
+				061FE65E197744C2007C4122 /* FLTDaydreamFilter.m */,
+				061FE65F197744C2007C4122 /* FLTEssenceFilter.h */,
+				061FE660197744C2007C4122 /* FLTEssenceFilter.m */,
+				061FE661197744C2007C4122 /* FLTExposureFilter.h */,
+				061FE662197744C2007C4122 /* FLTExposureFilter.m */,
+				061FE663197744C2007C4122 /* FLTFilter.h */,
+				061FE664197744C2007C4122 /* FLTFilter.m */,
+				061FE665197744C2007C4122 /* FLTFinesseFilter.h */,
+				061FE666197744C2007C4122 /* FLTFinesseFilter.m */,
+				061FE667197744C2007C4122 /* FLTHighlightsFilter.h */,
+				061FE668197744C2007C4122 /* FLTHighlightsFilter.m */,
+				061FE669197744C2007C4122 /* FLTLithiumFilter.h */,
+				061FE66A197744C2007C4122 /* FLTLithiumFilter.m */,
+				061FE66B197744C2007C4122 /* FLTLockewoodFilter.h */,
+				061FE66C197744C2007C4122 /* FLTLockewoodFilter.m */,
+				061FE66D197744C2007C4122 /* FLTLucidityFilter.h */,
+				061FE66E197744C2007C4122 /* FLTLucidityFilter.m */,
+				061FE66F197744C2007C4122 /* FLTNimbusFilter.h */,
+				061FE670197744C2007C4122 /* FLTNimbusFilter.m */,
+				061FE671197744C2007C4122 /* FLTSaturationFilter.h */,
+				061FE672197744C2007C4122 /* FLTSaturationFilter.m */,
+				061FE673197744C2007C4122 /* FLTShadowsFilter.h */,
+				061FE674197744C2007C4122 /* FLTShadowsFilter.m */,
+				061FE675197744C2007C4122 /* FLTSharpnessFilter.h */,
+				061FE676197744C2007C4122 /* FLTSharpnessFilter.m */,
+				061FE677197744C2007C4122 /* FLTSonataFilter.h */,
+				061FE678197744C2007C4122 /* FLTSonataFilter.m */,
+				061FE679197744C2007C4122 /* FLTTemperatureFilter.h */,
+				061FE67A197744C2007C4122 /* FLTTemperatureFilter.m */,
+				061FE67B197744C2007C4122 /* FLTTimelessFilter.h */,
+				061FE67C197744C2007C4122 /* FLTTimelessFilter.m */,
+				061FE67D197744C2007C4122 /* FLTUtopiaFilter.h */,
+				061FE67E197744C2007C4122 /* FLTUtopiaFilter.m */,
+				061FE67F197744C2007C4122 /* FLTVeniceFilter.h */,
+				061FE680197744C2007C4122 /* FLTVeniceFilter.m */,
+				061FE681197744C2007C4122 /* FLTWhiteVignetteFilter.h */,
+				061FE682197744C2007C4122 /* FLTWhiteVignetteFilter.m */,
+				061FE683197744C2007C4122 /* FLTWidowFilter.h */,
+				061FE684197744C2007C4122 /* FLTWidowFilter.m */,
+				061FE685197744C2007C4122 /* GPUImageIntensityGrayscaleFilter.h */,
+				061FE686197744C2007C4122 /* GPUImageIntensityGrayscaleFilter.m */,
+				061FE687197744C2007C4122 /* GPUImageIntensityToneCurveFilter.h */,
+				061FE688197744C2007C4122 /* GPUImageIntensityToneCurveFilter.m */,
 			);
-			name = Resources;
+			path = Filters;
+			sourceTree = "<group>";
+		};
+		061FE6A5197744E0007C4122 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				061FE6C4197746CA007C4122 /* Dancing Script OT.otf */,
+				061FE6A6197744E0007C4122 /* arcadia.acv */,
+				061FE6A7197744E0007C4122 /* bliss.acv */,
+				061FE6A8197744E0007C4122 /* cobalt.acv */,
+				061FE6A9197744E0007C4122 /* daydream.acv */,
+				061FE6AA197744E0007C4122 /* essence.acv */,
+				061FE6AB197744E0007C4122 /* finesse.acv */,
+				061FE6AC197744E0007C4122 /* lithium.acv */,
+				061FE6AD197744E0007C4122 /* lockewood.acv */,
+				061FE6AE197744E0007C4122 /* lucidity.acv */,
+				061FE6AF197744E0007C4122 /* nimbus.acv */,
+				061FE6B0197744E0007C4122 /* sonata.acv */,
+				061FE6B1197744E0007C4122 /* timeless.acv */,
+				061FE6B2197744E0007C4122 /* utopia.acv */,
+				061FE6B3197744E0007C4122 /* venice.acv */,
+				061FE6B4197744E0007C4122 /* widow.acv */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		06E2EE3C194B9807004C6FE8 = {
@@ -282,7 +348,8 @@
 		06E2EE4E194B9807004C6FE8 /* FilterLab */ = {
 			isa = PBXGroup;
 			children = (
-				06A06F9B196CA544000D64AF /* Resources */,
+				061FE6A5197744E0007C4122 /* Resources */,
+				061FE650197744C2007C4122 /* Filters */,
 				06E2EE57194B9807004C6FE8 /* FLTAppDelegate.h */,
 				06E2EE58194B9807004C6FE8 /* FLTAppDelegate.m */,
 				06E2EE77194BA1CA004C6FE8 /* FLTHomeScreenViewController.h */,
@@ -301,63 +368,7 @@
 				06B6DADC195C05C700D1B4E6 /* FLTMenuItemTitleView.m */,
 				06A1A37F195EAB3000A986F8 /* FLTFilterManager.h */,
 				06A1A380195EAB3000A986F8 /* FLTFilterManager.m */,
-				06178340195F9A7E0038F5F1 /* FLTFilter.h */,
-				06178341195F9A7E0038F5F1 /* FLTFilter.m */,
-				06ECC5371961089400FC79D8 /* FLTSharpnessFilter.h */,
-				06ECC5381961089400FC79D8 /* FLTSharpnessFilter.m */,
-				06BCD229196770660042ACE3 /* FLTBrightnessFilter.h */,
-				06BCD22A196770660042ACE3 /* FLTBrightnessFilter.m */,
-				06BCD22D196776F40042ACE3 /* FLTContrastFilter.h */,
-				06BCD22E196776F40042ACE3 /* FLTContrastFilter.m */,
-				06BCD23019677A8D0042ACE3 /* FLTSaturationFilter.h */,
-				06BCD23119677A8E0042ACE3 /* FLTSaturationFilter.m */,
-				06BCD23319677BD20042ACE3 /* FLTExposureFilter.h */,
-				06BCD23419677BD20042ACE3 /* FLTExposureFilter.m */,
-				06BCD23619677EA60042ACE3 /* FLTBlackVignetteFilter.h */,
-				06BCD23719677EA60042ACE3 /* FLTBlackVignetteFilter.m */,
-				06BCD239196786B00042ACE3 /* FLTWhiteVignetteFilter.h */,
-				06BCD23A196786B00042ACE3 /* FLTWhiteVignetteFilter.m */,
-				06DA8E1E196A5F990005A996 /* FLTTemperatureFilter.h */,
-				06DA8E1F196A5F990005A996 /* FLTTemperatureFilter.m */,
-				0610C816196B6067007C4BAD /* FLTHighlightsFilter.h */,
-				0610C817196B6067007C4BAD /* FLTHighlightsFilter.m */,
-				0610C81A196B65F4007C4BAD /* FLTShadowsFilter.h */,
-				0610C81B196B65F4007C4BAD /* FLTShadowsFilter.m */,
-				0652D73E1972FBAA00D3041C /* FLTLithiumFilter.h */,
-				0652D73F1972FBAA00D3041C /* FLTLithiumFilter.m */,
-				0652D748197356C400D3041C /* FLTNimbusFilter.h */,
-				0652D749197356C400D3041C /* FLTNimbusFilter.m */,
-				0652D74D19735C5900D3041C /* FLTWidowFilter.h */,
-				0652D74E19735C5A00D3041C /* FLTWidowFilter.m */,
-				0652D7521973623400D3041C /* FLTCobaltFilter.h */,
-				0652D7531973623400D3041C /* FLTCobaltFilter.m */,
-				06A06F98196CA46F000D64AF /* FLTLucidityFilter.h */,
-				06A06F99196CA46F000D64AF /* FLTLucidityFilter.m */,
-				06A06FA0196CA7CD000D64AF /* FLTDaydreamFilter.h */,
-				06A06FA1196CA7CD000D64AF /* FLTDaydreamFilter.m */,
-				06A06FA5196CA96E000D64AF /* FLTUtopiaFilter.h */,
-				06A06FA6196CA96E000D64AF /* FLTUtopiaFilter.m */,
-				06A06FAA196CAC16000D64AF /* FLTVeniceFilter.h */,
-				06A06FAB196CAC16000D64AF /* FLTVeniceFilter.m */,
-				06A06FB1196CAD3F000D64AF /* FLTFinesseFilter.h */,
-				06A06FB2196CAD3F000D64AF /* FLTFinesseFilter.m */,
-				06A06FB4196CAD77000D64AF /* FLTSonataFilter.h */,
-				06A06FB5196CAD77000D64AF /* FLTSonataFilter.m */,
-				06A06FB7196CAE89000D64AF /* FLTBlissFilter.h */,
-				06A06FB8196CAE89000D64AF /* FLTBlissFilter.m */,
-				06A06FBA196CAE95000D64AF /* FLTArcadiaFilter.h */,
-				06A06FBB196CAE95000D64AF /* FLTArcadiaFilter.m */,
-				06A06FC3196CBEDF000D64AF /* FLTEssenceFilter.h */,
-				06A06FC4196CBEDF000D64AF /* FLTEssenceFilter.m */,
-				06A06FCC196CBFC8000D64AF /* FLTLockewoodFilter.h */,
-				06A06FCD196CBFC8000D64AF /* FLTLockewoodFilter.m */,
-				06A06FCF196CC03B000D64AF /* FLTTimelessFilter.h */,
-				06A06FD0196CC03B000D64AF /* FLTTimelessFilter.m */,
 				06178343195FA4390038F5F1 /* FLTImageEffectType.h */,
-				0652D74519730D3000D3041C /* GPUImageIntensityGrayscaleFilter.h */,
-				0652D74619730D3000D3041C /* GPUImageIntensityGrayscaleFilter.m */,
-				06BCD22119671FD10042ACE3 /* GPUImageIntensityToneCurveFilter.h */,
-				06BCD22219671FD10042ACE3 /* GPUImageIntensityToneCurveFilter.m */,
 				068DB9A5195BA18B00B5B29C /* FLTMenuItemCell.xib */,
 				063034B31953A32000E7A927 /* FLTPhotoEditorViewController.xib */,
 				069505A2194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.xib */,
@@ -475,27 +486,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0652D74C1973572800D3041C /* nimbus.acv in Resources */,
-				06A06FAE196CAD11000D64AF /* finesse.acv in Resources */,
+				061FE6BE197744E0007C4122 /* nimbus.acv in Resources */,
+				061FE6BA197744E0007C4122 /* finesse.acv in Resources */,
 				06E2EE53194B9807004C6FE8 /* InfoPlist.strings in Resources */,
-				0652D756197362AE00D3041C /* cobalt.acv in Resources */,
-				06A06FB0196CAD20000D64AF /* sonata.acv in Resources */,
-				06A06F9F196CA7A6000D64AF /* daydream.acv in Resources */,
+				061FE6B8197744E0007C4122 /* daydream.acv in Resources */,
 				069505A4194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.xib in Resources */,
 				06B6DAD7195BE29200D1B4E6 /* Images.xcassets in Resources */,
-				06A06FC2196CAF13000D64AF /* arcadia.acv in Resources */,
-				06A06FC9196CBF4E000D64AF /* lockewood.acv in Resources */,
-				06A06FCB196CBF5B000D64AF /* timeless.acv in Resources */,
-				0652D75119735CF400D3041C /* widow.acv in Resources */,
-				06A06F9D196CA555000D64AF /* lucidity.acv in Resources */,
-				06A06FA9196CAB4A000D64AF /* venice.acv in Resources */,
-				0652D7441973068700D3041C /* lithium.acv in Resources */,
-				06A06FC7196CBF2F000D64AF /* essence.acv in Resources */,
-				06A06FBE196CAEF1000D64AF /* bliss.acv in Resources */,
+				061FE6B7197744E0007C4122 /* cobalt.acv in Resources */,
 				06349246194EB0C700D6E052 /* FLTCameraViewController.xib in Resources */,
+				061FE6C2197744E0007C4122 /* venice.acv in Resources */,
+				061FE6C0197744E0007C4122 /* timeless.acv in Resources */,
+				061FE6C3197744E0007C4122 /* widow.acv in Resources */,
+				061FE6B9197744E0007C4122 /* essence.acv in Resources */,
+				061FE6BF197744E0007C4122 /* sonata.acv in Resources */,
+				061FE6BB197744E0007C4122 /* lithium.acv in Resources */,
 				063034B51953A32000E7A927 /* FLTPhotoEditorViewController.xib in Resources */,
-				06A06FA4196CA946000D64AF /* utopia.acv in Resources */,
+				061FE6BC197744E0007C4122 /* lockewood.acv in Resources */,
+				061FE6C5197746CA007C4122 /* Dancing Script OT.otf in Resources */,
 				068DB9A6195BA18B00B5B29C /* FLTMenuItemCell.xib in Resources */,
+				061FE6B6197744E0007C4122 /* bliss.acv in Resources */,
+				061FE6C1197744E0007C4122 /* utopia.acv in Resources */,
+				061FE6BD197744E0007C4122 /* lucidity.acv in Resources */,
+				061FE6B5197744E0007C4122 /* arcadia.acv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,44 +559,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0610C81C196B65F4007C4BAD /* FLTShadowsFilter.m in Sources */,
-				06A06FC5196CBEDF000D64AF /* FLTEssenceFilter.m in Sources */,
-				06A06FCE196CBFC8000D64AF /* FLTLockewoodFilter.m in Sources */,
-				0652D7401972FBAA00D3041C /* FLTLithiumFilter.m in Sources */,
-				06A06FD1196CC03B000D64AF /* FLTTimelessFilter.m in Sources */,
-				06BCD22319671FD10042ACE3 /* GPUImageIntensityToneCurveFilter.m in Sources */,
-				0652D74A197356C400D3041C /* FLTNimbusFilter.m in Sources */,
+				061FE69E197744C2007C4122 /* FLTTimelessFilter.m in Sources */,
 				06E2EE79194BA1CA004C6FE8 /* FLTHomeScreenViewController.m in Sources */,
-				0610C818196B6067007C4BAD /* FLTHighlightsFilter.m in Sources */,
-				06A06FB9196CAE89000D64AF /* FLTBlissFilter.m in Sources */,
-				06178342195F9A7E0038F5F1 /* FLTFilter.m in Sources */,
-				06DA8E20196A5F990005A996 /* FLTTemperatureFilter.m in Sources */,
-				06A06FB6196CAD77000D64AF /* FLTSonataFilter.m in Sources */,
-				06A06FA7196CA96E000D64AF /* FLTUtopiaFilter.m in Sources */,
-				06ECC5391961089400FC79D8 /* FLTSharpnessFilter.m in Sources */,
-				06A06FAC196CAC16000D64AF /* FLTVeniceFilter.m in Sources */,
 				06E2EE55194B9807004C6FE8 /* main.m in Sources */,
-				06BCD22B196770660042ACE3 /* FLTBrightnessFilter.m in Sources */,
-				06BCD23219677A8E0042ACE3 /* FLTSaturationFilter.m in Sources */,
+				061FE68A197744C2007C4122 /* FLTBlackVignetteFilter.m in Sources */,
+				061FE69F197744C2007C4122 /* FLTUtopiaFilter.m in Sources */,
+				061FE6A1197744C2007C4122 /* FLTWhiteVignetteFilter.m in Sources */,
+				061FE697197744C2007C4122 /* FLTLucidityFilter.m in Sources */,
 				068DB9A1195B9CD000B5B29C /* FLTMenuItemCell.m in Sources */,
-				06BCD23819677EA60042ACE3 /* FLTBlackVignetteFilter.m in Sources */,
+				061FE691197744C2007C4122 /* FLTExposureFilter.m in Sources */,
+				061FE6A2197744C2007C4122 /* FLTWidowFilter.m in Sources */,
+				061FE689197744C2007C4122 /* FLTArcadiaFilter.m in Sources */,
+				061FE68C197744C2007C4122 /* FLTBrightnessFilter.m in Sources */,
+				061FE699197744C2007C4122 /* FLTSaturationFilter.m in Sources */,
+				061FE68B197744C2007C4122 /* FLTBlissFilter.m in Sources */,
+				061FE69D197744C2007C4122 /* FLTTemperatureFilter.m in Sources */,
 				06349245194EB0C700D6E052 /* FLTCameraViewController.m in Sources */,
-				06BCD23519677BD20042ACE3 /* FLTExposureFilter.m in Sources */,
-				0652D74F19735C5A00D3041C /* FLTWidowFilter.m in Sources */,
+				061FE694197744C2007C4122 /* FLTHighlightsFilter.m in Sources */,
+				061FE69B197744C2007C4122 /* FLTSharpnessFilter.m in Sources */,
+				061FE696197744C2007C4122 /* FLTLockewoodFilter.m in Sources */,
+				061FE69C197744C2007C4122 /* FLTSonataFilter.m in Sources */,
+				061FE68E197744C2007C4122 /* FLTContrastFilter.m in Sources */,
+				061FE695197744C2007C4122 /* FLTLithiumFilter.m in Sources */,
 				06A1A381195EAB3000A986F8 /* FLTFilterManager.m in Sources */,
-				06BCD22F196776F40042ACE3 /* FLTContrastFilter.m in Sources */,
+				061FE693197744C2007C4122 /* FLTFinesseFilter.m in Sources */,
 				06B6DADA195BF43100D1B4E6 /* FLTHorizontalScrollMenuLayout.m in Sources */,
-				06A06FA2196CA7CD000D64AF /* FLTDaydreamFilter.m in Sources */,
-				06A06FB3196CAD3F000D64AF /* FLTFinesseFilter.m in Sources */,
+				061FE69A197744C2007C4122 /* FLTShadowsFilter.m in Sources */,
+				061FE68D197744C2007C4122 /* FLTCobaltFilter.m in Sources */,
 				06E2EE59194B9807004C6FE8 /* FLTAppDelegate.m in Sources */,
-				06A06F9A196CA46F000D64AF /* FLTLucidityFilter.m in Sources */,
+				061FE6A3197744C2007C4122 /* GPUImageIntensityGrayscaleFilter.m in Sources */,
+				061FE692197744C2007C4122 /* FLTFilter.m in Sources */,
+				061FE6A4197744C2007C4122 /* GPUImageIntensityToneCurveFilter.m in Sources */,
 				069505A3194FAD8500B4C3E0 /* FLTPhotoPreviewViewController.m in Sources */,
+				061FE6A0197744C2007C4122 /* FLTVeniceFilter.m in Sources */,
 				06B6DADD195C05C700D1B4E6 /* FLTMenuItemTitleView.m in Sources */,
 				063034B41953A32000E7A927 /* FLTPhotoEditorViewController.m in Sources */,
-				0652D74719730D3000D3041C /* GPUImageIntensityGrayscaleFilter.m in Sources */,
-				06A06FBC196CAE95000D64AF /* FLTArcadiaFilter.m in Sources */,
-				06BCD23B196786B00042ACE3 /* FLTWhiteVignetteFilter.m in Sources */,
-				0652D7541973623400D3041C /* FLTCobaltFilter.m in Sources */,
+				061FE68F197744C2007C4122 /* FLTDaydreamFilter.m in Sources */,
+				061FE698197744C2007C4122 /* FLTNimbusFilter.m in Sources */,
+				061FE690197744C2007C4122 /* FLTEssenceFilter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

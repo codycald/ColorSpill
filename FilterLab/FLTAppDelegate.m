@@ -18,6 +18,14 @@
     FLTHomeScreenViewController *hvc = [[FLTHomeScreenViewController alloc] init];
     self.window.rootViewController = hvc;
     
+    for (NSString *family in [UIFont familyNames]) {
+        NSLog(@"%@", family);
+        
+        for (NSString *name in [UIFont fontNamesForFamilyName:family]) {
+            NSLog(@"\t%@", name);
+        }
+    }
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

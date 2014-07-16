@@ -34,7 +34,7 @@ FLTPhotoPreviewViewControllerDelegate, FLTCameraViewControllerDelegate, FLTPhoto
     // Create the title
     UILabel *titleLabel = [[UILabel alloc] init];
     titleLabel.text = @"Filter Lab";
-    titleLabel.font = [UIFont fontWithName:@"Zapfino" size:30];
+    titleLabel.font = [UIFont fontWithName:@"DancingScriptOT" size:60];
     titleLabel.textColor = [UIColor whiteColor];
     titleLabel.textAlignment = NSTextAlignmentCenter;
     
