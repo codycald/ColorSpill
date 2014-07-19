@@ -29,31 +29,43 @@ FLTPhotoPreviewViewControllerDelegate, FLTCameraViewControllerDelegate, FLTPhoto
     
     [super loadView];
     
-    self.view.backgroundColor = [UIColor blackColor];
+    self.view.backgroundColor = [UIColor colorWithRed:0.45f green:0.72f blue:0.91f alpha:1.0f];
     
     // Create the title
-    UILabel *titleLabel = [[UILabel alloc] init];
-    titleLabel.text = @"Filter Lab";
-    titleLabel.font = [UIFont fontWithName:@"DancingScriptOT" size:60];
-    titleLabel.textColor = [UIColor whiteColor];
-    titleLabel.textAlignment = NSTextAlignmentCenter;
+    UIImageView *logoView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Logo"]];
     
     // Describe the appearence of our camera and photo library buttons
-    NSDictionary *appearenceProxy = @{kMRoundedButtonCornerRadius : @FLT_MAX,
-                                      kMRoundedButtonBorderWidth : @2,
-                                      kMRoundedButtonBorderColor : [UIColor whiteColor],
-                                      kMRoundedButtonBorderAnimationColor : [UIColor darkGrayColor],
-                                      kMRoundedButtonContentColor : [UIColor whiteColor],
-                                      kMRoundedButtonContentAnimationColor : [UIColor darkGrayColor],
-                                      kMRoundedButtonForegroundColor : [UIColor darkGrayColor],
-                                      kMRoundedButtonForegroundAnimationColor : [UIColor whiteColor]};
+    NSDictionary *cameraAppearenceProxy = @{kMRoundedButtonCornerRadius : @FLT_MAX,
+                                            kMRoundedButtonBorderWidth : @3,
+                                            kMRoundedButtonBorderColor : [UIColor colorWithRed:0.30f green:0.30f blue:0.30f alpha:1.0f],
+                                            kMRoundedButtonBorderAnimationColor : [UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.0],
+                                            kMRoundedButtonContentColor : [UIColor colorWithRed:0.30f green:0.30f blue:0.30f alpha:1.0f],
+                                            kMRoundedButtonContentAnimationColor : [UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.0],
+                                            kMRoundedButtonForegroundColor : [UIColor colorWithRed:0.98f green:0.32f blue:0.05f alpha:1.0f],
+                                            kMRoundedButtonForegroundAnimationColor : [UIColor colorWithRed:0.56 green:0.16 blue:0.0 alpha:1.0]};
     
-    [MRoundedButtonAppearanceManager registerAppearanceProxy:appearenceProxy forIdentifier:@"cameraButton"];
-    [MRoundedButtonAppearanceManager registerAppearanceProxy:appearenceProxy forIdentifier:@"photoLibraryButton"];
+    NSDictionary *photoLibraryAppearenceProxy = @{kMRoundedButtonCornerRadius : @FLT_MAX,
+                                                  kMRoundedButtonBorderWidth : @3,
+                                                  kMRoundedButtonBorderColor : [UIColor colorWithRed:0.30f green:0.30f blue:0.30f alpha:1.0f],
+                                                  kMRoundedButtonBorderAnimationColor : [UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.0],
+                                                  kMRoundedButtonContentColor : [UIColor colorWithRed:0.30f green:0.30f blue:0.30f alpha:1.0f],
+                                                  kMRoundedButtonContentAnimationColor : [UIColor colorWithRed:0.20 green:0.20 blue:0.20 alpha:1.0],
+                                                  kMRoundedButtonForegroundColor : [UIColor colorWithRed:0.51f green:0.78f blue:0.25f alpha:1.0f],
+                                                  kMRoundedButtonForegroundAnimationColor : [UIColor colorWithRed:0.20 green:0.38 blue:0.01 alpha:1.0]};
+    
+    [MRoundedButtonAppearanceManager registerAppearanceProxy:cameraAppearenceProxy
+                                               forIdentifier:@"cameraButton"];
+    [MRoundedButtonAppearanceManager registerAppearanceProxy:photoLibraryAppearenceProxy
+                                               forIdentifier:@"photoLibraryButton"];
     
     // Create the camera and photo library buttons
-    cameraButton = [MRoundedButton buttonWithFrame:CGRectZero buttonStyle:MRoundedButtonCentralImage appearanceIdentifier:@"cameraButton"];
-    photoLibraryButton = [MRoundedButton buttonWithFrame:CGRectZero buttonStyle:MRoundedButtonCentralImage appearanceIdentifier:@"photoLibraryButton"];
+    cameraButton = [MRoundedButton buttonWithFrame:CGRectZero
+                                       buttonStyle:MRoundedButtonCentralImage
+                              appearanceIdentifier:@"cameraButton"];
+    
+    photoLibraryButton = [MRoundedButton buttonWithFrame:CGRectZero
+                                             buttonStyle:MRoundedButtonCentralImage
+                                    appearanceIdentifier:@"photoLibraryButton"];
     
     cameraButton.imageView.image = [UIImage imageNamed:@"Camera"];
     photoLibraryButton.imageView.image =[UIImage imageNamed:@"Picture_Fields"];
@@ -71,28 +83,28 @@ FLTPhotoPreviewViewControllerDelegate, FLTCameraViewControllerDelegate, FLTPhoto
                  forControlEvents:UIControlEventTouchUpInside];
     
     // Add the views to the view controllers view
-    [self.view addSubview:titleLabel];
+    [self.view addSubview:logoView];
     [self.view addSubview:cameraButton];
     [self.view addSubview:photoLibraryButton];
     
     // Configure the layout of our views
-    titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    logoView.translatesAutoresizingMaskIntoConstraints = NO;
     cameraButton.translatesAutoresizingMaskIntoConstraints = NO;
     photoLibraryButton.translatesAutoresizingMaskIntoConstraints = NO;
     
     // Create the lookup dictionary for our views
-    NSDictionary *viewsDictionary = NSDictionaryOfVariableBindings(titleLabel, cameraButton, photoLibraryButton);
+    NSDictionary *viewsDictionary = NSDictionaryOfVariableBindings(logoView, cameraButton, photoLibraryButton);
     
     // Define the vertical layout constraints
     NSArray *titleVerticalConstraints = [NSLayoutConstraint
-                                         constraintsWithVisualFormat:@"V:|-53-[titleLabel]-40-[cameraButton(==90)]-50-[photoLibraryButton(==90)]"
+                                         constraintsWithVisualFormat:@"V:|-53-[logoView]-40-[cameraButton(==90)]-30-[photoLibraryButton(==90)]"
                                          options:0
                                          metrics:nil
                                          views:viewsDictionary];
     
     // Define the horizontal layout constraints involving the title
     NSArray *titleHorizontalConstraints = [NSLayoutConstraint
-                                           constraintsWithVisualFormat:@"H:|-20-[titleLabel]-20-|"
+                                           constraintsWithVisualFormat:@"H:|-20-[logoView]-20-|"
                                            options:0
                                            metrics:nil
                                            views:viewsDictionary];
