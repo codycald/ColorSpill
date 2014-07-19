@@ -97,7 +97,7 @@ FLTPhotoPreviewViewControllerDelegate, FLTCameraViewControllerDelegate, FLTPhoto
     
     // Define the vertical layout constraints
     NSArray *titleVerticalConstraints = [NSLayoutConstraint
-                                         constraintsWithVisualFormat:@"V:|-53-[logoView]-40-[cameraButton(==90)]-30-[photoLibraryButton(==90)]"
+                                         constraintsWithVisualFormat:@"V:|-50-[logoView]-45-[cameraButton(==90)]-(<=45)-[photoLibraryButton(==90)]-(>=30)-|"
                                          options:0
                                          metrics:nil
                                          views:viewsDictionary];
@@ -126,15 +126,6 @@ FLTPhotoPreviewViewControllerDelegate, FLTCameraViewControllerDelegate, FLTPhoto
     [self.view addConstraints:titleVerticalConstraints];
     [self.view addConstraints:cameraHorizontalConstraints];
     [self.view addConstraints:photoLibraryHorizontalConstraints];
-}
-
-- (void)viewDidLoad {
-    
-    [super viewDidLoad];
-    
-    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-        cameraButton.enabled = NO;
-    }
 }
 
 #pragma mark - UIViewController overrides
@@ -202,9 +193,18 @@ FLTPhotoPreviewViewControllerDelegate, FLTCameraViewControllerDelegate, FLTPhoto
         return;
     }
     
-    FLTCameraViewController *cvc = [[FLTCameraViewController alloc] init];
-    cvc.delegate = self;
-    [self presentViewController:cvc animated:YES completion:NULL];
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        FLTCameraViewController *cvc = [[FLTCameraViewController alloc] init];
+        cvc.delegate = self;
+        [self presentViewController:cvc animated:YES completion:NULL];
+    } else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No camera"
+                                                        message:@"This device does not have a camera. Please select an image from your photo library."
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }
 }
 
 - (IBAction)presentPhotoLibary:(id)sender {
