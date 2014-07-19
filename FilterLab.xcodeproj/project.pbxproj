@@ -43,7 +43,6 @@
 		061FE6B9197744E0007C4122 /* essence.acv in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6AA197744E0007C4122 /* essence.acv */; };
 		061FE6BA197744E0007C4122 /* finesse.acv in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6AB197744E0007C4122 /* finesse.acv */; };
 		061FE6BB197744E0007C4122 /* lithium.acv in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6AC197744E0007C4122 /* lithium.acv */; };
-		061FE6BC197744E0007C4122 /* lockewood.acv in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6AD197744E0007C4122 /* lockewood.acv */; };
 		061FE6BD197744E0007C4122 /* lucidity.acv in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6AE197744E0007C4122 /* lucidity.acv */; };
 		061FE6BE197744E0007C4122 /* nimbus.acv in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6AF197744E0007C4122 /* nimbus.acv */; };
 		061FE6BF197744E0007C4122 /* sonata.acv in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6B0197744E0007C4122 /* sonata.acv */; };
@@ -153,7 +152,6 @@
 		061FE6AA197744E0007C4122 /* essence.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = essence.acv; sourceTree = "<group>"; };
 		061FE6AB197744E0007C4122 /* finesse.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = finesse.acv; sourceTree = "<group>"; };
 		061FE6AC197744E0007C4122 /* lithium.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = lithium.acv; sourceTree = "<group>"; };
-		061FE6AD197744E0007C4122 /* lockewood.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = lockewood.acv; sourceTree = "<group>"; };
 		061FE6AE197744E0007C4122 /* lucidity.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = lucidity.acv; sourceTree = "<group>"; };
 		061FE6AF197744E0007C4122 /* nimbus.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = nimbus.acv; sourceTree = "<group>"; };
 		061FE6B0197744E0007C4122 /* sonata.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = sonata.acv; sourceTree = "<group>"; };
@@ -168,6 +166,7 @@
 		06349242194EB0C700D6E052 /* FLTCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTCameraViewController.h; sourceTree = "<group>"; };
 		06349243194EB0C700D6E052 /* FLTCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTCameraViewController.m; sourceTree = "<group>"; };
 		06349244194EB0C700D6E052 /* FLTCameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLTCameraViewController.xib; sourceTree = "<group>"; };
+		064F1BFE197B05110099A024 /* lockewood.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = lockewood.acv; sourceTree = "<group>"; };
 		068DB99F195B9CD000B5B29C /* FLTMenuItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTMenuItemCell.h; sourceTree = "<group>"; };
 		068DB9A0195B9CD000B5B29C /* FLTMenuItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTMenuItemCell.m; sourceTree = "<group>"; };
 		068DB9A5195BA18B00B5B29C /* FLTMenuItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FLTMenuItemCell.xib; sourceTree = "<group>"; };
@@ -293,6 +292,7 @@
 		061FE6A5197744E0007C4122 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				064F1BFE197B05110099A024 /* lockewood.acv */,
 				061FE6C4197746CA007C4122 /* Dancing Script OT.otf */,
 				061FE6A6197744E0007C4122 /* arcadia.acv */,
 				061FE6A7197744E0007C4122 /* bliss.acv */,
@@ -301,7 +301,6 @@
 				061FE6AA197744E0007C4122 /* essence.acv */,
 				061FE6AB197744E0007C4122 /* finesse.acv */,
 				061FE6AC197744E0007C4122 /* lithium.acv */,
-				061FE6AD197744E0007C4122 /* lockewood.acv */,
 				061FE6AE197744E0007C4122 /* lucidity.acv */,
 				061FE6AF197744E0007C4122 /* nimbus.acv */,
 				061FE6B0197744E0007C4122 /* sonata.acv */,
@@ -501,7 +500,6 @@
 				061FE6BF197744E0007C4122 /* sonata.acv in Resources */,
 				061FE6BB197744E0007C4122 /* lithium.acv in Resources */,
 				063034B51953A32000E7A927 /* FLTPhotoEditorViewController.xib in Resources */,
-				061FE6BC197744E0007C4122 /* lockewood.acv in Resources */,
 				061FE6C5197746CA007C4122 /* Dancing Script OT.otf in Resources */,
 				068DB9A6195BA18B00B5B29C /* FLTMenuItemCell.xib in Resources */,
 				061FE6B6197744E0007C4122 /* bliss.acv in Resources */,
