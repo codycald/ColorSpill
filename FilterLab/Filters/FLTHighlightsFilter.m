@@ -15,7 +15,7 @@
     self = [super init];
     
     if (self) {
-        self.filterName = @"Highlights";
+        self.filterName = @"Darken Highlights";
         self.imageName = @"highlights";
         self.type = FLTToolFilterType;
         self.maximumFilterValue = 1.0;

@@ -6,18 +6,18 @@
 //  Copyright (c) 2014 Cody Caldwell. All rights reserved.
 //
 
-#import "FLTLockewoodFilter.h"
+#import "FLTTimberFilter.h"
 #import "GPUImageIntensityToneCurveFilter.h"
 
-@implementation FLTLockewoodFilter
+@implementation FLTTimberFilter
 
 - (instancetype)init {
     
     self = [super init];
     
     if (self) {
-        self.filterName = @"Lockewood";
-        self.imageName = @"lockewood";
+        self.filterName = @"Timber";
+        self.imageName = @"timber";
         self.type = FLTGeneralFilterType;
         self.maximumFilterValue = 1.0;
         self.minimumFilterValue = 0.0;

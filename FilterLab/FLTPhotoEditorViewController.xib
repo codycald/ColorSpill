@@ -24,28 +24,28 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <color key="backgroundColor" red="0.1450980392" green="0.1450980392" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
                     <items>
-                        <barButtonItem systemItem="trash" id="xyf-ZQ-lLf">
+                        <barButtonItem style="plain" systemItem="trash" id="xyf-ZQ-lLf">
                             <color key="tintColor" red="0.97647058819999999" green="0.32156862749999998" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="revertChanges:" destination="-1" id="d7g-Yw-z1t"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="me1-Rx-ust"/>
-                        <barButtonItem image="Horizontal_Slider" id="EM2-bM-fRl">
+                        <barButtonItem image="Horizontal_Slider" style="plain" id="EM2-bM-fRl">
                             <color key="tintColor" red="0.4549019608" green="0.72156862749999995" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="showToolMenu:" destination="-1" id="qfr-cw-qVj"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="5UZ-02-X8B"/>
-                        <barButtonItem image="Venn_Diagram" id="Wo2-aO-AQU">
+                        <barButtonItem image="Venn_Diagram" style="plain" id="Wo2-aO-AQU">
                             <color key="tintColor" red="0.5568627451" green="0.77647058820000003" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="showFilterMenu:" destination="-1" id="sQ0-nR-cNQ"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="twf-Nb-e5I"/>
-                        <barButtonItem systemItem="action" id="wNM-Zk-IAC">
+                        <barButtonItem style="plain" systemItem="action" id="wNM-Zk-IAC">
                             <color key="tintColor" red="0.81960784310000001" green="0.76078431369999999" blue="0.027450980390000001" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="shareImage:" destination="-1" id="kWK-et-CHZ"/>

@@ -29,10 +29,10 @@
         self.filterNames = @[@"FLTSharpnessFilter", @"FLTBrightnessFilter", @"FLTContrastFilter",
                              @"FLTSaturationFilter", @"FLTExposureFilter", @"FLTBlackVignetteFilter",
                              @"FLTWhiteVignetteFilter", @"FLTTemperatureFilter", @"FLTHighlightsFilter",
-                             @"FLTShadowsFilter", @"FLTLucidityFilter", @"FLTDaydreamFilter",
+                             @"FLTShadowsFilter", @"FLTLucidityFilter", @"FLTReverieFilter",
                              @"FLTUtopiaFilter", @"FLTVeniceFilter", @"FLTFinesseFilter",
                              @"FLTSonataFilter", @"FLTBlissFilter", @"FLTArcadiaFilter",
-                             @"FLTEssenceFilter", @"FLTLockewoodFilter", @"FLTTimelessFilter",
+                             @"FLTEssenceFilter", @"FLTTimberFilter", @"FLTTimelessFilter",
                              @"FLTLithiumFilter", @"FLTNimbusFilter", @"FLTWidowFilter",
                              @"FLTCobaltFilter"];
         [self createFilters];

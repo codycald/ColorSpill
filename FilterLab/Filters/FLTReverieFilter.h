@@ -1,5 +1,5 @@
 //
-//  FLTLockewoodFilter.h
+//  FLTDaydreamFilter.h
 //  FilterLab
 //
 //  Created by Cody Caldwell on 7/8/14.
@@ -8,6 +8,6 @@
 
 #import "FLTFilter.h"
 
-@interface FLTLockewoodFilter : FLTFilter
+@interface FLTReverieFilter : FLTFilter
 
 @end

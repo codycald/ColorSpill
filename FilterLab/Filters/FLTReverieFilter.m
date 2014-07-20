@@ -6,23 +6,23 @@
 //  Copyright (c) 2014 Cody Caldwell. All rights reserved.
 //
 
-#import "FLTDaydreamFilter.h"
+#import "FLTReverieFilter.h"
 #import "GPUImageIntensityToneCurveFilter.h"
 
-@implementation FLTDaydreamFilter
+@implementation FLTReverieFilter
 
 - (instancetype)init {
     
     self = [super init];
     
     if (self) {
-        self.filterName = @"Daydream";
-        self.imageName = @"daydream";
+        self.filterName = @"Reverie";
+        self.imageName = @"reverie";
         self.type = FLTGeneralFilterType;
         self.maximumFilterValue = 1.0;
         self.minimumFilterValue = 0.0;
         self.startingFilterValue = 1.0;
-        self.gpuFilter = [[GPUImageIntensityToneCurveFilter alloc] initWithACV:@"daydream"];
+        self.gpuFilter = [[GPUImageIntensityToneCurveFilter alloc] initWithACV:@"reverie"];
         self.intensity = 1.0;
     }
     return self;
