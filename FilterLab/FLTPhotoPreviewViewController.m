@@ -8,6 +8,7 @@
 
 #import "FLTPhotoPreviewViewController.h"
 #import "GPUImage.h"
+#import "MBProgressHUD.h"
 
 @interface FLTPhotoPreviewViewController ()
 
@@ -19,9 +20,21 @@
 
 #pragma mark - View life cycle
 
-- (void)viewDidLoad {
+- (void)viewWillAppear:(BOOL)animated {
     
-    [super viewDidLoad];
+    [super viewWillAppear:animated];
+    
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.margin = 5.0f;
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    
+    [super viewDidAppear:animated];
+    
+    // We must process the image in viewDidAppear due to a bug with GPUImage
+    // where processing the image in viewDidLoad or viewWillAppear will sometimes
+    // cause the image to be streched on 3.5inch devices.
     GPUImagePicture *imagePicture = [[GPUImagePicture alloc] initWithImage:self.image smoothlyScaleOutput:YES];
     GPUImageRotationMode rotationMode = kGPUImageNoRotation;
     
@@ -45,7 +58,11 @@
     self.imageView.contentMode = UIViewContentModeScaleAspectFit;
     [imagePicture addTarget:self.imageView];
     [self.imageView setInputRotation:rotationMode atIndex:0];
-    [imagePicture processImage];
+    [imagePicture processImageWithCompletionHandler:^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [MBProgressHUD hideHUDForView:self.view animated:YES];
+        });
+    }];
 }
 
 - (BOOL)shouldAutorotate {
