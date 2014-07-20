@@ -184,8 +184,6 @@ typedef NS_ENUM(NSInteger, MenuType) {
         
     } else if ([alertView.title isEqualToString:@"Discard changes"] && buttonIndex == 1) {
         
-        [self reconfigureImageViews];
-        
         self.filteredImagePicture = [[GPUImagePicture alloc] initWithImage:self.image];
         
         GPUImageFilter *dummyFilter = [[GPUImageFilter alloc] init];
@@ -194,6 +192,7 @@ typedef NS_ENUM(NSInteger, MenuType) {
         [dummyFilter addTarget:self.originalImageView];
         [dummyFilter addTarget:self.filteredImageView];
         
+        [self reconfigureImageViews];
         [self.filteredImagePicture processImage];
         
         [self.originalImageView setHidden:YES];

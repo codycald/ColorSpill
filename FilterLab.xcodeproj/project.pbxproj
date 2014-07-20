@@ -457,6 +457,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Cody Caldwell";
 				TargetAttributes = {
+					06E2EE44194B9807004C6FE8 = {
+						DevelopmentTeam = 38B42C28A5;
+					};
 					06E2EE5F194B9807004C6FE8 = {
 						TestTargetID = 06E2EE44194B9807004C6FE8;
 					};
@@ -712,6 +715,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FilterLab/FilterLab-Prefix.pch";
 				INFOPLIST_FILE = "FilterLab/FilterLab-Info.plist";
@@ -727,6 +731,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FilterLab/FilterLab-Prefix.pch";
 				INFOPLIST_FILE = "FilterLab/FilterLab-Info.plist";
