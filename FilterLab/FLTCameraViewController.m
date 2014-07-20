@@ -61,6 +61,7 @@
 
 - (void)photoPreview:(FLTPhotoPreviewViewController *)photoPreview useImage:(UIImage *)image {
     
+    UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
     if (self.delegate) {
         [self.delegate cameraViewController:self didCaptureImage:image];
     }
@@ -77,8 +78,6 @@
         
         [MBProgressHUD hideHUDForView:self.view animated:YES];
         if (!error) {
-            
-            UIImageWriteToSavedPhotosAlbum(processedImage, nil, nil, nil);
             
             FLTPhotoPreviewViewController *pvc = [[FLTPhotoPreviewViewController alloc] init];
             pvc.image = processedImage;
