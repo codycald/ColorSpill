@@ -21,7 +21,7 @@
         self.type = FLTGeneralFilterType;
         self.maximumFilterValue = 1.0;
         self.minimumFilterValue = 0.0;
-        self.startingFilterValue = 1.0;
+        self.startingFilterValue = 0.5;
         self.gpuFilter = [[GPUImageIntensityToneCurveFilter alloc] initWithACV:@"utopia"];
         self.intensity = 1.0;
     }
