@@ -1,0 +1,830 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		030726987C1E44C48ED32425 /* libPods-ColorSpill.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EC4995A616B4AEBB9590483 /* libPods-ColorSpill.a */; };
+		061FE689197744C2007C4122 /* CSArcadiaFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE652197744C2007C4122 /* CSArcadiaFilter.m */; };
+		061FE68A197744C2007C4122 /* CSBlackVignetteFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE654197744C2007C4122 /* CSBlackVignetteFilter.m */; };
+		061FE68B197744C2007C4122 /* CSBlissFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE656197744C2007C4122 /* CSBlissFilter.m */; };
+		061FE68C197744C2007C4122 /* CSBrightnessFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE658197744C2007C4122 /* CSBrightnessFilter.m */; };
+		061FE68D197744C2007C4122 /* CSCobaltFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE65A197744C2007C4122 /* CSCobaltFilter.m */; };
+		061FE68E197744C2007C4122 /* CSContrastFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE65C197744C2007C4122 /* CSContrastFilter.m */; };
+		061FE68F197744C2007C4122 /* CSReverieFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE65E197744C2007C4122 /* CSReverieFilter.m */; };
+		061FE690197744C2007C4122 /* CSEssenceFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE660197744C2007C4122 /* CSEssenceFilter.m */; };
+		061FE691197744C2007C4122 /* CSExposureFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE662197744C2007C4122 /* CSExposureFilter.m */; };
+		061FE692197744C2007C4122 /* CSFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE664197744C2007C4122 /* CSFilter.m */; };
+		061FE693197744C2007C4122 /* CSFinesseFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE666197744C2007C4122 /* CSFinesseFilter.m */; };
+		061FE694197744C2007C4122 /* CSHighlightsFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE668197744C2007C4122 /* CSHighlightsFilter.m */; };
+		061FE695197744C2007C4122 /* CSLithiumFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE66A197744C2007C4122 /* CSLithiumFilter.m */; };
+		061FE696197744C2007C4122 /* CSTimberFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE66C197744C2007C4122 /* CSTimberFilter.m */; };
+		061FE697197744C2007C4122 /* CSLucidityFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE66E197744C2007C4122 /* CSLucidityFilter.m */; };
+		061FE698197744C2007C4122 /* CSNimbusFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE670197744C2007C4122 /* CSNimbusFilter.m */; };
+		061FE699197744C2007C4122 /* CSSaturationFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE672197744C2007C4122 /* CSSaturationFilter.m */; };
+		061FE69A197744C2007C4122 /* CSShadowsFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE674197744C2007C4122 /* CSShadowsFilter.m */; };
+		061FE69B197744C2007C4122 /* CSSharpnessFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE676197744C2007C4122 /* CSSharpnessFilter.m */; };
+		061FE69C197744C2007C4122 /* CSSonataFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE678197744C2007C4122 /* CSSonataFilter.m */; };
+		061FE69D197744C2007C4122 /* CSTemperatureFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE67A197744C2007C4122 /* CSTemperatureFilter.m */; };
+		061FE69E197744C2007C4122 /* CSTimelessFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE67C197744C2007C4122 /* CSTimelessFilter.m */; };
+		061FE69F197744C2007C4122 /* CSUtopiaFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE67E197744C2007C4122 /* CSUtopiaFilter.m */; };
+		061FE6A0197744C2007C4122 /* CSVeniceFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE680197744C2007C4122 /* CSVeniceFilter.m */; };
+		061FE6A1197744C2007C4122 /* CSWhiteVignetteFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE682197744C2007C4122 /* CSWhiteVignetteFilter.m */; };
+		061FE6A2197744C2007C4122 /* CSWidowFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE684197744C2007C4122 /* CSWidowFilter.m */; };
+		061FE6A3197744C2007C4122 /* GPUImageIntensityGrayscaleFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE686197744C2007C4122 /* GPUImageIntensityGrayscaleFilter.m */; };
+		061FE6A4197744C2007C4122 /* GPUImageIntensityToneCurveFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 061FE688197744C2007C4122 /* GPUImageIntensityToneCurveFilter.m */; };
+		061FE6B5197744E0007C4122 /* arcadia.acv in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6A6197744E0007C4122 /* arcadia.acv */; };
+		061FE6B6197744E0007C4122 /* bliss.acv in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6A7197744E0007C4122 /* bliss.acv */; };
+		061FE6B7197744E0007C4122 /* cobalt.acv in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6A8197744E0007C4122 /* cobalt.acv */; };
+		061FE6B8197744E0007C4122 /* reverie.acv in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6A9197744E0007C4122 /* reverie.acv */; };
+		061FE6B9197744E0007C4122 /* essence.acv in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6AA197744E0007C4122 /* essence.acv */; };
+		061FE6BA197744E0007C4122 /* finesse.acv in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6AB197744E0007C4122 /* finesse.acv */; };
+		061FE6BB197744E0007C4122 /* lithium.acv in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6AC197744E0007C4122 /* lithium.acv */; };
+		061FE6BD197744E0007C4122 /* lucidity.acv in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6AE197744E0007C4122 /* lucidity.acv */; };
+		061FE6BE197744E0007C4122 /* nimbus.acv in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6AF197744E0007C4122 /* nimbus.acv */; };
+		061FE6BF197744E0007C4122 /* sonata.acv in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6B0197744E0007C4122 /* sonata.acv */; };
+		061FE6C0197744E0007C4122 /* timeless.acv in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6B1197744E0007C4122 /* timeless.acv */; };
+		061FE6C1197744E0007C4122 /* utopia.acv in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6B2197744E0007C4122 /* utopia.acv */; };
+		061FE6C2197744E0007C4122 /* venice.acv in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6B3197744E0007C4122 /* venice.acv */; };
+		061FE6C3197744E0007C4122 /* widow.acv in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6B4197744E0007C4122 /* widow.acv */; };
+		061FE6C5197746CA007C4122 /* Dancing Script OT.otf in Resources */ = {isa = PBXBuildFile; fileRef = 061FE6C4197746CA007C4122 /* Dancing Script OT.otf */; };
+		063034B41953A32000E7A927 /* CSPhotoEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 063034B21953A32000E7A927 /* CSPhotoEditorViewController.m */; };
+		063034B51953A32000E7A927 /* CSPhotoEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 063034B31953A32000E7A927 /* CSPhotoEditorViewController.xib */; };
+		06349245194EB0C700D6E052 /* CSCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06349243194EB0C700D6E052 /* CSCameraViewController.m */; };
+		06349246194EB0C700D6E052 /* CSCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06349244194EB0C700D6E052 /* CSCameraViewController.xib */; };
+		064A36D6197F6F1B0030A9C9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E2EE61194B9807004C6FE8 /* XCTest.framework */; };
+		064A36D7197F6F1B0030A9C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E2EE48194B9807004C6FE8 /* Foundation.framework */; };
+		064A36D8197F6F1B0030A9C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E2EE4C194B9807004C6FE8 /* UIKit.framework */; };
+		064A36DE197F6F1B0030A9C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 064A36DC197F6F1B0030A9C9 /* InfoPlist.strings */; };
+		064A36E0197F6F1B0030A9C9 /* ColorSpillTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 064A36DF197F6F1B0030A9C9 /* ColorSpillTests.m */; };
+		068DB9A1195B9CD000B5B29C /* CSMenuItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 068DB9A0195B9CD000B5B29C /* CSMenuItemCell.m */; };
+		068DB9A6195BA18B00B5B29C /* CSMenuItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 068DB9A5195BA18B00B5B29C /* CSMenuItemCell.xib */; };
+		069505A3194FAD8500B4C3E0 /* CSPhotoPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 069505A1194FAD8500B4C3E0 /* CSPhotoPreviewViewController.m */; };
+		069505A4194FAD8500B4C3E0 /* CSPhotoPreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 069505A2194FAD8500B4C3E0 /* CSPhotoPreviewViewController.xib */; };
+		06A1A381195EAB3000A986F8 /* CSFilterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A1A380195EAB3000A986F8 /* CSFilterManager.m */; };
+		06B6DAD7195BE29200D1B4E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06E2EE5A194B9807004C6FE8 /* Images.xcassets */; };
+		06B6DADA195BF43100D1B4E6 /* CSHorizontalScrollMenuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B6DAD9195BF43100D1B4E6 /* CSHorizontalScrollMenuLayout.m */; };
+		06B6DADD195C05C700D1B4E6 /* CSMenuItemTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B6DADC195C05C700D1B4E6 /* CSMenuItemTitleView.m */; };
+		06E2EE49194B9807004C6FE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E2EE48194B9807004C6FE8 /* Foundation.framework */; };
+		06E2EE4B194B9807004C6FE8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E2EE4A194B9807004C6FE8 /* CoreGraphics.framework */; };
+		06E2EE4D194B9807004C6FE8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E2EE4C194B9807004C6FE8 /* UIKit.framework */; };
+		06E2EE53194B9807004C6FE8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06E2EE51194B9807004C6FE8 /* InfoPlist.strings */; };
+		06E2EE55194B9807004C6FE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E2EE54194B9807004C6FE8 /* main.m */; };
+		06E2EE59194B9807004C6FE8 /* CSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E2EE58194B9807004C6FE8 /* CSAppDelegate.m */; };
+		06E2EE79194BA1CA004C6FE8 /* CSHomeScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06E2EE78194BA1CA004C6FE8 /* CSHomeScreenViewController.m */; };
+		06FC3767197F4FA700EE02B7 /* timber.acv in Resources */ = {isa = PBXBuildFile; fileRef = 06FC3766197F4FA700EE02B7 /* timber.acv */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		064A36E2197F6F1B0030A9C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06E2EE3D194B9807004C6FE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06E2EE44194B9807004C6FE8;
+			remoteInfo = ColorSpill;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06178343195FA4390038F5F1 /* CSImageEffectType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSImageEffectType.h; sourceTree = "<group>"; };
+		061FE651197744C2007C4122 /* CSArcadiaFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSArcadiaFilter.h; sourceTree = "<group>"; };
+		061FE652197744C2007C4122 /* CSArcadiaFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSArcadiaFilter.m; sourceTree = "<group>"; };
+		061FE653197744C2007C4122 /* CSBlackVignetteFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSBlackVignetteFilter.h; sourceTree = "<group>"; };
+		061FE654197744C2007C4122 /* CSBlackVignetteFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSBlackVignetteFilter.m; sourceTree = "<group>"; };
+		061FE655197744C2007C4122 /* CSBlissFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSBlissFilter.h; sourceTree = "<group>"; };
+		061FE656197744C2007C4122 /* CSBlissFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSBlissFilter.m; sourceTree = "<group>"; };
+		061FE657197744C2007C4122 /* CSBrightnessFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSBrightnessFilter.h; sourceTree = "<group>"; };
+		061FE658197744C2007C4122 /* CSBrightnessFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSBrightnessFilter.m; sourceTree = "<group>"; };
+		061FE659197744C2007C4122 /* CSCobaltFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSCobaltFilter.h; sourceTree = "<group>"; };
+		061FE65A197744C2007C4122 /* CSCobaltFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSCobaltFilter.m; sourceTree = "<group>"; };
+		061FE65B197744C2007C4122 /* CSContrastFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSContrastFilter.h; sourceTree = "<group>"; };
+		061FE65C197744C2007C4122 /* CSContrastFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSContrastFilter.m; sourceTree = "<group>"; };
+		061FE65D197744C2007C4122 /* CSReverieFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSReverieFilter.h; sourceTree = "<group>"; };
+		061FE65E197744C2007C4122 /* CSReverieFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSReverieFilter.m; sourceTree = "<group>"; };
+		061FE65F197744C2007C4122 /* CSEssenceFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSEssenceFilter.h; sourceTree = "<group>"; };
+		061FE660197744C2007C4122 /* CSEssenceFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSEssenceFilter.m; sourceTree = "<group>"; };
+		061FE661197744C2007C4122 /* CSExposureFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSExposureFilter.h; sourceTree = "<group>"; };
+		061FE662197744C2007C4122 /* CSExposureFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSExposureFilter.m; sourceTree = "<group>"; };
+		061FE663197744C2007C4122 /* CSFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFilter.h; sourceTree = "<group>"; };
+		061FE664197744C2007C4122 /* CSFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFilter.m; sourceTree = "<group>"; };
+		061FE665197744C2007C4122 /* CSFinesseFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFinesseFilter.h; sourceTree = "<group>"; };
+		061FE666197744C2007C4122 /* CSFinesseFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFinesseFilter.m; sourceTree = "<group>"; };
+		061FE667197744C2007C4122 /* CSHighlightsFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSHighlightsFilter.h; sourceTree = "<group>"; };
+		061FE668197744C2007C4122 /* CSHighlightsFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSHighlightsFilter.m; sourceTree = "<group>"; };
+		061FE669197744C2007C4122 /* CSLithiumFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLithiumFilter.h; sourceTree = "<group>"; };
+		061FE66A197744C2007C4122 /* CSLithiumFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLithiumFilter.m; sourceTree = "<group>"; };
+		061FE66B197744C2007C4122 /* CSTimberFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSTimberFilter.h; sourceTree = "<group>"; };
+		061FE66C197744C2007C4122 /* CSTimberFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSTimberFilter.m; sourceTree = "<group>"; };
+		061FE66D197744C2007C4122 /* CSLucidityFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLucidityFilter.h; sourceTree = "<group>"; };
+		061FE66E197744C2007C4122 /* CSLucidityFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLucidityFilter.m; sourceTree = "<group>"; };
+		061FE66F197744C2007C4122 /* CSNimbusFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSNimbusFilter.h; sourceTree = "<group>"; };
+		061FE670197744C2007C4122 /* CSNimbusFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSNimbusFilter.m; sourceTree = "<group>"; };
+		061FE671197744C2007C4122 /* CSSaturationFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSSaturationFilter.h; sourceTree = "<group>"; };
+		061FE672197744C2007C4122 /* CSSaturationFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSSaturationFilter.m; sourceTree = "<group>"; };
+		061FE673197744C2007C4122 /* CSShadowsFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSShadowsFilter.h; sourceTree = "<group>"; };
+		061FE674197744C2007C4122 /* CSShadowsFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSShadowsFilter.m; sourceTree = "<group>"; };
+		061FE675197744C2007C4122 /* CSSharpnessFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSSharpnessFilter.h; sourceTree = "<group>"; };
+		061FE676197744C2007C4122 /* CSSharpnessFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSSharpnessFilter.m; sourceTree = "<group>"; };
+		061FE677197744C2007C4122 /* CSSonataFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSSonataFilter.h; sourceTree = "<group>"; };
+		061FE678197744C2007C4122 /* CSSonataFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSSonataFilter.m; sourceTree = "<group>"; };
+		061FE679197744C2007C4122 /* CSTemperatureFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSTemperatureFilter.h; sourceTree = "<group>"; };
+		061FE67A197744C2007C4122 /* CSTemperatureFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSTemperatureFilter.m; sourceTree = "<group>"; };
+		061FE67B197744C2007C4122 /* CSTimelessFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSTimelessFilter.h; sourceTree = "<group>"; };
+		061FE67C197744C2007C4122 /* CSTimelessFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSTimelessFilter.m; sourceTree = "<group>"; };
+		061FE67D197744C2007C4122 /* CSUtopiaFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSUtopiaFilter.h; sourceTree = "<group>"; };
+		061FE67E197744C2007C4122 /* CSUtopiaFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSUtopiaFilter.m; sourceTree = "<group>"; };
+		061FE67F197744C2007C4122 /* CSVeniceFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSVeniceFilter.h; sourceTree = "<group>"; };
+		061FE680197744C2007C4122 /* CSVeniceFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSVeniceFilter.m; sourceTree = "<group>"; };
+		061FE681197744C2007C4122 /* CSWhiteVignetteFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSWhiteVignetteFilter.h; sourceTree = "<group>"; };
+		061FE682197744C2007C4122 /* CSWhiteVignetteFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSWhiteVignetteFilter.m; sourceTree = "<group>"; };
+		061FE683197744C2007C4122 /* CSWidowFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSWidowFilter.h; sourceTree = "<group>"; };
+		061FE684197744C2007C4122 /* CSWidowFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSWidowFilter.m; sourceTree = "<group>"; };
+		061FE685197744C2007C4122 /* GPUImageIntensityGrayscaleFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageIntensityGrayscaleFilter.h; sourceTree = "<group>"; };
+		061FE686197744C2007C4122 /* GPUImageIntensityGrayscaleFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageIntensityGrayscaleFilter.m; sourceTree = "<group>"; };
+		061FE687197744C2007C4122 /* GPUImageIntensityToneCurveFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageIntensityToneCurveFilter.h; sourceTree = "<group>"; };
+		061FE688197744C2007C4122 /* GPUImageIntensityToneCurveFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageIntensityToneCurveFilter.m; sourceTree = "<group>"; };
+		061FE6A6197744E0007C4122 /* arcadia.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = arcadia.acv; sourceTree = "<group>"; };
+		061FE6A7197744E0007C4122 /* bliss.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = bliss.acv; sourceTree = "<group>"; };
+		061FE6A8197744E0007C4122 /* cobalt.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = cobalt.acv; sourceTree = "<group>"; };
+		061FE6A9197744E0007C4122 /* reverie.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = reverie.acv; sourceTree = "<group>"; };
+		061FE6AA197744E0007C4122 /* essence.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = essence.acv; sourceTree = "<group>"; };
+		061FE6AB197744E0007C4122 /* finesse.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = finesse.acv; sourceTree = "<group>"; };
+		061FE6AC197744E0007C4122 /* lithium.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = lithium.acv; sourceTree = "<group>"; };
+		061FE6AE197744E0007C4122 /* lucidity.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = lucidity.acv; sourceTree = "<group>"; };
+		061FE6AF197744E0007C4122 /* nimbus.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = nimbus.acv; sourceTree = "<group>"; };
+		061FE6B0197744E0007C4122 /* sonata.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = sonata.acv; sourceTree = "<group>"; };
+		061FE6B1197744E0007C4122 /* timeless.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = timeless.acv; sourceTree = "<group>"; };
+		061FE6B2197744E0007C4122 /* utopia.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = utopia.acv; sourceTree = "<group>"; };
+		061FE6B3197744E0007C4122 /* venice.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = venice.acv; sourceTree = "<group>"; };
+		061FE6B4197744E0007C4122 /* widow.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = widow.acv; sourceTree = "<group>"; };
+		061FE6C4197746CA007C4122 /* Dancing Script OT.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dancing Script OT.otf"; sourceTree = "<group>"; };
+		063034B11953A32000E7A927 /* CSPhotoEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSPhotoEditorViewController.h; sourceTree = "<group>"; };
+		063034B21953A32000E7A927 /* CSPhotoEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSPhotoEditorViewController.m; sourceTree = "<group>"; };
+		063034B31953A32000E7A927 /* CSPhotoEditorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSPhotoEditorViewController.xib; sourceTree = "<group>"; };
+		06349242194EB0C700D6E052 /* CSCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSCameraViewController.h; sourceTree = "<group>"; };
+		06349243194EB0C700D6E052 /* CSCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSCameraViewController.m; sourceTree = "<group>"; };
+		06349244194EB0C700D6E052 /* CSCameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSCameraViewController.xib; sourceTree = "<group>"; };
+		064A36D5197F6F1B0030A9C9 /* ColorSpillTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorSpillTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		064A36DB197F6F1B0030A9C9 /* ColorSpillTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ColorSpillTests-Info.plist"; sourceTree = "<group>"; };
+		064A36DD197F6F1B0030A9C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		064A36DF197F6F1B0030A9C9 /* ColorSpillTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorSpillTests.m; sourceTree = "<group>"; };
+		064A36E1197F6F1B0030A9C9 /* ColorSpillTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ColorSpillTests-Prefix.pch"; sourceTree = "<group>"; };
+		068DB99F195B9CD000B5B29C /* CSMenuItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSMenuItemCell.h; sourceTree = "<group>"; };
+		068DB9A0195B9CD000B5B29C /* CSMenuItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSMenuItemCell.m; sourceTree = "<group>"; };
+		068DB9A5195BA18B00B5B29C /* CSMenuItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSMenuItemCell.xib; sourceTree = "<group>"; };
+		069505A0194FAD8500B4C3E0 /* CSPhotoPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSPhotoPreviewViewController.h; sourceTree = "<group>"; };
+		069505A1194FAD8500B4C3E0 /* CSPhotoPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSPhotoPreviewViewController.m; sourceTree = "<group>"; };
+		069505A2194FAD8500B4C3E0 /* CSPhotoPreviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSPhotoPreviewViewController.xib; sourceTree = "<group>"; };
+		06A1A37F195EAB3000A986F8 /* CSFilterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFilterManager.h; sourceTree = "<group>"; };
+		06A1A380195EAB3000A986F8 /* CSFilterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFilterManager.m; sourceTree = "<group>"; };
+		06B6DAD8195BF43100D1B4E6 /* CSHorizontalScrollMenuLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSHorizontalScrollMenuLayout.h; sourceTree = "<group>"; };
+		06B6DAD9195BF43100D1B4E6 /* CSHorizontalScrollMenuLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSHorizontalScrollMenuLayout.m; sourceTree = "<group>"; };
+		06B6DADB195C05C700D1B4E6 /* CSMenuItemTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSMenuItemTitleView.h; sourceTree = "<group>"; };
+		06B6DADC195C05C700D1B4E6 /* CSMenuItemTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSMenuItemTitleView.m; sourceTree = "<group>"; };
+		06E2EE45194B9807004C6FE8 /* ColorSpill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorSpill.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06E2EE48194B9807004C6FE8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		06E2EE4A194B9807004C6FE8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		06E2EE4C194B9807004C6FE8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		06E2EE50194B9807004C6FE8 /* ColorSpill-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ColorSpill-Info.plist"; sourceTree = "<group>"; };
+		06E2EE52194B9807004C6FE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		06E2EE54194B9807004C6FE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		06E2EE56194B9807004C6FE8 /* ColorSpill-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ColorSpill-Prefix.pch"; sourceTree = "<group>"; };
+		06E2EE57194B9807004C6FE8 /* CSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSAppDelegate.h; sourceTree = "<group>"; };
+		06E2EE58194B9807004C6FE8 /* CSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSAppDelegate.m; sourceTree = "<group>"; };
+		06E2EE5A194B9807004C6FE8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		06E2EE61194B9807004C6FE8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		06E2EE77194BA1CA004C6FE8 /* CSHomeScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSHomeScreenViewController.h; sourceTree = "<group>"; };
+		06E2EE78194BA1CA004C6FE8 /* CSHomeScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSHomeScreenViewController.m; sourceTree = "<group>"; };
+		06FC3766197F4FA700EE02B7 /* timber.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = timber.acv; sourceTree = "<group>"; };
+		9EC4995A616B4AEBB9590483 /* libPods-ColorSpill.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ColorSpill.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4FAAEA04A69427795CB873A /* Pods-ColorSpill.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorSpill.xcconfig"; path = "Pods/Pods-ColorSpill.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		064A36D2197F6F1B0030A9C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				064A36D6197F6F1B0030A9C9 /* XCTest.framework in Frameworks */,
+				064A36D8197F6F1B0030A9C9 /* UIKit.framework in Frameworks */,
+				064A36D7197F6F1B0030A9C9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06E2EE42194B9807004C6FE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06E2EE4B194B9807004C6FE8 /* CoreGraphics.framework in Frameworks */,
+				06E2EE4D194B9807004C6FE8 /* UIKit.framework in Frameworks */,
+				06E2EE49194B9807004C6FE8 /* Foundation.framework in Frameworks */,
+				030726987C1E44C48ED32425 /* libPods-ColorSpill.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		061FE650197744C2007C4122 /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				061FE651197744C2007C4122 /* CSArcadiaFilter.h */,
+				061FE652197744C2007C4122 /* CSArcadiaFilter.m */,
+				061FE653197744C2007C4122 /* CSBlackVignetteFilter.h */,
+				061FE654197744C2007C4122 /* CSBlackVignetteFilter.m */,
+				061FE655197744C2007C4122 /* CSBlissFilter.h */,
+				061FE656197744C2007C4122 /* CSBlissFilter.m */,
+				061FE657197744C2007C4122 /* CSBrightnessFilter.h */,
+				061FE658197744C2007C4122 /* CSBrightnessFilter.m */,
+				061FE659197744C2007C4122 /* CSCobaltFilter.h */,
+				061FE65A197744C2007C4122 /* CSCobaltFilter.m */,
+				061FE65B197744C2007C4122 /* CSContrastFilter.h */,
+				061FE65C197744C2007C4122 /* CSContrastFilter.m */,
+				061FE65D197744C2007C4122 /* CSReverieFilter.h */,
+				061FE65E197744C2007C4122 /* CSReverieFilter.m */,
+				061FE65F197744C2007C4122 /* CSEssenceFilter.h */,
+				061FE660197744C2007C4122 /* CSEssenceFilter.m */,
+				061FE661197744C2007C4122 /* CSExposureFilter.h */,
+				061FE662197744C2007C4122 /* CSExposureFilter.m */,
+				061FE663197744C2007C4122 /* CSFilter.h */,
+				061FE664197744C2007C4122 /* CSFilter.m */,
+				061FE665197744C2007C4122 /* CSFinesseFilter.h */,
+				061FE666197744C2007C4122 /* CSFinesseFilter.m */,
+				061FE667197744C2007C4122 /* CSHighlightsFilter.h */,
+				061FE668197744C2007C4122 /* CSHighlightsFilter.m */,
+				061FE669197744C2007C4122 /* CSLithiumFilter.h */,
+				061FE66A197744C2007C4122 /* CSLithiumFilter.m */,
+				061FE66B197744C2007C4122 /* CSTimberFilter.h */,
+				061FE66C197744C2007C4122 /* CSTimberFilter.m */,
+				061FE66D197744C2007C4122 /* CSLucidityFilter.h */,
+				061FE66E197744C2007C4122 /* CSLucidityFilter.m */,
+				061FE66F197744C2007C4122 /* CSNimbusFilter.h */,
+				061FE670197744C2007C4122 /* CSNimbusFilter.m */,
+				061FE671197744C2007C4122 /* CSSaturationFilter.h */,
+				061FE672197744C2007C4122 /* CSSaturationFilter.m */,
+				061FE673197744C2007C4122 /* CSShadowsFilter.h */,
+				061FE674197744C2007C4122 /* CSShadowsFilter.m */,
+				061FE675197744C2007C4122 /* CSSharpnessFilter.h */,
+				061FE676197744C2007C4122 /* CSSharpnessFilter.m */,
+				061FE677197744C2007C4122 /* CSSonataFilter.h */,
+				061FE678197744C2007C4122 /* CSSonataFilter.m */,
+				061FE679197744C2007C4122 /* CSTemperatureFilter.h */,
+				061FE67A197744C2007C4122 /* CSTemperatureFilter.m */,
+				061FE67B197744C2007C4122 /* CSTimelessFilter.h */,
+				061FE67C197744C2007C4122 /* CSTimelessFilter.m */,
+				061FE67D197744C2007C4122 /* CSUtopiaFilter.h */,
+				061FE67E197744C2007C4122 /* CSUtopiaFilter.m */,
+				061FE67F197744C2007C4122 /* CSVeniceFilter.h */,
+				061FE680197744C2007C4122 /* CSVeniceFilter.m */,
+				061FE681197744C2007C4122 /* CSWhiteVignetteFilter.h */,
+				061FE682197744C2007C4122 /* CSWhiteVignetteFilter.m */,
+				061FE683197744C2007C4122 /* CSWidowFilter.h */,
+				061FE684197744C2007C4122 /* CSWidowFilter.m */,
+				061FE685197744C2007C4122 /* GPUImageIntensityGrayscaleFilter.h */,
+				061FE686197744C2007C4122 /* GPUImageIntensityGrayscaleFilter.m */,
+				061FE687197744C2007C4122 /* GPUImageIntensityToneCurveFilter.h */,
+				061FE688197744C2007C4122 /* GPUImageIntensityToneCurveFilter.m */,
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
+		061FE6A5197744E0007C4122 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				06FC3766197F4FA700EE02B7 /* timber.acv */,
+				061FE6C4197746CA007C4122 /* Dancing Script OT.otf */,
+				061FE6A6197744E0007C4122 /* arcadia.acv */,
+				061FE6A7197744E0007C4122 /* bliss.acv */,
+				061FE6A8197744E0007C4122 /* cobalt.acv */,
+				061FE6A9197744E0007C4122 /* reverie.acv */,
+				061FE6AA197744E0007C4122 /* essence.acv */,
+				061FE6AB197744E0007C4122 /* finesse.acv */,
+				061FE6AC197744E0007C4122 /* lithium.acv */,
+				061FE6AE197744E0007C4122 /* lucidity.acv */,
+				061FE6AF197744E0007C4122 /* nimbus.acv */,
+				061FE6B0197744E0007C4122 /* sonata.acv */,
+				061FE6B1197744E0007C4122 /* timeless.acv */,
+				061FE6B2197744E0007C4122 /* utopia.acv */,
+				061FE6B3197744E0007C4122 /* venice.acv */,
+				061FE6B4197744E0007C4122 /* widow.acv */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		064A36D9197F6F1B0030A9C9 /* ColorSpillTests */ = {
+			isa = PBXGroup;
+			children = (
+				064A36DF197F6F1B0030A9C9 /* ColorSpillTests.m */,
+				064A36DA197F6F1B0030A9C9 /* Supporting Files */,
+			);
+			path = ColorSpillTests;
+			sourceTree = "<group>";
+		};
+		064A36DA197F6F1B0030A9C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				064A36DB197F6F1B0030A9C9 /* ColorSpillTests-Info.plist */,
+				064A36DC197F6F1B0030A9C9 /* InfoPlist.strings */,
+				064A36E1197F6F1B0030A9C9 /* ColorSpillTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		06E2EE3C194B9807004C6FE8 = {
+			isa = PBXGroup;
+			children = (
+				06E2EE4E194B9807004C6FE8 /* ColorSpill */,
+				064A36D9197F6F1B0030A9C9 /* ColorSpillTests */,
+				06E2EE47194B9807004C6FE8 /* Frameworks */,
+				06E2EE46194B9807004C6FE8 /* Products */,
+				C4FAAEA04A69427795CB873A /* Pods-ColorSpill.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		06E2EE46194B9807004C6FE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06E2EE45194B9807004C6FE8 /* ColorSpill.app */,
+				064A36D5197F6F1B0030A9C9 /* ColorSpillTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06E2EE47194B9807004C6FE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06E2EE48194B9807004C6FE8 /* Foundation.framework */,
+				06E2EE4A194B9807004C6FE8 /* CoreGraphics.framework */,
+				06E2EE4C194B9807004C6FE8 /* UIKit.framework */,
+				06E2EE61194B9807004C6FE8 /* XCTest.framework */,
+				9EC4995A616B4AEBB9590483 /* libPods-ColorSpill.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		06E2EE4E194B9807004C6FE8 /* ColorSpill */ = {
+			isa = PBXGroup;
+			children = (
+				061FE6A5197744E0007C4122 /* Resources */,
+				061FE650197744C2007C4122 /* Filters */,
+				06E2EE57194B9807004C6FE8 /* CSAppDelegate.h */,
+				06E2EE58194B9807004C6FE8 /* CSAppDelegate.m */,
+				06E2EE77194BA1CA004C6FE8 /* CSHomeScreenViewController.h */,
+				06E2EE78194BA1CA004C6FE8 /* CSHomeScreenViewController.m */,
+				06349242194EB0C700D6E052 /* CSCameraViewController.h */,
+				06349243194EB0C700D6E052 /* CSCameraViewController.m */,
+				069505A0194FAD8500B4C3E0 /* CSPhotoPreviewViewController.h */,
+				069505A1194FAD8500B4C3E0 /* CSPhotoPreviewViewController.m */,
+				063034B11953A32000E7A927 /* CSPhotoEditorViewController.h */,
+				063034B21953A32000E7A927 /* CSPhotoEditorViewController.m */,
+				068DB99F195B9CD000B5B29C /* CSMenuItemCell.h */,
+				068DB9A0195B9CD000B5B29C /* CSMenuItemCell.m */,
+				06B6DAD8195BF43100D1B4E6 /* CSHorizontalScrollMenuLayout.h */,
+				06B6DAD9195BF43100D1B4E6 /* CSHorizontalScrollMenuLayout.m */,
+				06B6DADB195C05C700D1B4E6 /* CSMenuItemTitleView.h */,
+				06B6DADC195C05C700D1B4E6 /* CSMenuItemTitleView.m */,
+				06A1A37F195EAB3000A986F8 /* CSFilterManager.h */,
+				06A1A380195EAB3000A986F8 /* CSFilterManager.m */,
+				06178343195FA4390038F5F1 /* CSImageEffectType.h */,
+				068DB9A5195BA18B00B5B29C /* CSMenuItemCell.xib */,
+				063034B31953A32000E7A927 /* CSPhotoEditorViewController.xib */,
+				069505A2194FAD8500B4C3E0 /* CSPhotoPreviewViewController.xib */,
+				06349244194EB0C700D6E052 /* CSCameraViewController.xib */,
+				06E2EE5A194B9807004C6FE8 /* Images.xcassets */,
+				06E2EE4F194B9807004C6FE8 /* Supporting Files */,
+			);
+			path = ColorSpill;
+			sourceTree = "<group>";
+		};
+		06E2EE4F194B9807004C6FE8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				06E2EE50194B9807004C6FE8 /* ColorSpill-Info.plist */,
+				06E2EE51194B9807004C6FE8 /* InfoPlist.strings */,
+				06E2EE54194B9807004C6FE8 /* main.m */,
+				06E2EE56194B9807004C6FE8 /* ColorSpill-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		064A36D4197F6F1B0030A9C9 /* ColorSpillTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 064A36E4197F6F1B0030A9C9 /* Build configuration list for PBXNativeTarget "ColorSpillTests" */;
+			buildPhases = (
+				064A36D1197F6F1B0030A9C9 /* Sources */,
+				064A36D2197F6F1B0030A9C9 /* Frameworks */,
+				064A36D3197F6F1B0030A9C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				064A36E3197F6F1B0030A9C9 /* PBXTargetDependency */,
+			);
+			name = ColorSpillTests;
+			productName = ColorSpillTests;
+			productReference = 064A36D5197F6F1B0030A9C9 /* ColorSpillTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		06E2EE44194B9807004C6FE8 /* ColorSpill */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06E2EE71194B9807004C6FE8 /* Build configuration list for PBXNativeTarget "ColorSpill" */;
+			buildPhases = (
+				F372ACCD561542B885DF99C4 /* Check Pods Manifest.lock */,
+				06E2EE41194B9807004C6FE8 /* Sources */,
+				06E2EE42194B9807004C6FE8 /* Frameworks */,
+				06E2EE43194B9807004C6FE8 /* Resources */,
+				2FD8CAA0D002436992DD968B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ColorSpill;
+			productName = ColorSpill;
+			productReference = 06E2EE45194B9807004C6FE8 /* ColorSpill.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		06E2EE3D194B9807004C6FE8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FLT;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Cody Caldwell";
+				TargetAttributes = {
+					064A36D4197F6F1B0030A9C9 = {
+						TestTargetID = 06E2EE44194B9807004C6FE8;
+					};
+				};
+			};
+			buildConfigurationList = 06E2EE40194B9807004C6FE8 /* Build configuration list for PBXProject "ColorSpill" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 06E2EE3C194B9807004C6FE8;
+			productRefGroup = 06E2EE46194B9807004C6FE8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06E2EE44194B9807004C6FE8 /* ColorSpill */,
+				064A36D4197F6F1B0030A9C9 /* ColorSpillTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		064A36D3197F6F1B0030A9C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				064A36DE197F6F1B0030A9C9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06E2EE43194B9807004C6FE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				061FE6BE197744E0007C4122 /* nimbus.acv in Resources */,
+				061FE6BA197744E0007C4122 /* finesse.acv in Resources */,
+				06E2EE53194B9807004C6FE8 /* InfoPlist.strings in Resources */,
+				06FC3767197F4FA700EE02B7 /* timber.acv in Resources */,
+				061FE6B8197744E0007C4122 /* reverie.acv in Resources */,
+				069505A4194FAD8500B4C3E0 /* CSPhotoPreviewViewController.xib in Resources */,
+				06B6DAD7195BE29200D1B4E6 /* Images.xcassets in Resources */,
+				061FE6B7197744E0007C4122 /* cobalt.acv in Resources */,
+				06349246194EB0C700D6E052 /* CSCameraViewController.xib in Resources */,
+				061FE6C2197744E0007C4122 /* venice.acv in Resources */,
+				061FE6C0197744E0007C4122 /* timeless.acv in Resources */,
+				061FE6C3197744E0007C4122 /* widow.acv in Resources */,
+				061FE6B9197744E0007C4122 /* essence.acv in Resources */,
+				061FE6BF197744E0007C4122 /* sonata.acv in Resources */,
+				061FE6BB197744E0007C4122 /* lithium.acv in Resources */,
+				063034B51953A32000E7A927 /* CSPhotoEditorViewController.xib in Resources */,
+				061FE6C5197746CA007C4122 /* Dancing Script OT.otf in Resources */,
+				068DB9A6195BA18B00B5B29C /* CSMenuItemCell.xib in Resources */,
+				061FE6B6197744E0007C4122 /* bliss.acv in Resources */,
+				061FE6C1197744E0007C4122 /* utopia.acv in Resources */,
+				061FE6BD197744E0007C4122 /* lucidity.acv in Resources */,
+				061FE6B5197744E0007C4122 /* arcadia.acv in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FD8CAA0D002436992DD968B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-ColorSpill-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F372ACCD561542B885DF99C4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		064A36D1197F6F1B0030A9C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				064A36E0197F6F1B0030A9C9 /* ColorSpillTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06E2EE41194B9807004C6FE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				061FE69E197744C2007C4122 /* CSTimelessFilter.m in Sources */,
+				06E2EE79194BA1CA004C6FE8 /* CSHomeScreenViewController.m in Sources */,
+				06E2EE55194B9807004C6FE8 /* main.m in Sources */,
+				061FE68A197744C2007C4122 /* CSBlackVignetteFilter.m in Sources */,
+				061FE69F197744C2007C4122 /* CSUtopiaFilter.m in Sources */,
+				061FE6A1197744C2007C4122 /* CSWhiteVignetteFilter.m in Sources */,
+				061FE697197744C2007C4122 /* CSLucidityFilter.m in Sources */,
+				068DB9A1195B9CD000B5B29C /* CSMenuItemCell.m in Sources */,
+				061FE691197744C2007C4122 /* CSExposureFilter.m in Sources */,
+				061FE6A2197744C2007C4122 /* CSWidowFilter.m in Sources */,
+				061FE689197744C2007C4122 /* CSArcadiaFilter.m in Sources */,
+				061FE68C197744C2007C4122 /* CSBrightnessFilter.m in Sources */,
+				061FE699197744C2007C4122 /* CSSaturationFilter.m in Sources */,
+				061FE68B197744C2007C4122 /* CSBlissFilter.m in Sources */,
+				061FE69D197744C2007C4122 /* CSTemperatureFilter.m in Sources */,
+				06349245194EB0C700D6E052 /* CSCameraViewController.m in Sources */,
+				061FE694197744C2007C4122 /* CSHighlightsFilter.m in Sources */,
+				061FE69B197744C2007C4122 /* CSSharpnessFilter.m in Sources */,
+				061FE696197744C2007C4122 /* CSTimberFilter.m in Sources */,
+				061FE69C197744C2007C4122 /* CSSonataFilter.m in Sources */,
+				061FE68E197744C2007C4122 /* CSContrastFilter.m in Sources */,
+				061FE695197744C2007C4122 /* CSLithiumFilter.m in Sources */,
+				06A1A381195EAB3000A986F8 /* CSFilterManager.m in Sources */,
+				061FE693197744C2007C4122 /* CSFinesseFilter.m in Sources */,
+				06B6DADA195BF43100D1B4E6 /* CSHorizontalScrollMenuLayout.m in Sources */,
+				061FE69A197744C2007C4122 /* CSShadowsFilter.m in Sources */,
+				061FE68D197744C2007C4122 /* CSCobaltFilter.m in Sources */,
+				06E2EE59194B9807004C6FE8 /* CSAppDelegate.m in Sources */,
+				061FE6A3197744C2007C4122 /* GPUImageIntensityGrayscaleFilter.m in Sources */,
+				061FE692197744C2007C4122 /* CSFilter.m in Sources */,
+				061FE6A4197744C2007C4122 /* GPUImageIntensityToneCurveFilter.m in Sources */,
+				069505A3194FAD8500B4C3E0 /* CSPhotoPreviewViewController.m in Sources */,
+				061FE6A0197744C2007C4122 /* CSVeniceFilter.m in Sources */,
+				06B6DADD195C05C700D1B4E6 /* CSMenuItemTitleView.m in Sources */,
+				063034B41953A32000E7A927 /* CSPhotoEditorViewController.m in Sources */,
+				061FE68F197744C2007C4122 /* CSReverieFilter.m in Sources */,
+				061FE698197744C2007C4122 /* CSNimbusFilter.m in Sources */,
+				061FE690197744C2007C4122 /* CSEssenceFilter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		064A36E3197F6F1B0030A9C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06E2EE44194B9807004C6FE8 /* ColorSpill */;
+			targetProxy = 064A36E2197F6F1B0030A9C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		064A36DC197F6F1B0030A9C9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				064A36DD197F6F1B0030A9C9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		06E2EE51194B9807004C6FE8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06E2EE52194B9807004C6FE8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		064A36E5197F6F1B0030A9C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ColorSpill.app/ColorSpill";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColorSpillTests/ColorSpillTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ColorSpillTests/ColorSpillTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		064A36E6197F6F1B0030A9C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ColorSpill.app/ColorSpill";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColorSpillTests/ColorSpillTests-Prefix.pch";
+				INFOPLIST_FILE = "ColorSpillTests/ColorSpillTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		06E2EE6F194B9807004C6FE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		06E2EE70194B9807004C6FE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		06E2EE72194B9807004C6FE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4FAAEA04A69427795CB873A /* Pods-ColorSpill.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColorSpill/ColorSpill-Prefix.pch";
+				INFOPLIST_FILE = "ColorSpill/ColorSpill-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = ColorSpill;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		06E2EE73194B9807004C6FE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4FAAEA04A69427795CB873A /* Pods-ColorSpill.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColorSpill/ColorSpill-Prefix.pch";
+				INFOPLIST_FILE = "ColorSpill/ColorSpill-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = ColorSpill;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		064A36E4197F6F1B0030A9C9 /* Build configuration list for PBXNativeTarget "ColorSpillTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				064A36E5197F6F1B0030A9C9 /* Debug */,
+				064A36E6197F6F1B0030A9C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06E2EE40194B9807004C6FE8 /* Build configuration list for PBXProject "ColorSpill" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06E2EE6F194B9807004C6FE8 /* Debug */,
+				06E2EE70194B9807004C6FE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06E2EE71194B9807004C6FE8 /* Build configuration list for PBXNativeTarget "ColorSpill" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06E2EE72194B9807004C6FE8 /* Debug */,
+				06E2EE73194B9807004C6FE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 06E2EE3D194B9807004C6FE8 /* Project object */;
+}

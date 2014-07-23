@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CSPhotoViewController">
+            <connections>
+                <outlet property="editingToolBar" destination="TFe-ss-rD0" id="8k0-i6-X8o"/>
+                <outlet property="filterNameView" destination="4WK-yG-28i" id="jGx-eh-VXm"/>
+                <outlet property="filterSlider" destination="FMI-T8-uls" id="WE2-2J-9SZ"/>
+                <outlet property="filteredImageView" destination="zzh-BD-Vbf" id="k7a-EO-Y4y"/>
+                <outlet property="originalImageView" destination="eYp-zh-8DE" id="7Ij-kw-M1K"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFe-ss-rD0" userLabel="Editing Toolbar">
+                    <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" red="0.1450980392" green="0.1450980392" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                    <items>
+                        <barButtonItem style="plain" systemItem="trash" id="xyf-ZQ-lLf">
+                            <color key="tintColor" red="0.97647058819999999" green="0.32156862749999998" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="revertChanges:" destination="-1" id="d7g-Yw-z1t"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="me1-Rx-ust"/>
+                        <barButtonItem image="Horizontal_Slider" style="plain" id="EM2-bM-fRl">
+                            <color key="tintColor" red="0.4549019608" green="0.72156862749999995" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="showToolMenu:" destination="-1" id="qfr-cw-qVj"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="5UZ-02-X8B"/>
+                        <barButtonItem image="Venn_Diagram" style="plain" id="Wo2-aO-AQU">
+                            <color key="tintColor" red="0.5568627451" green="0.77647058820000003" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="showFilterMenu:" destination="-1" id="sQ0-nR-cNQ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="twf-Nb-e5I"/>
+                        <barButtonItem style="plain" systemItem="action" id="wNM-Zk-IAC">
+                            <color key="tintColor" red="0.81960784310000001" green="0.76078431369999999" blue="0.027450980390000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="shareImage:" destination="-1" id="kWK-et-CHZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                    <color key="barTintColor" red="0.1450980392" green="0.1450980392" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                </toolbar>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ra-8p-6kR" userLabel="Top Toolbar">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" red="0.1450980392" green="0.1450980392" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                    <items>
+                        <barButtonItem title="back" id="T9c-l1-Gv2">
+                            <color key="tintColor" red="0.83921568629999999" green="0.83921568629999999" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="back:" destination="-1" id="F59-Up-shO"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                    <color key="barTintColor" red="0.1450980392" green="0.1450980392" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                </toolbar>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eYp-zh-8DE" userLabel="Original Image View" customClass="GPUImageView">
+                    <rect key="frame" x="0.0" y="44" width="320" height="480"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zzh-BD-Vbf" userLabel="Filtered Image View" customClass="GPUImageView">
+                    <rect key="frame" x="0.0" y="44" width="320" height="480"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.14509803921568626" green="0.14509803921568626" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <toolbar hidden="YES" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FMI-T8-uls" userLabel="Slider">
+                    <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" red="0.1450980392" green="0.1450980392" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                    <items>
+                        <barButtonItem image="cancelbutton" style="plain" id="SC2-W5-3ji">
+                            <color key="tintColor" red="0.97647058823529409" green="0.32156862745098036" blue="0.047058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="sliderCancel:" destination="-1" id="JWf-IH-VPT"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" id="hW5-Mr-Xdv">
+                            <slider key="customView" opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="Cga-kJ-SWH">
+                                <rect key="frame" x="48" y="6" width="222" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.81960784310000001" green="0.76078431369999999" blue="0.027450980390000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="minimumTrackTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="maximumTrackTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="0.81960784313725488" green="0.76078431372549016" blue="0.027450980392156862" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="-1" eventType="valueChanged" id="sSS-GT-9QY"/>
+                                </connections>
+                            </slider>
+                        </barButtonItem>
+                        <barButtonItem image="confirmbutton" id="Thm-gA-RCf">
+                            <color key="tintColor" red="0.5568627451" green="0.77647058820000003" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="sliderConfirm:" destination="-1" id="IfC-uE-NEU"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                    <color key="barTintColor" red="0.1450980392" green="0.1450980392" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                </toolbar>
+                <view hidden="YES" opaque="NO" alpha="0.74999999999999978" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4WK-yG-28i" userLabel="Filter Name Label">
+                    <rect key="frame" x="0.0" y="480" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dyc-e5-2vx">
+                            <rect key="frame" x="139" y="13" width="42" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="16"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="0VT-az-2bR"/>
+                        <constraint firstItem="dyc-e5-2vx" firstAttribute="leading" relation="lessThanOrEqual" secondItem="4WK-yG-28i" secondAttribute="leading" constant="139" id="PjD-j9-EUw"/>
+                        <constraint firstAttribute="centerY" secondItem="dyc-e5-2vx" secondAttribute="centerY" constant="0.5" id="hna-kA-eLn"/>
+                        <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="dyc-e5-2vx" secondAttribute="trailing" constant="139" id="t18-0O-2UD"/>
+                        <constraint firstAttribute="centerX" secondItem="dyc-e5-2vx" secondAttribute="centerX" id="yBY-Rv-IwK"/>
+                    </constraints>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="zzh-BD-Vbf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="08n-aT-NUh"/>
+                <constraint firstItem="eYp-zh-8DE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0m3-JZ-hfH"/>
+                <constraint firstItem="3Ra-8p-6kR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0nB-n3-RLK"/>
+                <constraint firstAttribute="centerX" secondItem="eYp-zh-8DE" secondAttribute="centerX" id="4Ig-jk-Gg1"/>
+                <constraint firstAttribute="bottom" secondItem="TFe-ss-rD0" secondAttribute="bottom" id="4cc-zF-WwF"/>
+                <constraint firstItem="3Ra-8p-6kR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5Pm-NI-qRd"/>
+                <constraint firstItem="zzh-BD-Vbf" firstAttribute="top" secondItem="3Ra-8p-6kR" secondAttribute="bottom" id="5ls-TX-4TO"/>
+                <constraint firstAttribute="centerY" secondItem="zzh-BD-Vbf" secondAttribute="centerY" id="ETq-J4-g1L"/>
+                <constraint firstAttribute="trailing" secondItem="3Ra-8p-6kR" secondAttribute="trailing" id="Nh3-Nl-aNM"/>
+                <constraint firstAttribute="trailing" secondItem="zzh-BD-Vbf" secondAttribute="trailing" id="OGg-nI-rPa"/>
+                <constraint firstItem="TFe-ss-rD0" firstAttribute="top" secondItem="4WK-yG-28i" secondAttribute="bottom" id="P2r-j5-nLc"/>
+                <constraint firstItem="eYp-zh-8DE" firstAttribute="top" secondItem="3Ra-8p-6kR" secondAttribute="bottom" id="Rgj-i6-dH5"/>
+                <constraint firstAttribute="trailing" secondItem="4WK-yG-28i" secondAttribute="trailing" id="THM-cM-MsW"/>
+                <constraint firstAttribute="trailing" secondItem="TFe-ss-rD0" secondAttribute="trailing" id="U3F-U6-HYE"/>
+                <constraint firstAttribute="trailing" secondItem="FMI-T8-uls" secondAttribute="trailing" id="Uue-MI-4yP"/>
+                <constraint firstAttribute="bottom" secondItem="FMI-T8-uls" secondAttribute="bottom" id="X4i-ex-OHF"/>
+                <constraint firstItem="4WK-yG-28i" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Yvd-sd-QaT"/>
+                <constraint firstItem="TFe-ss-rD0" firstAttribute="top" secondItem="zzh-BD-Vbf" secondAttribute="bottom" id="bAe-rX-mPW"/>
+                <constraint firstItem="FMI-T8-uls" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lFg-XE-XHr"/>
+                <constraint firstAttribute="trailing" secondItem="eYp-zh-8DE" secondAttribute="trailing" id="neo-3z-UPo"/>
+                <constraint firstAttribute="centerX" secondItem="zzh-BD-Vbf" secondAttribute="centerX" id="nzD-cy-PX3"/>
+                <constraint firstItem="TFe-ss-rD0" firstAttribute="top" secondItem="eYp-zh-8DE" secondAttribute="bottom" id="r5T-FQ-o5u"/>
+                <constraint firstItem="TFe-ss-rD0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="y36-ry-TSi"/>
+                <constraint firstAttribute="centerY" secondItem="eYp-zh-8DE" secondAttribute="centerY" id="zsh-tf-V3H"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Horizontal_Slider" width="24" height="23"/>
+        <image name="Venn_Diagram" width="24" height="23"/>
+        <image name="cancelbutton" width="22" height="22"/>
+        <image name="confirmbutton" width="25" height="18"/>
+    </resources>
+</document>
