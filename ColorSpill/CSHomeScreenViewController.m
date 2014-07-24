@@ -29,37 +29,33 @@ CSPhotoPreviewViewControllerDelegate, CSCameraViewControllerDelegate, CSPhotoEdi
     
     [super loadView];
     
-    self.view.backgroundColor = [UIColor colorWithRed:0.90f green:0.90f blue:1.0f alpha:1.0f];
+    self.view.backgroundColor = [UIColor colorWithRed:0.145f green:0.145f blue:0.145f alpha:1.0f];
     
     // Create the title
     UIImageView *logoView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Logo"]];
     
-    UIColor *gray = [UIColor colorWithRed:0.18f green:0.18f blue:0.18f alpha:1.0f];
+    UIColor *lightGray = [UIColor colorWithRed:0.98f green:0.98f blue:0.98f alpha:1.0f];
     UIColor *darkGray = [UIColor colorWithRed:0.10 green:0.10 blue:0.10 alpha:1.0];
     UIColor *lightBlue = [UIColor colorWithRed:0.36f green:0.67f blue:0.89f alpha:1.0f];
     UIColor *darkBlue = [UIColor colorWithRed:0.13 green:0.33 blue:0.49 alpha:1.0];
-    UIColor *lightYellow = [UIColor colorWithRed:0.97f green:0.92f blue:0.20f alpha:1.0f];
-    UIColor *darkYellow = [UIColor colorWithRed:0.72 green:0.52 blue:0.01 alpha:1.0];
+    UIColor *lightRed = [UIColor colorWithRed:0.98f green:0.32f blue:0.05f alpha:1.0f];
+    UIColor *darkRed = [UIColor colorWithRed:0.56 green:0.16 blue:0.0 alpha:1.0];
     
     // Describe the appearence of our camera and photo library buttons
     NSDictionary *cameraAppearenceProxy = @{kMRoundedButtonCornerRadius : @FLT_MAX,
-                                            kMRoundedButtonBorderWidth : @3,
-                                            kMRoundedButtonBorderColor : gray,
-                                            kMRoundedButtonBorderAnimationColor : darkGray,
-                                            kMRoundedButtonContentColor : gray,
+                                            kMRoundedButtonBorderWidth : @0,
+                                            kMRoundedButtonContentColor : lightGray,
                                             kMRoundedButtonContentAnimationColor : darkGray,
                                             kMRoundedButtonForegroundColor : lightBlue,
                                             kMRoundedButtonForegroundAnimationColor : darkBlue};
     
     
     NSDictionary *photoLibraryAppearenceProxy = @{kMRoundedButtonCornerRadius : @FLT_MAX,
-                                                  kMRoundedButtonBorderWidth : @3,
-                                                  kMRoundedButtonBorderColor : gray,
-                                                  kMRoundedButtonBorderAnimationColor : darkGray,
-                                                  kMRoundedButtonContentColor : gray,
+                                                  kMRoundedButtonBorderWidth : @0,
+                                                  kMRoundedButtonContentColor : lightGray,
                                                   kMRoundedButtonContentAnimationColor : darkGray,
-                                                  kMRoundedButtonForegroundColor : lightYellow,
-                                                  kMRoundedButtonForegroundAnimationColor : darkYellow};
+                                                  kMRoundedButtonForegroundColor : lightRed,
+                                                  kMRoundedButtonForegroundAnimationColor : darkRed};
     
     [MRoundedButtonAppearanceManager registerAppearanceProxy:cameraAppearenceProxy
                                                forIdentifier:@"cameraButton"];
