@@ -1,5 +1,0 @@
-#include "Pods-ColorSpill-MRoundedButton.xcconfig"
-GCC_PREPROCESSOR_DEFINITIONS = COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/MRoundedButton" "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/GPUImage" "${PODS_ROOT}/Headers/MBProgressHUD" "${PODS_ROOT}/Headers/MRoundedButton"
-OTHER_LDFLAGS = -ObjC ${PODS_COLORSPILL_MROUNDEDBUTTON_OTHER_LDFLAGS}
-PODS_ROOT = ${SRCROOT}

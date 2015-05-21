@@ -4,7 +4,6 @@ target "ColorSpill" do
 
 pod 'GPUImage', '~> 0.1.4'
 pod 'MBProgressHUD'
-pod 'MRoundedButton'
 
 end
 

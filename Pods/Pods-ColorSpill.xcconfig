@@ -1,6 +1,0 @@
-CLANG_MODULES_AUTOLINK = YES
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/GPUImage" "${PODS_ROOT}/Headers/MBProgressHUD" "${PODS_ROOT}/Headers/MRoundedButton"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers" -isystem "${PODS_ROOT}/Headers/GPUImage" -isystem "${PODS_ROOT}/Headers/MBProgressHUD" -isystem "${PODS_ROOT}/Headers/MRoundedButton"
-OTHER_LDFLAGS = -ObjC -framework AVFoundation -framework CoreGraphics -framework CoreMedia -framework Foundation -framework OpenGLES -framework QuartzCore -framework UIKit
-PODS_ROOT = ${SRCROOT}/Pods

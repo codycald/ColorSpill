@@ -45,17 +45,17 @@ CSPhotoPreviewViewControllerDelegate, CSCameraViewControllerDelegate, CSPhotoEdi
     NSDictionary *cameraAppearenceProxy = @{kMRoundedButtonCornerRadius : @FLT_MAX,
                                             kMRoundedButtonBorderWidth : @0,
                                             kMRoundedButtonContentColor : lightGray,
-                                            kMRoundedButtonContentAnimationColor : darkGray,
+                                            kMRoundedButtonContentAnimateToColor : darkGray,
                                             kMRoundedButtonForegroundColor : lightBlue,
-                                            kMRoundedButtonForegroundAnimationColor : darkBlue};
+                                            kMRoundedButtonForegroundAnimateToColor : darkBlue};
     
     
     NSDictionary *photoLibraryAppearenceProxy = @{kMRoundedButtonCornerRadius : @FLT_MAX,
                                                   kMRoundedButtonBorderWidth : @0,
                                                   kMRoundedButtonContentColor : lightGray,
-                                                  kMRoundedButtonContentAnimationColor : darkGray,
+                                                  kMRoundedButtonContentAnimateToColor : darkGray,
                                                   kMRoundedButtonForegroundColor : lightRed,
-                                                  kMRoundedButtonForegroundAnimationColor : darkRed};
+                                                  kMRoundedButtonForegroundAnimateToColor : darkRed};
     
     [MRoundedButtonAppearanceManager registerAppearanceProxy:cameraAppearenceProxy
                                                forIdentifier:@"cameraButton"];

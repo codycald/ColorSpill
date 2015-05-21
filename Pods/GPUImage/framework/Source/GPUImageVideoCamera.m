@@ -953,7 +953,7 @@ NSString *const kGPUImageYUVVideoRangeConversionForLAFragmentShaderString = SHAD
         }
         
         CFRetain(sampleBuffer);
-        runSynchronouslyOnVideoProcessingQueue(^{
+        runAsynchronouslyOnVideoProcessingQueue(^{
             //Feature Detection Hook.
             if (self.delegate)
             {

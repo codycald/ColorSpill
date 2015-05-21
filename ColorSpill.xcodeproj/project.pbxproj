@@ -68,6 +68,7 @@
 		06B6DAD7195BE29200D1B4E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06E2EE5A194B9807004C6FE8 /* Images.xcassets */; };
 		06B6DADA195BF43100D1B4E6 /* CSHorizontalScrollMenuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B6DAD9195BF43100D1B4E6 /* CSHorizontalScrollMenuLayout.m */; };
 		06B6DADD195C05C700D1B4E6 /* CSMenuItemTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B6DADC195C05C700D1B4E6 /* CSMenuItemTitleView.m */; };
+		06C860261B0D98CA000DC346 /* MRoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C860251B0D98CA000DC346 /* MRoundedButton.m */; };
 		06E2EE49194B9807004C6FE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E2EE48194B9807004C6FE8 /* Foundation.framework */; };
 		06E2EE4B194B9807004C6FE8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E2EE4A194B9807004C6FE8 /* CoreGraphics.framework */; };
 		06E2EE4D194B9807004C6FE8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E2EE4C194B9807004C6FE8 /* UIKit.framework */; };
@@ -184,6 +185,8 @@
 		06B6DAD9195BF43100D1B4E6 /* CSHorizontalScrollMenuLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSHorizontalScrollMenuLayout.m; sourceTree = "<group>"; };
 		06B6DADB195C05C700D1B4E6 /* CSMenuItemTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSMenuItemTitleView.h; sourceTree = "<group>"; };
 		06B6DADC195C05C700D1B4E6 /* CSMenuItemTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSMenuItemTitleView.m; sourceTree = "<group>"; };
+		06C860241B0D98CA000DC346 /* MRoundedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRoundedButton.h; path = MRoundedButton/MRoundedButton.h; sourceTree = "<group>"; };
+		06C860251B0D98CA000DC346 /* MRoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MRoundedButton.m; path = MRoundedButton/MRoundedButton.m; sourceTree = "<group>"; };
 		06E2EE45194B9807004C6FE8 /* ColorSpill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorSpill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06E2EE48194B9807004C6FE8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		06E2EE4A194B9807004C6FE8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -199,8 +202,9 @@
 		06E2EE77194BA1CA004C6FE8 /* CSHomeScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSHomeScreenViewController.h; sourceTree = "<group>"; };
 		06E2EE78194BA1CA004C6FE8 /* CSHomeScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSHomeScreenViewController.m; sourceTree = "<group>"; };
 		06FC3766197F4FA700EE02B7 /* timber.acv */ = {isa = PBXFileReference; lastKnownFileType = file; path = timber.acv; sourceTree = "<group>"; };
+		6BDDAF1BA7DA320ECD61FDB8 /* Pods-ColorSpill.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorSpill.release.xcconfig"; path = "Pods/Target Support Files/Pods-ColorSpill/Pods-ColorSpill.release.xcconfig"; sourceTree = "<group>"; };
 		9EC4995A616B4AEBB9590483 /* libPods-ColorSpill.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ColorSpill.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C4FAAEA04A69427795CB873A /* Pods-ColorSpill.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorSpill.xcconfig"; path = "Pods/Pods-ColorSpill.xcconfig"; sourceTree = "<group>"; };
+		E99D2474FE790FC8D2B71ECE /* Pods-ColorSpill.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorSpill.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ColorSpill/Pods-ColorSpill.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -336,11 +340,13 @@
 		06E2EE3C194B9807004C6FE8 = {
 			isa = PBXGroup;
 			children = (
+				06C860241B0D98CA000DC346 /* MRoundedButton.h */,
+				06C860251B0D98CA000DC346 /* MRoundedButton.m */,
 				06E2EE4E194B9807004C6FE8 /* ColorSpill */,
 				064A36D9197F6F1B0030A9C9 /* ColorSpillTests */,
 				06E2EE47194B9807004C6FE8 /* Frameworks */,
 				06E2EE46194B9807004C6FE8 /* Products */,
-				C4FAAEA04A69427795CB873A /* Pods-ColorSpill.xcconfig */,
+				ACB4920699078230E9281896 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -408,6 +414,15 @@
 				06E2EE56194B9807004C6FE8 /* ColorSpill-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ACB4920699078230E9281896 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E99D2474FE790FC8D2B71ECE /* Pods-ColorSpill.debug.xcconfig */,
+				6BDDAF1BA7DA320ECD61FDB8 /* Pods-ColorSpill.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -536,7 +551,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-ColorSpill-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ColorSpill/Pods-ColorSpill-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F372ACCD561542B885DF99C4 /* Check Pods Manifest.lock */ = {
@@ -570,6 +585,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				061FE69E197744C2007C4122 /* CSTimelessFilter.m in Sources */,
+				06C860261B0D98CA000DC346 /* MRoundedButton.m in Sources */,
 				06E2EE79194BA1CA004C6FE8 /* CSHomeScreenViewController.m in Sources */,
 				06E2EE55194B9807004C6FE8 /* main.m in Sources */,
 				061FE68A197744C2007C4122 /* CSBlackVignetteFilter.m in Sources */,
@@ -754,7 +770,7 @@
 		};
 		06E2EE72194B9807004C6FE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C4FAAEA04A69427795CB873A /* Pods-ColorSpill.xcconfig */;
+			baseConfigurationReference = E99D2474FE790FC8D2B71ECE /* Pods-ColorSpill.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -775,7 +791,7 @@
 		};
 		06E2EE73194B9807004C6FE8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C4FAAEA04A69427795CB873A /* Pods-ColorSpill.xcconfig */;
+			baseConfigurationReference = 6BDDAF1BA7DA320ECD61FDB8 /* Pods-ColorSpill.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
